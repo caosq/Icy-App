@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<root>
+<url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getXMLPluginFile.php?pluginId=142&beta=0]]></url><name>Workspace Editor</name><version>1.2.2.0</version><required_kernel_version>1.3.1.0</required_kernel_version><kernel_ver>1.3.1.0</kernel_ver><jar_url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getJarFile.php?pluginId=142&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=809]]></icon_url><image_url></image_url><description><![CDATA[Edit the workspaces with a simple drag'n drop system (Requires Icy 1.2 at least).]]></description><classname><![CDATA[plugins.tprovoost.workspaceeditor.WorkspaceEditorPlugin]]></classname><author><![CDATA[tprovoost - Thomas Provoost]]></author><changelog><![CDATA[-
+Version 1.2.2.0
+Date 2013-02-07 10:46:01
+
+Corrected issue with Component Must Be Showing Location On Screen
+
+-
+Version 1.2.1.0
+Date 2013-01-14 13:53:55
+
+Corrected issue that came with 1.3.0.0
+
+-
+Version 1.2.0.3
+Date 2012-10-24 12:07:05
+
+Corrected infinite loop happening on mac because of repaint.
+
+-
+Version 1.2.0.2
+Date 2012-10-22 14:23:10
+
+* correct getLocation issue, should not happen again.
+
+-
+Version 1.2.0.1
+Date 2012-06-29 15:33:44
+
+Corrected an issue when renaming workspace.
+
+-
+Version 1.2.0.0
+Date 2012-06-27 17:20:23
+
+Added some GUI improvements:
+* now rendering stays normal when only one plugin is shown
+
+* expanding the window will correctly expand the 2 views.
+
+-
+Version 1.1.2.6
+Date 2012-06-08 13:27:35
+
+Now displays an image explaining how to make visible your workspace.
+
+-
+Version 1.1.2.5
+Date 2012-06-07 17:24:09
+
+* corrected bug on enable workspace (it was impossible)
+* added an ugly message at creation of a workspace, will be nice soon.
+
+-
+Version 1.1.2.4
+Date 2012-05-22 15:37:48
+
+Cannot enable an empty workspace anymore to avoid crash on open.
+
+-
+Version 1.1.2.3
+Date 2012-04-24 11:14:07
+
+* No change, only recompiled for Icy 1.2.3.0.
+
+-
+Version 1.1.2.2
+Date 2012-04-19 13:46:30
+
+* Move Up et Move Down to plugins inside bands. 
+* Working on a drag 'n drop version of this.
+
+-
+Version 1.1.2.1
+Date 2012-03-14 15:47:49
+
+- Added Rename Band feature
+
+-
+Version 1.1.2.0
+Date 2012-03-07 14:42:37
+
+- Added icons to plugins
+- added a filter
+
+-
+Version 1.1.1.3
+Date 2012-02-21 13:56:51
+
+Previous version implemented a non existent feature of release version. Everything should be ok now.
+
+-
+Version 1.1.1.2
+Date 2012-02-20 17:29:05
+
+- Added feature: possibility to activate  or deactivate the workspace directly in the Properties dialog;
+- Fixed an issue with Properties Dialog.
+
+-
+Version 1.1.1.1
+Date 2012-02-20 14:51:34
+
+- Fixed non appearing confirmation dialogs when deleting;
+- Fixed issues with sys.xml, now the only possible action is the removal of plugins from "New" band;
+- Fixed issue with empty space at end of popuppanels;
+- Added a title to popup menus for more clarity.
+
+-
+Version 1.1.1.0
+Date 2012-02-03 15:20:22
+
+- GUI colors for selection more visible
+- escape key supported while drag'n'drop
+- multi selection feature added
+
+-
+Version 1.1.0.2
+Date 2012-01-17 11:31:54
+
+* Separator between left and right modified
+* reload button now restart Icy
+* possibility to reload list of plugins
+
+-
+Version 1.1.0.1
+Date 2012-01-16 11:32:09
+
+Corrected a bug in icy 1.2.
+Should now be completely functional.
+
+-
+Version 1.1.0.0
+Date 2011-12-23 17:01:31
+
+Colors are better based on Color Scheme.
+
+-
+Version 1.0.0.1
+Date 2011-12-06 16:14:09
+
+Prevents from running if version not ok.
+
+-
+Version 1.0.0.0
+Date 2011-12-06 16:08:55
+
+
+
+-
+Version 0.0.1.0
+Date 2011-12-06 16:05:15
+
+
+
+]]></changelog><web><![CDATA[http://icy.bioimageanalysis.org/plugin/Workspace_Editor]]></web><dependencies></dependencies></root>

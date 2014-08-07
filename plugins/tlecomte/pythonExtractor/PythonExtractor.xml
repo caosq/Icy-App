@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<root>
+<url><![CDATA[http://icy.bioimageanalysis.org/repository/getXMLPluginFile.php?pluginId=290&beta=0]]></url><name>Python Extractor</name><version>0.7.0.0</version><required_kernel_version>1.4.2.0</required_kernel_version><kernel_ver>1.4.2.0</kernel_ver><jar_url><![CDATA[http://icy.bioimageanalysis.org/repository/getJarFile.php?pluginId=290&beta=0]]></jar_url><icon_url></icon_url><image_url></image_url><description><![CDATA[Extracts Python files stored in plugins so that they can be used in Icy.]]></description><classname><![CDATA[plugins.tlecomte.pythonExtractor.PythonExtractor]]></classname><author><![CDATA[tlecomte - Timothée Lecomte]]></author><changelog><![CDATA[-
+Version 0.7.0.0
+Date 2013-12-09 16:51:41
+
+Solve leaks that would cause out-of-memory errors when reloading plugins (after a Plugin update for example).
+
+-
+Version 0.6.0.0
+Date 2013-12-03 15:50:56
+
+- Fix path in GUI under Windows (mixed separators)
+
+-
+Version 0.5.0.0
+Date 2013-11-27 15:14:51
+
+- Performance improvement (avoid using a Python interpreter to do the extraction, simply use PySystemState).
+
+-
+Version 0.4.0.0
+Date 2013-11-21 10:45:30
+
+Improve the text explaining what this plugin does, and some additional information about the customization of the embedded Python inside Icy.
+
+-
+Version 0.3.0.0
+Date 2013-11-19 17:01:00
+
+- Do the work in init() synchronously. Fix an error about duplicate classes found in some cases.
+
+- Properly call cleanup() for the PythonInterpreter. This fixes a PermGenSpace errors when repeatedly refreshing the plugin list.
+
+
+-
+Version 0.2.0.0
+Date 2013-11-18 13:52:50
+
+- Fix for unavailability of the "site" module at first run.
+
+
+-
+Version 0.1.0.0
+Date 2013-11-18 11:51:07
+
+Update version and kernel dependency.
+
+-
+Version 0.0.1.0
+Date 2013-11-18 11:46:43
+
+
+
+]]></changelog><web><![CDATA[http://icy.bioimageanalysis.org/plugin/Python_Extractor]]></web><dependencies><dependency><classname>plugins.tlecomte.jythonForIcy.JythonForIcy</classname></dependency><dependency><classname>plugins.tlecomte.jythonExtrasForIcy.JythonExtrasForIcy</classname></dependency></dependencies></root>

@@ -1,0 +1,255 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<root>
+<url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getXMLPluginFile.php?pluginId=38&beta=0]]></url><name>NHerve Toolbox</name><version>1.3.0.6</version><required_kernel_version>0.0.0.0</required_kernel_version><kernel_ver>0.0.0.0</kernel_ver><jar_url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getJarFile.php?pluginId=38&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=131]]></icon_url><image_url></image_url><description><![CDATA[My own toolbox used for all the plugins I developed.]]></description><classname><![CDATA[plugins.nherve.toolbox.NherveToolbox]]></classname><author><![CDATA[nherve - Nicolas Hervé]]></author><changelog><![CDATA[-
+Version 1.3.0.6
+Date 2013-03-14 23:52:19
+
+
+
+-
+Version 1.3.0.5
+Date 2013-03-14 14:29:34
+
+
+
+-
+Version 1.3.0.4
+Date 2013-03-14 14:12:51
+
+
+
+-
+Version 1.3.0.3
+Date 2013-03-14 12:14:52
+
+
+
+-
+Version 1.3.0.2
+Date 2012-08-14 12:29:53
+
+
+
+-
+Version 1.3.0.1
+Date 2012-08-14 12:05:26
+
+
+
+-
+Version 1.3.0.0
+Date 2012-06-13 14:17:48
+
+
+
+-
+Version 1.2.1.2
+Date 2011-09-15 11:40:53
+
+
+
+-
+Version 1.2.1.1
+Date 2011-08-30 15:27:40
+
+
+
+-
+Version 1.2.1.0
+Date 2011-08-02 11:39:12
+
+
+
+-
+Version 1.2.0.3
+Date 2011-08-01 14:47:15
+
+
+
+-
+Version 1.2.0.2
+Date 2011-07-28 11:42:34
+
+
+
+-
+Version 1.2.0.1
+Date 2011-07-28 10:56:49
+
+
+
+-
+Version 1.2.0.0
+Date 2011-07-28 10:25:14
+
+
+
+-
+Version 1.0.0.24
+Date 2011-07-07 14:26:11
+
+
+
+-
+Version 1.0.0.23
+Date 2011-07-05 10:22:39
+
+Regression from version 1.0.0.21
+
+-
+Version 1.0.0.22
+Date 2011-07-05 10:17:21
+
+Regression from version 1.0.0.20
+
+-
+Version 1.0.0.21
+Date 2011-07-04 17:25:54
+
+
+
+-
+Version 1.0.0.20
+Date 2011-07-01 18:07:11
+
+
+
+-
+Version 1.0.0.19
+Date 2011-06-29 17:37:45
+
+
+
+-
+Version 1.0.0.18
+Date 2011-06-29 11:26:29
+
+
+
+-
+Version 1.0.0.17
+Date 2011-06-28 17:47:30
+
+
+
+-
+Version 1.0.0.16
+Date 2011-05-04 10:20:06
+
+
+
+-
+Version 1.0.0.15
+Date 2011-04-19 17:13:42
+
+
+
+-
+Version 1.0.0.14
+Date 2011-03-18 17:10:11
+
+
+
+-
+Version 1.0.0.13
+Date 2011-03-18 16:56:42
+
+
+
+-
+Version 1.0.0.12
+Date 2011-03-01 14:46:49
+
+
+
+-
+Version 1.0.0.11
+Date 2011-02-21 15:28:36
+
+
+
+-
+Version 1.0.0.10
+Date 2011-02-17 15:07:48
+
+
+
+-
+Version 1.0.0.9
+Date 2011-02-14 09:50:43
+
+
+
+-
+Version 1.0.0.8
+Date 2011-02-09 17:30:31
+
+
+
+-
+Version 1.0.0.7
+Date 2011-02-03 17:49:02
+
+
+
+-
+Version 1.0.0.6
+Date 2011-02-02 18:16:54
+
+
+
+-
+Version 1.0.0.5
+Date 2011-02-01 15:33:36
+
+
+
+-
+Version 1.0.0.4
+Date 2011-01-28 11:54:52
+
+
+
+-
+Version 1.0.0.3
+Date 2011-01-28 11:53:51
+
+
+
+-
+Version 1.0.0.2
+Date 2011-01-26 13:26:51
+
+
+
+-
+Version 1.0.0.1
+Date 2011-01-26 10:49:19
+
+
+
+-
+Version 1.0.0.0
+Date 2011-01-21 13:02:33
+
+
+
+-
+Version 1.0.0.0
+Date 2011-01-25 14:34:52
+
+
+
+-
+Version 1.0.0.0
+Date 2011-01-26 10:30:42
+
+
+
+-
+Version 1.0.0.0
+Date 2011-01-26 10:31:18
+
+
+
+]]></changelog><web><![CDATA[http://icy.bioimageanalysis.org/plugin/NHerve_Toolbox]]></web><dependencies><dependency><classname>plugins.nherve.matrix.NHerveMatrix</classname></dependency><dependency><classname>plugins.adufour.connectedcomponents.ConnectedComponents</classname></dependency><dependency><classname>plugins.vannary.morphomaths.MorphoMaths</classname></dependency></dependencies></root>

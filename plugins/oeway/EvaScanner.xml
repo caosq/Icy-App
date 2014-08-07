@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<root>
+<url><![CDATA[http://icy.bioimageanalysis.org/repository/getXMLPluginFile.php?pluginId=283&beta=0]]></url><name>EVA-Scanner</name><version>3.7.2.1</version><required_kernel_version>1.5.3.0</required_kernel_version><kernel_ver>1.5.3.0</kernel_ver><jar_url><![CDATA[http://icy.bioimageanalysis.org/repository/getJarFile.php?pluginId=283&beta=0]]></jar_url><icon_url></icon_url><image_url></image_url><description><![CDATA[EVA-Scanner is a plugin use Micro-Manager to control arduino GRBL board and PicoScope to capture 3D image, originally used for Ultrasonic Imaging Platform of EVA project.]]></description><classname><![CDATA[plugins.oeway.EvaScanner]]></classname><author><![CDATA[oeway - Wei Ouyang]]></author><changelog><![CDATA[-
+Version 3.7.2.1
+Date 2014-07-31 10:52:29
+
+* change JDK version to 1.6 to be capatible with lower version
+
+-
+Version 3.7.2.0
+Date 2014-07-26 07:21:32
+
+* fix shutdown bug
+
+-
+Version 3.7.0.0
+Date 2014-07-25 16:17:45
+
+* Update to compatible with the Micro-Manager for Icy plugin in Icy 1.5.3
+
+-
+Version 3.5.0.0
+Date 2013-12-24 10:06:34
+
+* improve stability
+
+-
+Version 3.4.0.0
+Date 2013-12-19 16:15:33
+
+* improve stability
+
+-
+Version 3.3.0.0
+Date 2013-12-18 18:23:56
+
+* fix dead lock problem by disabling the gui when scanning
+
+-
+Version 3.2.0.1
+Date 2013-12-18 14:45:50
+
+* DAQ bug fixed
+
+-
+Version 3.2.0.0
+Date 2013-12-18 09:09:45
+
+* fix more bugs, add key board movement control
+
+-
+Version 3.1.0.0
+Date 2013-12-17 18:55:05
+
+* Stage moving bug fixed
+
+-
+Version 3.0.0.0
+Date 2013-12-17 18:42:22
+
+* new framework, more like a Micorscope plugin
+
+-
+Version 2.0.0.0
+Date 2013-12-15 18:01:32
+
+* improve scan speed by using rapid block mode
+
+-
+Version 1.0.0.1
+Date 2013-11-23 16:08:51
+
+* small fix
+
+-
+Version 1.0.0.0
+Date 2013-11-23 14:53:44
+
+* Fixed alignment bug, this will accelerate the scanning.
+
+-
+Version 0.0.1.0
+Date 2013-11-03 14:02:25
+
+
+
+]]></changelog><web><![CDATA[http://icy.bioimageanalysis.org/plugin/EVA-Scanner]]></web><dependencies><dependency><classname>plugins.tprovoost.Microscopy.MicroManagerForIcy.MicromanagerPlugin</classname></dependency></dependencies></root>

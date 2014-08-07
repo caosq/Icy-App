@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<root>
+<url><![CDATA[http://icy.bioimageanalysis.org/repository/getXMLPluginFile.php?pluginId=109&beta=0]]></url><name>Ruler Helper</name><version>1.2.1.2</version><required_kernel_version>1.4.0.0</required_kernel_version><kernel_ver>1.4.0.0</kernel_ver><jar_url><![CDATA[http://icy.bioimageanalysis.org/repository/getJarFile.php?pluginId=109&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=553]]></icon_url><image_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=555]]></image_url><description><![CDATA[Widget to measure distances over images considering current image scale.]]></description><classname><![CDATA[plugins.fab.Ruler.Ruler]]></classname><author><![CDATA[fab - Fabrice de Chaumont]]></author><changelog><![CDATA[-
+Version 1.2.1.2
+Date 2014-04-15 11:25:41
+
+
+
+-
+Version 1.2.1.1
+Date 2013-11-05 13:24:12
+
+Fix compatibility with kernel 1.4.0.0
+
+-
+Version 1.2.1.0
+Date 2013-08-06 15:46:25
+
+* corrected issue when launching the plugin in 3D.
+
+-
+Version 1.2.0.0
+Date 2013-08-02 11:19:14
+
+Now displayed at the current zoom position when added
+
+-
+Version 1.1.0.3
+Date 2013-02-15 13:34:27
+
+* avoid exception on 3D data.
+
+-
+Version 1.1.0.2
+Date 2013-02-14 18:11:44
+
+* issue with classpath because of the share of the plugin.
+
+-
+Version 1.1.0.1
+Date 2013-02-14 17:40:56
+
+* corrected issue with units
+
+-
+Version 1.1.0.0
+Date 2013-02-14 17:36:05
+
+* added real size after the pixel size
+
+-
+Version 1.0.0.3
+Date 2011-08-18 15:44:19
+
+Added somes features to be compatible with the protractor plugin
+
+-
+Version 1.0.0.2
+Date 2011-08-18 10:45:24
+
+Fix the delete behaviour.
+
+-
+Version 1.0.0.1
+Date 2011-08-18 10:29:46
+
+Add: Delete ruler by pressing delete on an anchor.
+Add: Message saying a sequence is needed
+
+-
+Version 1.0.0.0
+Date 2011-08-17 17:55:18
+
+
+
+]]></changelog><web><![CDATA[http://icy.bioimageanalysis.org/plugin/Ruler_Helper]]></web><dependencies></dependencies></root>

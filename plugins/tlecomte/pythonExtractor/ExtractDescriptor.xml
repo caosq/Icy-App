@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+<plugins>
+<plugin>
+<className>plugins.tlecomte.jythonExecnetForIcy.JythonExecnetForIcy</className>
+<timestamp>1407340052956</timestamp>
+</plugin>
+<plugin>
+<className>plugins.tlecomte.jythonExtrasForIcy.JythonExtrasForIcy</className>
+<timestamp>1406570206933</timestamp>
+</plugin>
+<plugin>
+<className>plugins.tlecomte.pythonPackager.PythonPluginPackager</className>
+<timestamp>1406599730359</timestamp>
+</plugin>
+</plugins>
+</root>

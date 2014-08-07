@@ -1,0 +1,396 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<root>
+<url><![CDATA[http://icy.bioimageanalysis.org/repository/getXMLPluginFile.php?pluginId=52&beta=0]]></url><name>Spot Detector</name><version>1.5.0.6</version><required_kernel_version>1.5.0.0</required_kernel_version><kernel_ver>1.5.0.0</kernel_ver><jar_url><![CDATA[http://icy.bioimageanalysis.org/repository/getJarFile.php?pluginId=52&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=790]]></icon_url><image_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=181]]></image_url><description><![CDATA[Spot detector detects and counts spots.
+
+- Detects spots in noisy images 2D/3D.
+- Depending on objective, spots can be nuclei, nucleus or cell
+- Versatile input: sequence or batch of file.
+- Detects spot in specific band/channel.
+- Multi band labeling: automaticaly creates ROIs from one band and count in the same or an other band.
+- Filters detection by size.
+- Sort detection by ROIs
+- Output data in XLS Excel files: number of detection by ROIs, and each detection location and size.
+- Outputs withness image with ROIs and detection painted on it.
+- Outputs binary detection image.
+- Displays detections
+- Displays tags
+]]></description><classname><![CDATA[plugins.fab.spotDetector.SpotDetector]]></classname><author><![CDATA[fab - Fabrice de Chaumont]]></author><changelog><![CDATA[-
+Version 1.5.0.6
+Date 2014-06-10 18:02:31
+
+Little Change in vtkRendering
+
+-
+Version 1.5.0.5
+Date 2014-05-19 18:16:25
+
+Minor fix to comply with new VTK lib.
+
+-
+Version 1.5.0.4
+Date 2014-04-25 14:10:32
+
+XLS export is now using XLSUtil instead of XLSManager
+
+-
+Version 1.5.0.3
+Date 2014-04-24 17:33:30
+
+Added: some code to obtain more explicit bug reports
+
+-
+Version 1.5.0.2
+Date 2014-04-07 12:03:46
+
+Fix the ROI export in 3D: some ROIs were not properly set in Z.
+
+-
+Version 1.5.0.1
+Date 2014-03-13 16:45:53
+
+minor fix: renaming bands to channels
+
+-
+Version 1.5.0.0
+Date 2014-03-07 18:21:54
+
+- Now exports spots as ROIs (named spot #number)
+- Threshold in wavelet detector is now named sensitivity
+- The approximative size of the objects detected by each scale is now displayed
+- The binary stack output are now saved in 1 file instead of multiple files
+- The filtering (range of size in pixel) is now fixed
+- The interval graphical component is removed
+- Force 2D wavelets for 3D is now functional
+
+
+-
+Version 1.4.1.9
+Date 2013-12-05 13:11:11
+
+Minor fix
+
+-
+Version 1.4.1.8
+Date 2013-12-04 11:15:34
+
+Improved: If the sequence has no file name, the swimming pool output takes its name as a label.
+
+-
+Version 1.4.1.7
+Date 2013-12-03 14:58:59
+
+max size for spot filtering is now 3000 instead of 300
+
+-
+Version 1.4.1.6
+Date 2013-07-12 15:58:18
+
+- Added: display: option to display detection index (not displayed by default)
+
+-
+Version 1.4.1.5
+Date 2013-06-15 16:04:05
+
+- Automatic creation of ROI now creates named roi with AREA# to find them easialy in the excel output file.
+
+-
+Version 1.4.1.4
+Date 2013-04-23 15:41:22
+
+Added the support of ROIs for scripts using the object UDWTWavelet
+
+-
+Version 1.4.1.3
+Date 2013-02-05 17:34:36
+
+add a class to call the wavelet in an easy manner from scripts
+
+-
+Version 1.4.1.2
+Date 2013-01-28 10:29:00
+
+Minor change
+
+-
+Version 1.4.1.1
+Date 2012-11-13 15:28:05
+
+The automatic generation of ROI can now dilate found ROIs
+
+-
+Version 1.4.1.0
+Date 2012-10-15 13:53:56
+
+- Memory consumption reduced
+
+-
+Version 1.4.0.7
+Date 2012-08-23 17:32:38
+
+- fix: The WAT value could be false if no ROI was present in the sequence and the WAT with ROIs enabled.
+
+- minor changes to fit integration in protocols.
+
+-
+Version 1.4.0.6
+Date 2012-06-15 16:13:37
+
+New XML Features:
+-Export tags (in a way Excel can manage it)
+-Export date time of image processing.
+
+New ROI/Batch feature:
+-New ROIFromFixedSequence: for a batch, you can now set a set of ROI from an active sequence and then apply those ROI(s) to all the batch.
+
+
+-
+Version 1.4.0.5
+Date 2012-06-14 18:23:10
+
+minor bugfix.
+
+-
+Version 1.4.0.4
+Date 2012-06-14 18:19:33
+
+- Automatic generation of ROIs now works in batch mode
+
+-
+Version 1.4.0.3
+Date 2012-06-14 17:54:12
+
+New preProcessor: mean of channel in images.
+
+-
+Version 1.4.0.2
+Date 2012-06-04 15:47:05
+
+improved: faster save of binary image
+
+-
+Version 1.4.0.1
+Date 2012-05-11 10:15:34
+
+-XML output fields added: file name and folder
+-fix minor error if no sequence is selected as input
+-debug output log removed
+
+
+-
+Version 1.4.0.0
+Date 2012-05-10 14:56:08
+
+New: XML export. See doc for details.
+
+-
+Version 1.3.0.1
+Date 2011-12-07 16:06:18
+
+update to fit with new detection data structure
+
+-
+Version 1.3.0.0
+Date 2011-11-23 17:12:19
+
+New feature:
+
+You can now use the *create roi from band* functionality to automaticaly create a mask of all the cells, and then perform a spot count per segmented cell.
+
+-
+Version 1.2.0.4
+Date 2011-11-14 10:07:40
+
+Add: Externalisation of the wavelets for external use by other plugins
+
+-
+Version 1.2.0.3
+Date 2011-10-27 09:54:33
+
+
+
+-
+Version 1.2.0.2
+Date 2011-10-20 10:21:18
+
+Batch improvements (to be continued)
+
+-
+Version 1.2.0.1
+Date 2011-10-06 14:42:31
+
+stable version
+
+-
+Version 1.2.0.0b
+Date 2011-10-06 13:39:24
+
+- now computes min,max and average intensity.
+- code cleanup
+
+-
+Version 1.1.0.6
+Date 2011-09-14 14:25:31
+
+minor change
+
+-
+Version 1.1.0.5
+Date 2011-09-14 14:18:46
+
+Fix: Images are now saved at the correct size.
+
+-
+Version 1.1.0.4
+Date 2011-09-13 11:40:19
+
+Fix export
+
+-
+Version 1.1.0.3
+Date 2011-09-13 11:38:42
+
+Regression from version 1.1.0.1
+
+-
+Version 1.1.0.2
+Date 2011-09-13 11:37:26
+
+Add: link to online documentation.
+
+-
+Version 1.1.0.1
+Date 2011-08-29 15:22:12
+
+improved detection GUI
+
+-
+Version 1.1.0.0
+Date 2011-08-29 13:16:38
+
+Fix: memory leak.
+Fix: painter are not anymore shared between sequences
+Fix: binary output has no more strange colors
+Fix: an error occured if 2 same batch were launch in a row
+
+-
+Version 1.0.2.11
+Date 2011-08-17 11:48:50
+
+
+
+-
+Version 1.0.2.10
+Date 2011-06-16 18:07:59
+
+Add x y z t in the xls output
+
+-
+Version 1.0.2.9
+Date 2011-05-03 15:51:59
+
+Compatibility with last kernel version 1.0.0.5
+
+-
+Version 1.0.2.8
+Date 2011-04-20 09:52:22
+
+Fix some issues due to changes in dependency ConnectedComponents
+
+-
+Version 1.0.2.7
+Date 2011-03-25 17:21:04
+
+stable release
+
+-
+Version 1.0.2.6b
+Date 2011-03-25 17:17:36
+
+FIX: when the plugin is closed, the detection represented on the sequence are removed too.
+
+-
+Version 1.0.2.5b
+Date 2011-03-25 16:46:08
+
+Added: Now exports detections to the swimming pool to communicate with the spot tracker.
+
+-
+Version 1.0.2.4
+Date 2011-03-15 14:25:24
+
+Added: Name of ROI displayed over sequence
+
+-
+Version 1.0.2.3
+Date 2011-03-07 10:11:12
+
+Added : support tags generated by the plugin ROI Tagger
+
+-
+Version 1.0.2.2b
+Date 2011-03-07 09:58:59
+
+
+
+-
+Version 1.0.2.1
+Date 2011-02-24 16:38:31
+
+Added the wavelet adaptive threshold.
+
+-
+Version 1.0.2.0
+Date 2011-02-16 18:31:53
+
+Batch input added
+
+-
+Version 1.0.1.3
+Date 2011-02-16 13:55:15
+
+removed webcam feature as it is not yet fully stable.
+
+-
+Version 1.0.1.2
+Date 2011-02-16 13:38:19
+
+
+
+-
+Version 1.0.1.1
+Date 2011-02-16 13:24:49
+
+Webcam detection fixed
+Output fixed
+
+-
+Version 1.0.1.0
+Date 2011-02-10 14:35:12
+
+Automatic creation of ROI added. This takes on channel and threshold it to drive the detection in an other channel.
+
+-
+Version 1.0.0.3
+Date 2011-02-09 15:59:45
+
+
+
+-
+Version 1.0.0.2
+Date 2011-02-09 15:54:15
+
+
+
+-
+Version 1.0.0.1
+Date 2011-02-09 15:50:50
+
+
+
+-
+Version 1.0.0.0
+Date 2011-02-09 14:59:24
+
+
+
+]]></changelog><web><![CDATA[http://icy.bioimageanalysis.org/plugin/Spot_Detector]]></web><dependencies><dependency><classname>plugins.fab.ROITagger.ROITagger</classname></dependency><dependency><classname>plugins.adufour.connectedcomponents.ConnectedComponents</classname></dependency><dependency><classname>plugins.nchenouard.spot.DetectionResult</classname></dependency></dependencies></root>

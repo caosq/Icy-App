@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<root>
+<url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getXMLPluginFile.php?pluginId=128&beta=0]]></url><name>Microscope Calibrator Manager</name><version>1.0.1.1</version><required_kernel_version>1.3.1.0</required_kernel_version><kernel_ver>1.3.1.0</kernel_ver><jar_url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getJarFile.php?pluginId=128&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=677]]></icon_url><image_url></image_url><description><![CDATA[Manage all calibrators for your microscope.]]></description><classname><![CDATA[plugins.tprovoost.Microscopy.CalibratorManager.CalibratorManagerPlugin]]></classname><author><![CDATA[tprovoost - Thomas Provoost]]></author><changelog><![CDATA[-
+Version 1.0.1.1
+Date 2013-01-25 16:39:23
+
+* changed signature of functions, upload needed
+
+-
+Version 1.0.1.0
+Date 2011-11-16 13:20:39
+
+
+
+-
+Version 1.0.0.0
+Date 2011-09-30 12:28:07
+
+
+
+]]></changelog><web><![CDATA[http://icy.bioimageanalysis.org/plugin/Microscope_Calibrator_Manager]]></web><dependencies><dependency><classname>plugins.tprovoost.Microscopy.MicroManagerForIcy.MicromanagerPlugin</classname></dependency></dependencies></root>

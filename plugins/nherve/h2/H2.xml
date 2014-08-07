@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='no'?>
+<root>
+<url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getXMLPluginFile.php?pluginId=108&beta=0]]></url><name>H2 database</name><version>1.0.0.2</version><required_kernel_version>0.0.0.0</required_kernel_version><kernel_ver>0.0.0.0</kernel_ver><jar_url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getJarFile.php?pluginId=108&beta=0]]></jar_url><icon_url></icon_url><image_url></image_url><description><![CDATA[H2 database packaged as an Icy plugin
+
+See http://www.h2database.com]]></description><classname><![CDATA[plugins.nherve.h2.H2]]></classname><author><![CDATA[nherve - Nicolas Hervé]]></author><changelog><![CDATA[-
+Version 1.0.0.2
+Date 2011-09-13 16:00:14
+
+Remove errors displayed at startup
+
+-
+Version 1.0.0.1
+Date 2011-08-01 22:45:08
+
+
+
+-
+Version 1.0.0.0
+Date 2011-08-01 14:39:42
+
+
+
+]]></changelog><dependencies></dependencies></root>

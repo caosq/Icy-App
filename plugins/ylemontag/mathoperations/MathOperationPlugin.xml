@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<root>
+<url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getXMLPluginFile.php?pluginId=185&beta=0]]></url><name>Math operations</name><version>2.0.1.0</version><required_kernel_version>1.3.2.0</required_kernel_version><kernel_ver>1.3.2.0</kernel_ver><jar_url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getJarFile.php?pluginId=185&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=1297]]></icon_url><image_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=1987]]></image_url><description><![CDATA[Execute some simple math operations on sequences, such as addition, product, absolute value extraction, rounding to the closest integer, etc. All the operations are executed pointwise.]]></description><classname><![CDATA[plugins.ylemontag.mathoperations.MathOperationPlugin]]></classname><author><![CDATA[ylemontag - Yoann Le Montagner]]></author><changelog><![CDATA[-
+Version 2.0.1.0
+Date 2013-04-22 13:42:06
+
+Add: Operation1.COPY
+
+-
+Version 2.0.0.0
+Date 2013-04-16 10:29:04
+
+Major code refactoring, add sub-sequences.
+
+-
+Version 1.2.1.0
+Date 2012-12-12 10:20:06
+
+Fix: Variant.IllegalNullValue devient RuntimeException
+
+-
+Version 1.2.0.0
+Date 2012-12-10 14:51:56
+
+Clarify the system of exceptions used by the plugin (the 'InvalidOperation' exception does not exist anymore)
+
+-
+Version 1.1.5.0
+Date 2012-10-17 13:17:36
+
+Fix: missing .java sources in the .jar file.
+
+-
+Version 1.1.4.0
+Date 2012-09-28 22:51:19
+
+Fix: wrong output object of math operation blocks when the output type is a scalar.
+
+-
+Version 1.1.3.0
+Date 2012-09-14 16:17:43
+
+Fix: Support functors with 0 input argument (useful in MathOperations++).
+
+-
+Version 1.1.2.0
+Date 2012-09-06 11:46:47
+
+Fix: save/load XML for VarOperation objects (only used in the EzPlug)
+
+-
+Version 1.1.1.0
+Date 2012-08-30 17:12:20
+
+Fix: minor compatiblity issues with Math operations++
+
+-
+Version 1.1.0.0
+Date 2012-08-16 14:15:07
+
+Fix: improve the naming of the result sequences (remove useless .0 and add () around negative scalars)
+Add: support for the upcoming Math operations++ plugin
+
+-
+Version 1.0.4.0
+Date 2012-08-03 15:25:53
+
+Fix: VarEditor becomes SwingVarEditor, remove the FunctorUnary and FunctorBinary classes (the number of arguments of the 'apply' functions is now checked at runtime within the Functor class).
+
+-
+Version 1.0.3.0
+Date 2012-07-10 13:16:08
+
+Fix: accept native datatypes as scalar input values in blocks
+
+-
+Version 1.0.2.0
+Date 2012-07-10 11:38:50
+
+Fix: begin/endUpdate when allocating a sequence
+
+-
+Version 1.0.1.0
+Date 2012-07-02 16:25:25
+
+Fix: Affect a default value to the output of MathOperation blocks when defining the output type.
+
+-
+Version 1.0.0.0
+Date 2012-06-28 17:34:36
+
+Add: enable operations on arrays within the blocks
+
+-
+Version 0.99.1.0
+Date 2012-06-26 13:00:16
+
+Fix: use VarArrayNative instead of VarArray
+
+-
+Version 0.99.0.0
+Date 2012-06-22 17:34:27
+
+Add: support array inputs, except in blocks for the moment due VarMutable and arrays issues
+
+-
+Version 0.0.2.0b
+Date 2012-06-22 16:33:43
+
+Add: support 1D arrays
+
+-
+Version 0.0.1.0b
+Date 2012-06-22 13:39:09
+
+
+
+]]></changelog><web><![CDATA[http://icy.bioimageanalysis.org/plugin/Math_operations]]></web><dependencies><dependency><classname>plugins.adufour.ezplug.EzPlug</classname></dependency><dependency><classname>plugins.adufour.blocks.Blocks</classname></dependency></dependencies></root>

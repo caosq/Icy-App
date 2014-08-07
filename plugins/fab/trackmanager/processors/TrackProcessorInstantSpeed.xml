@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<root>
+<url><![CDATA[http://icy.bioimageanalysis.org/repository/getXMLPluginFile.php?pluginId=114&beta=0]]></url><name>Track Processor Instant Speed</name><version>1.0.0.8</version><required_kernel_version>0.0.0.0</required_kernel_version><kernel_ver>0.0.0.0</kernel_ver><jar_url><![CDATA[http://icy.bioimageanalysis.org/repository/getJarFile.php?pluginId=114&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=582]]></icon_url><image_url></image_url><description><![CDATA[display the Instant Speed of tracks for the Track Manager]]></description><classname><![CDATA[plugins.fab.trackmanager.processors.TrackProcessorInstantSpeed]]></classname><author><![CDATA[fab - Fabrice de Chaumont]]></author><changelog><![CDATA[-
+Version 1.0.0.8
+Date 2014-06-10 14:13:01
+
+Fix a bug while exporting to xls. If no sequence is active, the TScale is not accessible so the speed computation cannot be performed and the save is cancelled.
+
+-
+Version 1.0.0.7
+Date 2014-06-05 14:34:35
+
+Fix an error that occurred if the sequence displayed is closed and freed during speed computation.
+
+-
+Version 1.0.0.6
+Date 2014-04-01 17:38:04
+
+Now use real sequence scales for speed computation (instead of pixels per frame)
+
+-
+Version 1.0.0.5
+Date 2012-11-15 16:43:15
+
+- Fix a bug when the speed graph is displayed over a sequence and no ROI has been created by the user
+
+-
+Version 1.0.0.4
+Date 2012-10-24 16:34:37
+
+Fixed a display bug
+
+-
+Version 1.0.0.3
+Date 2011-12-07 16:07:39
+
+update to fit with new detection data structure
+
+-
+Version 1.0.0.2
+Date 2011-10-06 16:21:47
+
+test for general debug
+
+-
+Version 1.0.0.1
+Date 2011-09-23 17:23:21
+
+Change: Display legend unselected by default.
+Fix:Export to XLS
+Fix:Display of graph over sequences fixed.
+
+-
+Version 1.0.0.0
+Date 2011-08-25 16:05:07
+
+
+
+]]></changelog><web><![CDATA[http://icy.bioimageanalysis.org/plugin/Track_Processor_Instant_Speed]]></web><dependencies></dependencies></root>

@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<root>
+<url><![CDATA[http://icy.bioimageanalysis.org/repository/getXMLPluginFile.php?pluginId=192&beta=0]]></url><name>3D OrthoViewer</name><version>2.0.0.0</version><required_kernel_version>1.4.3.5</required_kernel_version><kernel_ver>1.4.3.5</kernel_ver><jar_url><![CDATA[http://icy.bioimageanalysis.org/repository/getJarFile.php?pluginId=192&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=1440]]></icon_url><image_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=2032]]></image_url><description><![CDATA[View 3D data in three orientations simultaneously (XY, YZ, XZ)]]></description><classname><![CDATA[plugins.adufour.viewers.OrthoViewer]]></classname><author><![CDATA[adufour - Alexandre Dufour]]></author><changelog><![CDATA[-
+Version 2.0.0.0
+Date 2014-05-12 21:01:55
+
+- Updated to Icy 1.4.3.5
+- Minimal zoom support
+
+-
+Version 1.1.1.0
+Date 2013-10-07 15:22:26
+
+Fixed a bug causing the viewer to disregard the user-selected colormap on the XY plane view
+
+-
+Version 1.1.0.0
+Date 2013-08-22 18:53:54
+
+* Fixed a long-lasting bug causing annoying error messages
+* Improved graphical interface with support for 2D ROI viewing and editing
+
+-
+Version 1.0.2.0
+Date 2013-04-25 16:03:28
+
+* Applied similar patch as in the previous version to avoid a bug in the XZ side view creation
+* Removed problematic test code
+
+-
+Version 1.0.1.0
+Date 2013-04-10 19:16:55
+
+Finally found the origin of the "index out of bounds" bug. This new version fixes it, although not cleanly
+
+-
+Version 1.0.0.1
+Date 2013-02-04 11:02:28
+
+Removed debug line (was removing a specific slice for test purposes)
+
+-
+Version 1.0.0.0
+Date 2013-01-30 17:11:51
+
+* Added crosshair in side views
+* Inverted XZ view to match Z slider orientation
+* Fixed interface behavior: Z slider now updates when clicking in side views
+* Fixed Z scale not used properly for interacting with side views
+* Improved performance
+
+Thanks for the user feedback !
+
+-
+Version 0.2.0.0
+Date 2013-01-30 11:36:50
+
+Fixed issue when displaying stacks with missing slices (affects 3D and 3D+time sequences)
+
+-
+Version 0.1.0.0
+Date 2012-12-14 15:24:11
+
+* Fixed several out-of-bounds issues
+* Side views are now stretched according to the Z/X and Z/Y pixel size ratios
+
+-
+Version 0.0.4.0
+Date 2012-11-15 09:53:52
+
+Fixed another issue when viewing stacks with missing frames
+
+-
+Version 0.0.3.0
+Date 2012-10-30 14:06:29
+
+Fixed an issue when viewing stacks with missing frames
+
+-
+Version 0.0.2.0
+Date 2012-10-10 17:49:20
+
+Look-Up Tables (colormaps) changes now appear in the viewer
+
+-
+Version 0.0.1.0
+Date 2012-08-09 10:59:37
+
+
+
+]]></changelog><web><![CDATA[http://icy.bioimageanalysis.org/plugin/3D_OrthoViewer]]></web><dependencies></dependencies></root>

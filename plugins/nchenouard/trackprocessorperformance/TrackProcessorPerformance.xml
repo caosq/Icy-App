@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<root>
+<url><![CDATA[http://icy.bioimageanalysis.org/repository/getXMLPluginFile.php?pluginId=151&beta=0]]></url><name>Tracking Performance Measures</name><version>0.0.1.11</version><required_kernel_version>0.0.0.0</required_kernel_version><kernel_ver>0.0.0.0</kernel_ver><jar_url><![CDATA[http://icy.bioimageanalysis.org/repository/getJarFile.php?pluginId=151&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=888]]></icon_url><image_url></image_url><description><![CDATA[TrackProcessor for the TrackManager plugin that allows computing  several measures of tracking performance.
+It proceeds by computing optimal pairs between a set of reference tracks and a set of candidate tracks. Several measures are provided based on the pairing.
+Color coding of the tracks is used for illustrating the different types of pairs.]]></description><classname><![CDATA[plugins.nchenouard.trackprocessorperformance.TrackProcessorPerformance]]></classname><author><![CDATA[nchenouard - Nicolas Chenouard]]></author><changelog><![CDATA[-
+Version 0.0.1.11
+Date 2014-04-16 16:03:27
+
+Fixed a minor bug and depraction issues.
+
+-
+Version 0.0.1.10
+Date 2013-06-11 23:33:39
+
+minor fix
+
+-
+Version 0.0.1.9
+Date 2013-06-11 22:49:38
+
+Added features:
+- compute distance between detections of paired tracks
+- compute Mean Squared Displacements (MSDs) for each set of tracks
+- compute the instantaneous velocity for each set of tracks
+
+But not integrated in the GUI yet.
+
+-
+Version 0.0.1.8
+Date 2012-04-27 06:15:45
+
+Added detection accuracy measures
+
+-
+Version 0.0.1.7
+Date 2012-04-24 10:21:30
+
+New improved algorithm. 50x faster for big dataset.
+
+-
+Version 0.0.1.6
+Date 2012-04-19 11:57:22
+
+Now compatible with the ISBI Challenge scoring plugin
+
+-
+Version 0.0.1.5
+Date 2012-02-11 01:18:32
+
+handle virtual detections
+
+-
+Version 0.0.1.4
+Date 2012-02-10 16:34:58
+
+removed beta flag
+
+-
+Version 0.0.1.3b
+Date 2012-02-06 22:49:19
+
+Fixed a small issue in the matching algorithm
+
+-
+Version 0.0.1.2b
+Date 2012-02-04 20:13:57
+
+Fixed too deep recursion issue.
+Added clustering to the track matcher.
+
+-
+Version 0.0.1.1b
+Date 2012-02-03 18:17:07
+
+Changed a bit the GUI and excluded TrackGroup objects with null description.
+
+-
+Version 0.0.1.0b
+Date 2012-02-03 16:18:24
+
+
+
+]]></changelog><web><![CDATA[http://icy.bioimageanalysis.org/plugin/Tracking_Performance_Measures]]></web><dependencies><dependency><classname>plugins.fab.trackmanager.TrackManager</classname></dependency><dependency><classname>plugins.nchenouard.spot.DetectionResult</classname></dependency></dependencies></root>

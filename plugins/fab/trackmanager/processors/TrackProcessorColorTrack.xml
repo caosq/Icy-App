@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='no'?>
+<root>
+<url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getXMLPluginFile.php?pluginId=112&beta=0]]></url><name>Track Processor Color</name><version>1.1.0.2</version><required_kernel_version>0.0.0.0</required_kernel_version><kernel_ver>0.0.0.0</kernel_ver><jar_url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getJarFile.php?pluginId=112&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=572]]></icon_url><image_url></image_url><description><![CDATA[Track Processor to color tracks in the Track Manager]]></description><classname><![CDATA[plugins.fab.trackmanager.processors.TrackProcessorColorTrack]]></classname><author><![CDATA[fab - Fabrice de Chaumont]]></author><changelog><![CDATA[-
+Version 1.1.0.2
+Date 2011-12-07 16:06:59
+
+update to fit with new detection data structure
+
+-
+Version 1.1.0.1
+Date 2011-10-06 16:22:13
+
+test for general debug
+
+-
+Version 1.1.0.0
+Date 2011-09-23 17:24:20
+
+Simplified UI
+
+-
+Version 1.0.0.1
+Date 2011-09-02 16:11:10
+
+minor fixes
+
+-
+Version 1.0.0.0
+Date 2011-08-25 16:01:22
+
+
+
+]]></changelog><dependencies></dependencies></root>

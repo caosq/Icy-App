@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='no'?>
+<root>
+<url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getXMLPluginFile.php?pluginId=141&beta=0]]></url><name>Widefield Fluorescence Microscope PSF</name><version>1.0.0.4</version><required_kernel_version>1.2.5.0</required_kernel_version><kernel_ver>1.2.5.0</kernel_ver><jar_url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getJarFile.php?pluginId=141&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=825]]></icon_url><image_url></image_url><description><![CDATA[This plugin generates the point-spread function (PSF) for a Widefield Fluorescence Microscope using a scalar diffraction-limited model (Stokseth). It can generate PSF with spherical aberration if there is refractive index mismatch between objective immersion and specimen mounting media. 
+Refs:
+ [1] P. A. Stokseth (1969). `Properties of a defocused optical system'. J. Opt. Soc. Am. A 59:1314-1321.
+ [2] P. Pankajakshan (2009). Blind Deconvolution for Confocal Laser Scanning Microscopy. Ph.D. thesis, Universite de Nice Sophia-Antipolis.
+]]></description><classname><![CDATA[plugins.praveen.PSF.WideFieldPSF]]></classname><author><![CDATA[praveen - Praveen Pankajakshan]]></author><changelog><![CDATA[-
+Version 1.0.0.4
+Date 2012-06-29 15:39:10
+
+- Reuse quadrant swapping code from the fft plugin.
+- Recompile for changes in EzPlug
+
+-
+Version 1.0.0.3b
+Date 2012-02-17 13:23:08
+
+1. Updated plugin jar file
+2. Corrected error in EzPlug: 
+java.lang.NoSuchMethodError: plugins.adufour.ezplug.EzVarInteger.setValue
+
+-
+Version 1.0.0.2
+Date 2012-02-17 12:49:25
+
+Corrected bug in quadrant swap.
+
+-
+Version 1.0.0.1
+Date 2012-02-17 12:48:23
+
+Regression from version 0.0.1.2
+
+-
+Version 1.0.0.0
+Date 2012-02-17 12:46:44
+
+Corrected bug in quadrant swapping.
+
+-
+Version 0.0.1.2
+Date 2011-12-19 17:23:51
+
+Corrected problem with Quadrant swapping.
+
+-
+Version 0.0.1.0b
+Date 2011-12-02 15:11:12
+
+
+
+]]></changelog><dependencies><dependency><classname>plugins.adufour.ezplug.EzPlug</classname><version>0.0.0.1</version></dependency><dependency><classname>plugins.praveen.fft.fft</classname><version>0.0.0.1</version></dependency><dependency><classname>plugins.adufour.vars.lang.Var</classname><version>0.0.0.1</version></dependency></dependencies></root>

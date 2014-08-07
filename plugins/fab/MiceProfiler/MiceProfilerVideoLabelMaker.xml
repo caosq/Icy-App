@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<root>
+<url><![CDATA[http://icy.bioimageanalysis.org/repository/getXMLPluginFile.php?pluginId=157&beta=0]]></url><name>Mice Profiler Video Label Maker</name><version>7.3.0.9</version><required_kernel_version>1.4.0.0</required_kernel_version><kernel_ver>1.4.0.0</kernel_ver><jar_url><![CDATA[http://icy.bioimageanalysis.org/repository/getJarFile.php?pluginId=157&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=1009]]></icon_url><image_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=1010]]></image_url><description><![CDATA[Mice Profiler Video Label Maker processes tracking data to label a sequence thanks to a repertoire.]]></description><classname><![CDATA[plugins.fab.MiceProfiler.MiceProfilerVideoLabelMaker]]></classname><author><![CDATA[fab - Fabrice de Chaumont]]></author><changelog><![CDATA[-
+Version 7.3.0.9
+Date 2014-07-21 15:58:18
+
+Fix in the avisoft importer
+
+-
+Version 7.3.0.8
+Date 2014-07-18 17:23:59
+
+quick fix
+
+-
+Version 7.3.0.7
+Date 2014-07-18 15:17:39
+
+Now import avisoft label files
+
+-
+Version 7.3.0.6
+Date 2014-07-10 18:29:32
+
+Add: unlimited number of user events.
+
+-
+Version 7.3.0.5
+Date 2014-07-08 17:37:16
+
+- now handles automatic import of your custom labels !
+
+-
+Version 7.3.0.4
+Date 2014-04-15 13:11:19
+
+now checks if the parameters are really numbers.
+
+-
+Version 7.3.0.3
+Date 2014-04-01 14:13:38
+
+Added: A new button 'freeze setting' allow a user not to update the parameters of a specific animal.
+
+-
+Version 7.3.0.2
+Date 2013-12-05 10:52:32
+
+minor fix
+
+-
+Version 7.3.0.1
+Date 2013-12-05 10:46:42
+
+Fix the export of the speed of animals A and B. B excel sheet is now the mouse B (was A before)
+
+-
+Version 7.3.0.0
+Date 2013-12-04 14:48:25
+
+Fix of a very important error: The Chronograms provided a good graphical representation, but the internal counting of the number of event was wrong for complex events. This is now corrected.
+
+-
+Version 7.2.0.12
+Date 2013-12-04 10:42:53
+
+Minor error fixed: if a file was not set during export, the export crashed.
+
+-
+Version 7.2.0.11
+Date 2013-12-03 17:40:19
+
+Fixed: If a file contained a 0 position in t, the video label maker was not working.
+
+-
+Version 7.2.0.10
+Date 2013-11-15 11:28:07
+
+minor fix
+
+-
+Version 7.2.0.9
+Date 2013-11-14 17:28:14
+
+Installation fix
+
+-
+Version 7.2.0.8
+Date 2013-11-14 17:10:25
+
+- Fix on the export of all data (xls). If an event at the very beginning of the timeline existed, it was not considered in the 0 to 8 minutes output.
+
+-
+Version 7.2.0.7
+Date 2013-10-31 11:37:38
+
+You can now watch the recorded tracking without having the video in your folder.
+
+-
+Version 7.2.0.6
+Date 2013-10-04 13:03:43
+
+Now supports missing frames when exporting speed and distances to xls
+
+-
+Version 7.2.0.5
+Date 2013-10-03 15:48:35
+
+Now supports incomplete tracking file, with missing frames.
+
+-
+Version 7.2.0.4
+Date 2013-07-05 16:17:27
+
+- Add the vision graph export
+
+-
+Version 7.2.0.3
+Date 2013-07-03 15:58:51
+
+- Added vision graphs (follow and stop)
+
+-
+Version 7.2.0.2
+Date 2013-06-19 18:59:16
+
+- Now exports speed and distances per animal
+
+-
+Version 7.2.0.1
+Date 2012-11-26 11:06:25
+
+- Now displays an error message if the tracking was not complete. Also specify the #frame of error.
+
+-
+Version 7.2.0.0
+Date 2012-06-28 15:37:16
+
+Display fixed: the timeline now considers the offset between the fisrt image tracked and the first image of the video. Time 0 is now the beginning of the analysis. This is only display, it does not impact results.
+
+Removed load frame start and load frame end (was very technical and redundant with start minute and end minute fields)
+
+-
+Version 7.1.0.0
+Date 2012-06-25 10:41:49
+
+- Fix video load if the xml and video are not in the original folder.
+- Fix the scaling display of the mouse.
+- Add a scale in the parameters to display high resolution video file.
+
+-
+Version 7.0.0.0
+Date 2012-05-16 13:38:13
+
+Display fix.
+Now work with x64 architectures
+
+-
+Version 0.0.1.0
+Date 2012-03-05 14:24:04
+
+
+
+]]></changelog><web><![CDATA[http://icy.bioimageanalysis.org/plugin/Mice_Profiler_Video_Label_Maker]]></web><dependencies><dependency><classname>plugins.fab.MiceProfiler.MiceProfilerLabelAnalyser</classname></dependency><dependency><classname>plugins.fab.MiceProfiler.MiceProfilerTracker</classname></dependency></dependencies></root>

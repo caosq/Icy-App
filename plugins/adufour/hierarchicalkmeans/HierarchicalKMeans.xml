@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<root>
+<url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getXMLPluginFile.php?pluginId=101&beta=0]]></url><name>HK-Means</name><version>2.6.0.0</version><required_kernel_version>1.4.0.0</required_kernel_version><kernel_ver>1.4.0.0</kernel_ver><jar_url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getJarFile.php?pluginId=101&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=683]]></icon_url><image_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=469]]></image_url><description><![CDATA[This segmentation method performs a N-class thresholding based on a K-Means classification of the image histogram, then extracts objects in a bottom-up manner using user-defined minimum and maximum object sizes. Very useful to detect clustered objects in fluorescence microscopy.]]></description><classname><![CDATA[plugins.adufour.hierarchicalkmeans.HierarchicalKMeans]]></classname><author><![CDATA[adufour - Alexandre Dufour]]></author><changelog><![CDATA[-
+Version 2.6.0.0
+Date 2013-10-30 18:24:23
+
+Updated to Icy 1.4.0.0 (new support for 3D ROI)
+
+-
+Version 2.5.0.0
+Date 2013-10-30 15:47:18
+
+Added final threshold parameter in block version 
+
+-
+Version 2.4.0.0
+Date 2013-06-12 16:52:22
+
+3D ROI export
+
+-
+Version 2.3.1.0
+Date 2012-11-16 16:53:52
+
+Display a message dialog indicating that ROIs cannot be exported in 3D
+
+-
+Version 2.3.0.0
+Date 2012-10-31 17:28:21
+
+New: output the extracted objects as a list of ROI in block mode
+
+-
+Version 2.2.0.0
+Date 2012-09-11 09:42:24
+
+HK-Means is channel aware
+
+-
+Version 2.1.2.0
+Date 2012-08-03 10:42:00
+
+Fixed the output file name generation
+
+-
+Version 2.1.1.0
+Date 2012-08-02 17:02:14
+
+* Show appropriate error when given an incorrect class number
+* Adjust the output file name to the input name + a suffix (and a incremental number if used via EzPlug)
+
+-
+Version 2.1.0.0
+Date 2012-06-28 17:57:52
+
+* fix: throw handled exception if input is null (obviouslyâ€¦)
+* blocks: updated output to use VarGenericArray
+
+-
+Version 2.0.0.0
+Date 2012-06-21 13:35:29
+
+Support for Blocks programming.
+
+-
+Version 1.4.2.0
+Date 2012-05-31 16:30:48
+
+fixed: trying to access an EzGUI when running within Blocks
+
+-
+Version 1.4.1.0
+Date 2012-05-31 15:18:02
+
+adjusted classpath and field visibility
+
+-
+Version 1.4.0.0
+Date 2012-05-11 18:58:29
+
+new: changed internal structures and output to use integers instead of shorts
+new: updated to ConnectedComponents v.3.2.0.0 (components sorting)
+
+-
+Version 1.3.3.0
+Date 2012-04-12 13:56:01
+
+Updated to Filter toolbox 2.1.0.0
+
+-
+Version 1.3.2.0
+Date 2012-04-06 18:50:43
+
+Results names are incremental for easier differentiation.
+
+-
+Version 1.3.1.1
+Date 2012-02-20 11:54:00
+
+Updated to EzPlug 1.6.4.1 (no logic change)
+
+-
+Version 1.3.1.0
+Date 2011-11-29 17:15:16
+
+* added label on the interface displaying the total number of detected objects
+
+-
+Version 1.3.0.0
+Date 2011-11-19 16:52:45
+
+* new: export detections to the swimming pool for tracking purposes
+* new: export detections as ROIs on the input sequence
+
+-
+Version 1.2.0.1
+Date 2011-11-09 13:27:26
+
+updated to icy.type.DataType
+
+-
+Version 1.2.0.0
+Date 2011-09-09 19:12:39
+
+New: added optional parameter to discard objects below a certain intensity threshold within the extraction process
+
+-
+Version 1.1.0.0
+Date 2011-05-27 15:57:33
+
+- New: added a method to output the connected components found in the sequence
+- New: the total number and ID of the components are displayed in the console and the output sequence.
+
+-
+Version 1.0.0.1
+Date 2011-05-19 17:33:49
+
+- switched to non-beta state
+- adjusted default parameters
+
+-
+Version 1.0.0.0b
+Date 2011-05-19 17:23:54
+
+initial submission
+
+]]></changelog><web><![CDATA[http://icy.bioimageanalysis.org/plugin/HK-Means]]></web><dependencies><dependency><classname>plugins.adufour.ezplug.EzPlug</classname></dependency><dependency><classname>plugins.adufour.connectedcomponents.ConnectedComponents</classname></dependency><dependency><classname>plugins.adufour.thresholder.Thresholder</classname></dependency><dependency><classname>plugins.adufour.filtering.FilterToolbox</classname></dependency><dependency><classname>plugins.nchenouard.spot.DetectionResult</classname></dependency><dependency><classname>plugins.adufour.blocks.Blocks</classname></dependency><dependency><classname>plugins.adufour.roi.ROI3DAreaPlugin</classname></dependency></dependencies></root>

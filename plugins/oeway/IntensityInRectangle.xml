@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<root>
+<url><![CDATA[http://icy.bioimageanalysis.org/repository/getXMLPluginFile.php?pluginId=278&beta=0]]></url><name>IntensityInRectangle</name><version>2.5.0.0</version><required_kernel_version>1.4.0.0</required_kernel_version><kernel_ver>1.4.0.0</kernel_ver><jar_url><![CDATA[http://icy.bioimageanalysis.org/repository/getJarFile.php?pluginId=278&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=2502]]></icon_url><image_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=2503]]></image_url><description><![CDATA[An useful and cool painter plugin which displays the intensity profile of a roi within a resizable rectangle ROI.]]></description><classname><![CDATA[plugins.oeway.IntensityInRectangle]]></classname><author><![CDATA[oeway - Wei Ouyang]]></author><changelog><![CDATA[-
+Version 2.5.0.0
+Date 2013-12-13 14:55:47
+
+* Compute intensity profile in a separate thread to avoid GUI blocking
+* other improvement for better manipulation
+
+
+-
+Version 2.3.0.1
+Date 2013-12-13 09:31:27
+
+* improve display format
+
+-
+Version 2.3.0.0
+Date 2013-12-13 08:35:30
+
+Repackage version
+
+* improve stability and speed
+* support area ROI
+* Press 's' key to prevent ROI pair auto selection
+
+-
+Version 2.2.0.1
+Date 2013-12-13 08:25:46
+
+* improve stability and speed
+* support area ROI
+* Press 's' key to prevent ROI pair auto selection
+
+-
+Version 2.1.0.0
+Date 2013-12-12 12:41:45
+
+* Bug fixed, more stable
+* Show more information
+
+-
+Version 2.0.0.1
+Date 2013-12-11 19:09:49
+
+* support point roi and other rois
+* add cursor to indicate current position
+* code clean up
+
+
+-
+Version 1.2.0.2
+Date 2013-11-03 13:37:03
+
+Fix error with the jar file
+
+-
+Version 1.2.0.1
+Date 2013-11-03 11:18:13
+
+Regression from version 1.1.0.1
+
+-
+Version 1.2.0.0
+Date 2013-11-03 11:03:03
+
+Corrected the jar file error.
+
+-
+Version 1.1.0.1
+Date 2013-11-03 11:02:08
+
+Regression from version 1.0.0.0
+
+-
+Version 1.1.0.0
+Date 2013-11-03 10:43:04
+
+Keep update with Icy 1.4
+
+-
+Version 1.0.0.0
+Date 2013-10-22 18:33:39
+
+Automatic naming for each ROI and showing it in the canvas
+
+-
+Version 0.0.1.0
+Date 2013-10-20 16:37:32
+
+
+
+]]></changelog><web><![CDATA[http://icy.bioimageanalysis.org/plugin/IntensityInRectangle]]></web><dependencies></dependencies></root>

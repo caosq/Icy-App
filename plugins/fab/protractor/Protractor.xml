@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<root>
+<url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getXMLPluginFile.php?pluginId=110&beta=0]]></url><name>Protractor</name><version>1.0.0.4</version><required_kernel_version>1.4.0.0</required_kernel_version><kernel_ver>1.4.0.0</kernel_ver><jar_url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getJarFile.php?pluginId=110&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=560]]></icon_url><image_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=561]]></image_url><description><![CDATA[A protractor to measure angles on images]]></description><classname><![CDATA[plugins.fab.protractor.Protractor]]></classname><author><![CDATA[fab - Fabrice de Chaumont]]></author><changelog><![CDATA[-
+Version 1.0.0.4
+Date 2013-11-05 13:05:41
+
+Fix compatibility issue with kernel version 1.4.0.0
+
+-
+Version 1.0.0.3
+Date 2012-10-10 10:33:58
+
+Add a function to cut the ROIs
+
+-
+Version 1.0.0.2
+Date 2011-11-21 13:01:19
+
+test
+
+-
+Version 1.0.0.1
+Date 2011-11-21 12:48:57
+
+tests for plugin management of the website
+
+-
+Version 1.0.0.0
+Date 2011-08-18 15:43:26
+
+
+
+]]></changelog><web><![CDATA[http://icy.bioimageanalysis.org/plugin/Protractor]]></web><dependencies><dependency><classname>plugins.fab.Ruler.Ruler</classname></dependency></dependencies></root>

@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<root>
+<url><![CDATA[http://icy.bioimageanalysis.org/repository/getXMLPluginFile.php?pluginId=200&beta=0]]></url><name>Active Cells SDK</name><version>2.1.0.0</version><required_kernel_version>1.4.5.0</required_kernel_version><kernel_ver>1.4.5.0</kernel_ver><jar_url><![CDATA[http://icy.bioimageanalysis.org/repository/getJarFile.php?pluginId=200&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=2182]]></icon_url><image_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=1527]]></image_url><description><![CDATA[This is an icy package that encapsulates tools to design and implement parametric active contours. The package provides fast 2D and 3D filters for image preprocessing, and a framework to create and evolve snakes defined by a set of control points.]]></description><classname><![CDATA[plugins.big.bigsnakeutils.BIGSnakeUtils]]></classname><author><![CDATA[big - Biomedical Imaging Group]]></author><changelog><![CDATA[-
+Version 2.1.0.0
+Date 2014-05-03 01:35:15
+
+Adapted to VTK6
+
+-
+Version 2.0.1.0
+Date 2014-04-01 23:19:24
+
+Reupload
+
+-
+Version 2.0.0.0
+Date 2013-11-13 17:28:56
+
+- Implementes support to prior shapes
+
+-
+Version 1.8.0.0
+Date 2013-11-11 14:33:02
+
+Implemented structures for saving/loading snakes
+
+-
+Version 1.7.0.6
+Date 2013-10-30 17:43:32
+
+- Modifications to comply with icy 1.4.0.0
+
+-
+Version 1.5.1.5
+Date 2013-10-29 11:18:31
+
+- Fixed bug on the prior shapes
+- Updated javadoc
+
+-
+Version 1.5.1.4
+Date 2013-10-22 15:43:00
+
+Refactored dependencies
+
+-
+Version 1.5.1.3
+Date 2013-09-12 14:00:46
+
+- Corrected installation 
+
+-
+Version 1.5.1.2
+Date 2013-09-12 13:13:22
+
+Minor improvements
+
+-
+Version 1.5.1.1
+Date 2013-09-12 13:12:30
+
+- Corrected a bug that prevented good binarization
+
+-
+Version 1.5.1.0
+Date 2013-05-21 10:49:24
+
+Minor improvements
+
+-
+Version 1.5.0.0
+Date 2013-05-06 19:03:52
+
+- Added methods to manipulate polygons.
+
+-
+Version 1.4.0.0
+Date 2013-04-26 10:29:23
+
+Code reorganization. Some classes from the Active Cell plug-ins have been moved here.
+
+-
+Version 1.3.1.0
+Date 2013-04-16 19:57:19
+
+Added auxiliary geometric procedures
+
+-
+Version 1.3.0.0
+Date 2013-02-14 16:28:14
+
+Possibility to change the stroke thickness of a Snake2DScale.
+
+-
+Version 1.2.0.1
+Date 2013-01-16 16:55:50
+
+Updated methods to support Icy 1.3.0.0
+
+-
+Version 1.2.0.0
+Date 2012-11-05 16:21:27
+
+
+
+-
+Version 1.1.0.1
+Date 2012-10-23 15:42:17
+
+Updated javadoc
+
+-
+Version 1.1.0.0
+Date 2012-10-16 17:15:31
+
+Various gui improvements
+
+-
+Version 1.0.0.0
+Date 2012-09-16 16:30:26
+
+Initial submit
+
+-
+Version 0.0.1.1b
+Date 2012-09-12 15:47:24
+
+
+
+-
+Version 0.0.1.0b
+Date 2012-09-12 15:09:14
+
+
+
+]]></changelog><web><![CDATA[http://icy.bioimageanalysis.org/plugin/Active_Cells_SDK]]></web><dependencies><dependency><classname>plugins.adufour.ezplug.EzPlug</classname></dependency></dependencies></root>

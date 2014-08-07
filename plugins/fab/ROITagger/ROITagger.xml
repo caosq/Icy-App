@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='no'?>
+<root>
+<url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getXMLPluginFile.php?pluginId=78&beta=]]></url><url_stable><![CDATA[http://www.bioimageanalysis.org/icy/repository/getXMLPluginFile.php?pluginId=78&beta=0]]></url_stable><url_beta></url_beta><name>ROI Tagger</name><version>1.0.0.1</version><jar_url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getJarFile.php?pluginId=78&beta=0]]></jar_url><icon_url></icon_url><image_url></image_url><description><![CDATA[Create a list of tag and apply them to ROIs.
+
+<li>Multi tag per ROI
+<li>Tags are stored in sequence (persistent).
+<li>Compatible with Spot Detector
+
+The tags are stored in the sequence and can be re-display by starting again the ROI Tagger or by using compatible plugins such as the Spot Detector.]]></description><classname><![CDATA[plugins.fab.ROITagger.ROITagger]]></classname><author><![CDATA[fab - Fabrice de Chaumont]]></author><changelog><![CDATA[-----------------------------------
+Version 1.0.0.1
+Date 2011-08-29 15:21:32
+
+GUI improved
+
+-----------------------------------
+Version 1.0.0.0
+Date 2011-03-07 09:57:22
+
+
+
+]]></changelog><dependencies><dependency><classname>plugins.fab.ROIPool.ROIPool</classname><url_stable><![CDATA[http://www.bioimageanalysis.org/icy/repository/getXMLPluginFile.php?pluginId=79&beta=0]]></url_stable><url_beta></url_beta><version>1.0.0.0</version></dependency></dependencies></root>

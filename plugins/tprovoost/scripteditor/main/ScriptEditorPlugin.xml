@@ -1,0 +1,602 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<root>
+<url><![CDATA[http://icy.bioimageanalysis.org/repository/getXMLPluginFile.php?pluginId=223&beta=0]]></url><name>Script Editor</name><version>1.13.2.0</version><required_kernel_version>1.3.6.0</required_kernel_version><kernel_ver>1.3.6.0</kernel_ver><jar_url><![CDATA[http://icy.bioimageanalysis.org/repository/getJarFile.php?pluginId=223&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=1819]]></icon_url><image_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=1996]]></image_url><description><![CDATA[Create powerful scripts to implement what's missing with plugins. Syntax Color and Autocomplete features implemented (still need testing).
+
+Should be used with Icy-Master on github for better autocompletion.]]></description><classname><![CDATA[plugins.tprovoost.scripteditor.main.ScriptEditorPlugin]]></classname><author><![CDATA[tprovoost - Thomas Provoost]]></author><changelog><![CDATA[-
+Version 1.13.2.0
+Date 2014-07-23 18:46:58
+
+Added Boolean type for script editor block in protocol.
+
+-
+Version 1.13.1.0
+Date 2014-07-07 12:39:00
+
+Fixed bug on label completion parsing.
+
+-
+Version 1.13.0.4
+Date 2014-06-26 15:15:50
+
+some bug fixes.
+
+-
+Version 1.13.0.3
+Date 2014-06-16 12:16:44
+
+Fixed NPE in JSScriptingHandlerRhino.buildFunctionRecursive(..) method.
+
+-
+Version 1.13.0.1
+Date 2014-06-05 12:08:41
+
+Fixed a minor issue on executing a script directly from the search bar.
+
+-
+Version 1.13.0.0
+Date 2014-02-26 23:13:34
+
+Fix two possible exceptions related to JavaScript auto-completion.
+
+-
+Version 1.12.0.0
+Date 2014-01-13 12:43:08
+
+Fix bug preventing the editor to be opened (tab index errors when restoring the saved state of the editor).
+
+
+-
+Version 1.11.0.0
+Date 2013-12-26 13:45:35
+
+- Fix errors in tab opening, and code the closing more defensively.
+
+
+-
+Version 1.10.0.0
+Date 2013-12-26 12:53:34
+
+-The absolute path of the current file is shown in the title bar of the editor
+
+-The language combobox has a fixed size
+
+-The 'Run' button is re-enabled after switching to AppleScript and back
+
+-Fix BadLocationExceptions appearing when deleting lines on a script with errors (coming from asynchronous gutter update)
+
+-Fix '+' button for new tabs (the user could have selected the small region between the button and the edge of the tab component, and it would not have created a new tab as expected)
+
+-Code Cleanup
+
+
+-
+Version 1.9.0.0
+Date 2013-12-19 12:38:18
+
+- Really completely remove the possibility of an inifinte loop causing Icy to freeze (bug in syntax check).
+
+- Improve syntax checks to handle multiple errors on the same line.
+
+
+-
+Version 1.8.0.0
+Date 2013-12-18 16:50:18
+
+- Fix an error that could freeze Icy completely in the Javascript editor.
+
+- Re-throw Python exceptions so that syntax errors can be highlighted in the GUI.
+
+- Fix the "stop" button when running in the same engine.
+
+- Fix the language selection of the console when changing the current tab.
+
+- Performance optimisation (replace CaretListener with DocumentListener).
+
+
+-
+Version 1.7.0.2
+Date 2013-12-17 11:22:17
+
+Fix a NullPointerException with the Javascript block.
+
+
+
+-
+Version 1.7.0.1
+Date 2013-12-17 10:13:39
+
+Regression from version 1.6.0.0
+
+-
+Version 1.7.0.0
+Date 2013-12-16 17:05:04
+
+Please note that this update will erase the list of recent files, reset the editor state (opened files) and the editor preferences. This was needed to completely fix some issues.
+
+- Fix the scrolling of the console output. Now properly stops scrolling when the scrollbar is used.
+
+- Implement real "Apply", "Ok", "Cancel" for the Preferences. Also properly apply the Preferences when a file is opened.
+
+- Make the saving of the editor state (opened files, recent files) more robust.
+
+- Fix the logic for "soft tabs" (was inverted).
+
+- Do not format the files when applying the Preferences, but only when clicking on 'Format'.
+
+
+-
+Version 1.6.0.0
+Date 2013-12-09 16:57:00
+
+- allow Icy to release more memory when the Script editor is closed (remove listeners and release engines)
+
+- save the editor state more often (at each file open and close) to prevent state loss in case Icy crashes (which does not happen ;) )
+
+
+-
+Version 1.5.0.0
+Date 2013-12-02 16:53:50
+
+- Fix a memory leak that was causing Icy to freeze with an OutOfMemory exception after several script runs.
+
+- Fix the parsing of Python scripts where the encoding is explicitly specified.
+
+- Small code cleanups related to the Python script engine.
+
+
+-
+Version 1.4.0.0
+Date 2013-10-10 13:49:40
+
+* corrected issue with infinite loop due to an error in line interpretation.
+
+-
+Version 1.3.3.0
+Date 2013-09-20 17:09:07
+
+* will not try to reopen a file that does not exist
+* now remembers previous launch type
+* corrected issue with save
+
+-
+Version 1.3.2.0
+Date 2013-09-02 10:36:30
+
+* Handles errors better
+
+-
+Version 1.3.1.0
+Date 2013-08-26 15:34:19
+
+* previous version was compiled for next release.
+
+-
+Version 1.3.0.0
+Date 2013-08-26 15:29:34
+
+* added support for the search bar
+
+-
+Version 1.2.0.0
+Date 2013-07-17 16:50:41
+
+* added a feature in FileDialog to open directories
+* auto save all file types when run, but only if filename already set
+* added eval() method for JS
+* better module support in Python
+
+-
+Version 1.1.0.0
+Date 2013-07-12 10:31:50
+
+* Removed (for now) interpretation of functions : was too cheap
+* added interpretation of module and auto complete
+
+-
+Version 1.0.4.0
+Date 2013-07-08 17:59:34
+
+* if an image is dragged into Icy, the script editor gives it to Icy to open it.
+* corrected issue with constructors not having a source.
+
+-
+Version 1.0.3.0
+Date 2013-07-08 10:56:56
+
+* changed interpretatoin of imports, should not bring any more infinite loop.
+
+-
+Version 1.0.2.0
+Date 2013-07-03 17:04:30
+
+
+
+-
+Version 1.0.1.0
+Date 2013-07-02 17:35:35
+
+* started autocompletion with Python, more to come
+
+-
+Version 1.0.0.0
+Date 2013-06-25 17:09:20
+
+* Path corrections added for Python and Execnet
+
+-
+Version 0.9.9.1b
+Date 2013-06-21 13:08:33
+
+* removed sun JVM requirement on loading
+
+-
+Version 0.9.9.0b
+Date 2013-06-21 10:47:59
+
+* Beta build for linux compatibility
+
+-
+Version 0.9.7.1
+Date 2013-06-13 15:39:19
+
+* corrected run issue in python
+
+-
+Version 0.9.7.0
+Date 2013-06-13 14:28:20
+
+* issue with interpretation of python corrected
+* now opens the right previously selected tab when opening the Script Editor
+* now evaluates the file in Python, not the string
+
+-
+Version 0.9.6.2
+Date 2013-06-12 17:24:06
+
+* corrected issue with Python console.
+
+-
+Version 0.9.6.1
+Date 2013-06-12 14:08:41
+
+* corrected few issues: 
+- now able to add an input after the xml has been loaded
+- autocomplete now fully works on variables in both editors
+
+-
+Version 0.9.6.0
+Date 2013-06-04 17:22:06
+
+* corrected issue with importClass and spaces
+* now the autocomplete feature show the variables defined in the Javascript block
+
+-
+Version 0.9.5.1
+Date 2013-05-27 17:30:54
+
+* Corrected an issue that appeared with previous version.
+
+-
+Version 0.9.5.0
+Date 2013-05-22 17:12:35
+
+* console is now shared between scripts
+* added a button to choose the type of run
+* corrected multi occurences of "gui" variable
+* added a new feature : clear or not the console everytime the script is run
+* in Javascript block, the internal text editor is disabled while using
+the external one
+* the external editor is now name "External Editor" instead of
+"untitled"
+* memory of the engine is released when the no more Script Editor frames remain
+
+-
+Version 0.9.4.1
+Date 2013-05-14 17:35:19
+
+* Corrected Memory Leaks
+
+-
+Version 0.9.4.0
+Date 2013-05-14 10:59:43
+
+* Better conversion between java and javascript for Javascript block's outputs.
+
+-
+Version 0.9.3.0
+Date 2013-05-13 10:33:18
+
+* Corrected issue with warning and Javascript block
+
+-
+Version 0.9.2.0
+Date 2013-04-17 12:27:26
+
+* added a full autompletion feature: now proposes solution after every character when pausing for 0.5 s
+
+* corrected few interpretation errors
+
+-
+Version 0.9.1.0
+Date 2013-04-11 16:07:45
+
+* added a Javascript block
+* corrected a few issues concerning Arraylists (still need testing)
+
+-
+Version 0.9.0.0
+Date 2013-03-14 19:02:03
+
+* added a Javascript block
+* correct a few issues
+
+-
+Version 0.8.6.1
+Date 2013-03-13 16:32:23
+
+* Uncommited work added (gécomitilapapoule)
+
+-
+Version 0.8.6.0
+Date 2013-03-13 16:21:42
+
+* Corrected issue with opened recent files feature on Mac OS X.
+
+-
+Version 0.8.5.0
+Date 2013-03-12 17:09:00
+
+* corrected bug importing twice some classes
+* now imports only needed imports (previously, the script editor imported too many classes, not necessarily needed by the engine)
+
+-
+Version 0.8.4.0
+Date 2013-03-12 11:09:42
+
+Corrected issue with "Python" insteand of "python", leading to Templates bug and null engines.
+
+-
+Version 0.8.3.0
+Date 2013-03-11 16:36:44
+
+* added "View Source" in autocompletion
+* corrected few bugs for coming Script Block V2
+* Activated autocomplete by default
+
+-
+Version 0.8.2.0
+Date 2013-03-06 10:17:29
+
+* Corrections for JPython
+* Added Drag'n Drop feature
+* Better support for Enums
+
+-
+Version 0.8.1.2
+Date 2013-02-28 11:46:20
+
+* corrected null on populate() methods for functions in a class in autocomplete.
+
+-
+Version 0.8.1.1
+Date 2013-02-27 10:43:03
+
+* Corrected issue that appeared in 8.1 with auto parsing.
+
+-
+Version 0.8.1.0
+Date 2013-02-27 09:31:50
+
+Corrected Threading issues.
+
+-
+Version 0.8.0.0
+Date 2013-02-25 17:32:44
+
+* added sourcing for methods / constructors / classes.
+* added Ctrl + Shift + C for line commenting
+
+-
+Version 0.7.0.0
+Date 2013-02-20 10:33:20
+
+* Python now supported thanks to new Kernel and small corrections
+* Added Hyperlinks Ctrl+click feature
+
+-
+Version 0.6.3.0
+Date 2013-02-19 11:01:36
+
+* added new feature: Find/Replace
+* added "Go To" feature
+* new and [] now works, but will not verify if the constructor exists.
+* Better support of declaration of multiple variables.
+* Corrected asynchronous issue with FileDialog class.
+
+-
+Version 0.6.2.0
+Date 2013-02-13 19:04:14
+
+* corrected issue with FileDialog
+
+-
+Version 0.6.1.0
+Date 2013-02-13 18:20:51
+
+* corrected few issues with detection
+* "var" keywork taken into account
+
+-
+Version 0.6.0.0
+Date 2013-02-12 16:41:45
+
+* added GUI items easy to use for scripting:
+* * simple dialog creation 
+* * simple file save/open dialog 
+* better error support
+
+-
+Version 0.5.0.0
+Date 2013-02-08 16:25:17
+
+* added support for "new" in autocompletion
+* changed layout policy for tabs
+* cell renderer compatible with new autocompletion type
+* fixed issue with BasicJavaClassCompletion
+* changes in indentation
+* deprecated displayed on methods and fields
+* corrected another automatic import issue
+* preferences now have advanced mode for method detection
+* commented static functions used for binding
+* better method resolver
+* added "gui" variable in the engine
+* added Interface icon
+* corrected an issue with same name functions not appearing in
+autocomplete
+* displays only public members / classes / methods
+* corrected issue when opening templates
+* static function to display text in the scripteditor from another
+source
+* better array support
+
+-
+Version 0.4.1.2
+Date 2013-02-06 11:31:47
+
+* Corrected issue with Release version
+* added a textpane for some issues to have color
+
+-
+Version 0.4.1.1
+Date 2013-02-05 17:04:55
+
+* corrected null issues
+* multi line errors now back
+* handle assignment of arrays
+
+-
+Version 0.4.1.0
+Date 2013-02-05 14:35:26
+
+* removed debug info
+* corrected few null pointer exceptions happening in specific cases
+
+-
+Version 0.4.0.0
+Date 2013-02-05 11:03:04
+
+* Now uses Rhino Library for JavaScript Parsing: fully compatibility between Java 6 and 7.
+* Advanced mode for AutoCompletion: all methods. Activated by default in code for testing, will add an option in preferences later (less information)
+
+-
+Version 0.2.0.0
+Date 2013-01-31 17:17:30
+
+* added copy/paste features in console and output.
+* switched order buttons run
+* preferences with soft tab working
+* added text when running in new engine
+* added scroll lock
+* tooltips on run buttons
+
+-
+Version 0.1.2.0
+Date 2013-01-21 15:47:35
+
+Corrected a bug preventing from using plugins with the script editor in release.
+
+-
+Version 0.1.1.2
+Date 2013-01-14 10:11:55
+
+* if a library has an issue with findBindingMethods(), now catches it.
+
+-
+Version 0.1.1.1
+Date 2013-01-11 15:52:30
+
+* Updated to last kernel
+* few modifications in detection, although still disabled for now
+
+-
+Version 0.1.1.0
+Date 2013-01-07 16:34:58
+
+* corrected memory leak when closing
+
+-
+Version 0.1.0.0
+Date 2013-01-03 17:38:40
+
+* stable enough for RC 1
+* added a few corrections in first load
+* now fewer options in Preferences Panel, autocomplete is now for later versions, not stable enough
+
+-
+Version 0.0.3.0
+Date 2013-01-02 13:34:32
+
+
+
+-
+Version 0.0.2.3
+Date 2012-12-20 18:09:49
+
+* console separated
+* output should work better 
+
+-
+Version 0.0.2.2b
+Date 2012-12-20 12:47:40
+
+* new interpretation in python now completly functionnal
+* next version will feature a real Python Console.
+
+-
+Version 0.0.2.1b
+Date 2012-12-18 16:57:35
+
+* corrected open python files issue
+
+-
+Version 0.0.2.0b
+Date 2012-12-17 18:10:45
+
+* console added
+* lots of bug corrected
+* preferences panel 
+
+-
+Version 0.0.1.4b
+Date 2012-12-13 15:49:29
+
+* scripts are run in a thread
+* possibility to stop a thread (needs testing)
+
+-
+Version 0.0.1.3
+Date 2012-12-11 16:21:43
+
+* added a preferences panel (no save as of now) 
+* all verification features disabled by default
+* few corrections
+
+-
+Version 0.0.1.2b
+Date 2012-12-05 13:37:07
+
+Corrected java.lang.ClassNotFoundException: org.python.antlr.base.mod issue
+
+-
+Version 0.0.1.1b
+Date 2012-12-05 10:20:10
+
+Uses plugin libraries instead of own jars for developers to be able to try the plugin without issues.
+
+-
+Version 0.0.1.0b
+Date 2012-12-04 17:45:20
+
+
+
+]]></changelog><web><![CDATA[http://icy.bioimageanalysis.org/plugin/Script_Editor]]></web><dependencies><dependency><classname>plugins.tprovoost.rsyntaxtextarea.RSyntaxTextAreaPlugin</classname></dependency><dependency><classname>plugins.tprovoost.autocomplete.AutoCompletePlugin</classname></dependency><dependency><classname>plugins.tprovoost.rhino.RhinoPlugin</classname></dependency><dependency><classname>plugins.tprovoost.javadocparser.JavaDocParser</classname></dependency></dependencies></root>

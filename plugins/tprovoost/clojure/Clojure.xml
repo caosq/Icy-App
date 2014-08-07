@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<root>
+<url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getXMLPluginFile.php?pluginId=248&beta=0]]></url><name>Clojure</name><version>1.0.0.0</version><required_kernel_version>1.3.2.0</required_kernel_version><kernel_ver>1.3.2.0</kernel_ver><jar_url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getJarFile.php?pluginId=248&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=2120]]></icon_url><image_url></image_url><description><![CDATA[Library used by Micro-Manager for fast acquisition.]]></description><classname><![CDATA[plugins.tprovoost.clojure.Clojure]]></classname><author><![CDATA[tprovoost - Thomas Provoost]]></author><changelog><![CDATA[-
+Version 1.0.0.0
+Date 2013-04-12 15:35:46
+
+* correctly set up
+
+-
+Version 0.0.1.0
+Date 2013-04-11 14:02:07
+
+
+
+]]></changelog><web><![CDATA[http://icy.bioimageanalysis.org/plugin/Clojure]]></web><dependencies></dependencies></root>

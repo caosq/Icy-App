@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<root>
+<url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getXMLPluginFile.php?pluginId=166&beta=0]]></url><name>Best Threshold</name><version>1.4.0.0</version><required_kernel_version>1.3.6.0</required_kernel_version><kernel_ver>1.3.6.0</kernel_ver><jar_url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getJarFile.php?pluginId=166&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=1085]]></icon_url><image_url></image_url><description><![CDATA[Choose the best auto thresholding technique for your data. Ported from Auto Threshold plugin in ImageJ by G. Landini (plus others, see documentation).]]></description><classname><![CDATA[plugins.tprovoost.bestthreshold.BestThreshold]]></classname><author><![CDATA[tprovoost - Thomas Provoost]]></author><changelog><![CDATA[-
+Version 1.4.0.0
+Date 2013-10-10 13:56:54
+
+
+
+-
+Version 1.3.0.1
+Date 2013-08-06 17:28:37
+
+* Can now display ROIs
+
+-
+Version 1.2.0.0
+Date 2013-07-29 11:18:16
+
+Corrected Double issue
+
+-
+Version 1.1.0.1
+Date 2013-07-18 17:05:16
+
+* rollback
+
+-
+Version 1.1.0.0
+Date 2013-07-01 18:00:06
+
+* corrected some issues with double
+
+-
+Version 1.0.1.1
+Date 2013-01-18 11:07:09
+
+Retrocompatibility was broken since last version, now corrected back for backward compatibility.
+
+-
+Version 1.0.1.0
+Date 2013-01-11 15:54:35
+
+* added a function for scripting to make it easier to use this plugin
+
+-
+Version 1.0.0.0
+Date 2012-12-06 17:21:43
+
+Compatible with Blocks.
+
+-
+Version 0.0.1.0
+Date 2012-04-23 11:46:08
+
+
+
+]]></changelog><web><![CDATA[http://icy.bioimageanalysis.org/plugin/Best_Threshold]]></web><dependencies><dependency><classname>plugins.adufour.ezplug.EzPlug</classname></dependency><dependency><classname>plugins.adufour.blocks.Blocks</classname></dependency><dependency><classname>plugins.adufour.thresholder.Thresholder</classname></dependency></dependencies></root>

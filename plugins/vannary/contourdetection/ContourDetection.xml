@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<root>
+<url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getXMLPluginFile.php?pluginId=176&beta=0]]></url><name>Edge Detection</name><version>0.0.1.3</version><required_kernel_version>1.2.5.0</required_kernel_version><kernel_ver>1.2.5.0</kernel_ver><jar_url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getJarFile.php?pluginId=176&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=1207]]></icon_url><image_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=1208]]></image_url><description><![CDATA[Edge detection by Deriche's method.]]></description><classname><![CDATA[plugins.vannary.contourdetection.ContourDetection]]></classname><author><![CDATA[vannary]]></author><changelog><![CDATA[-
+Version 0.0.1.3
+Date 2012-11-23 18:22:40
+
+
+
+-
+Version 0.0.1.2
+Date 2012-06-25 10:12:37
+
+updated to last Blocks version
+
+-
+Version 0.0.1.1
+Date 2012-06-22 14:35:07
+
+Integrating the Blocks
+
+-
+Version 0.0.1.0b
+Date 2012-06-14 11:12:47
+
+
+
+]]></changelog><web><![CDATA[http://icy.bioimageanalysis.org/plugin/Edge_Detection]]></web><dependencies><dependency><classname>plugins.adufour.blocks.Blocks</classname></dependency><dependency><classname>plugins.adufour.ezplug.EzPlug</classname></dependency></dependencies></root>

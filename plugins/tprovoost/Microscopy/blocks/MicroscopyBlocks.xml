@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<root>
+<url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getXMLPluginFile.php?pluginId=183&beta=0]]></url><name>Microscopy Blocks</name><version>0.9.1.0</version><required_kernel_version>1.3.1.0</required_kernel_version><kernel_ver>1.3.1.0</kernel_ver><jar_url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getJarFile.php?pluginId=183&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=1260]]></icon_url><image_url></image_url><description><![CDATA[(Beta) Allows one to use various Micro Managers for Icy features inside Blocks plugin.]]></description><classname><![CDATA[plugins.tprovoost.Microscopy.blocks.MicroscopyBlocks]]></classname><author><![CDATA[tprovoost - Thomas Provoost]]></author><changelog><![CDATA[-
+Version 0.9.1.0
+Date 2013-01-25 17:31:10
+
+* updated to mm4icy last version
+
+-
+Version 0.9.0.2
+Date 2012-12-05 16:11:03
+
+Corrected issues due to incompatibility.
+
+Further work on blocks is necessary to ensure full compatibility, but this update should correct non implements functions errors.
+
+-
+Version 0.9.0.1
+Date 2012-06-26 14:16:20
+
+Few corrections on SnapC and SnapZ.
+
+-
+Version 0.9.0.0
+Date 2012-06-25 17:03:41
+
+snapSequence block removed. SnapZ and SnapC were added insteand.
+
+-
+Version 0.0.1.0
+Date 2012-06-21 15:40:58
+
+
+
+]]></changelog><web><![CDATA[http://icy.bioimageanalysis.org/plugin/Microscopy_Blocks]]></web><dependencies><dependency><classname>plugins.adufour.blocks.Blocks</classname></dependency><dependency><classname>plugins.tprovoost.Microscopy.MicroManagerForIcy.MicromanagerPlugin</classname></dependency><dependency><classname>plugins.tprovoost.Microscopy.MicroscopeAdvancedAcquisition.MicroscopeAdvancedAcquisitionPlugin</classname></dependency><dependency><classname>plugins.tprovoost.Microscopy.MicroscopeSnapper.MicroscopeSnapperPlugin</classname></dependency></dependencies></root>

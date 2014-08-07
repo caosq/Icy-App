@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<root>
+<url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getXMLPluginFile.php?pluginId=259&beta=0]]></url><name>3D Area</name><version>1.0.0.0</version><required_kernel_version>1.3.6.0</required_kernel_version><kernel_ver>1.3.6.0</kernel_ver><jar_url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getJarFile.php?pluginId=259&beta=0]]></jar_url><icon_url></icon_url><image_url></image_url><description><![CDATA[3D region of interest defined as a list of 2D areas (one per Z slice)]]></description><classname><![CDATA[plugins.adufour.roi.ROI3DAreaPlugin]]></classname><author><![CDATA[adufour - Alexandre Dufour]]></author><changelog><![CDATA[-
+Version 1.0.0.0
+Date 2013-07-19 17:34:05
+
+Upgraded to ROI3DStack v.1.1.0.0
+
+-
+Version 0.1.0.0
+Date 2013-07-16 11:43:05
+
+Switched to the new 3D ROI Stack implementation (fixing many issues on the way).
+
+-
+Version 0.0.1.0
+Date 2013-06-03 22:41:00
+
+
+
+]]></changelog><web><![CDATA[http://icy.bioimageanalysis.org/plugin/3D_Area]]></web><dependencies><dependency><classname>plugins.adufour.roi.ROI3DStackPlugin</classname></dependency></dependencies></root>

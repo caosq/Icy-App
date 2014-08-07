@@ -1,0 +1,349 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<root>
+<url><![CDATA[http://icy.bioimageanalysis.org/repository/getXMLPluginFile.php?pluginId=44&beta=0]]></url><name>Connected Components</name><version>4.8.1.0</version><required_kernel_version>1.5.1.0</required_kernel_version><kernel_ver>1.5.1.0</kernel_ver><jar_url><![CDATA[http://icy.bioimageanalysis.org/repository/getJarFile.php?pluginId=44&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=405]]></icon_url><image_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=406]]></image_url><description><![CDATA[This plugin extracts groups of connected pixels in 2D and 3D based on their intensity and that of the background. Works on both binary and gray-scale data. Output can be pushed to the swimming pool for other plug-ins to further exploit the extracted objects.]]></description><classname><![CDATA[plugins.adufour.connectedcomponents.ConnectedComponents]]></classname><author><![CDATA[adufour - Alexandre Dufour]]></author><changelog><![CDATA[-
+Version 4.8.1.0
+Date 2014-06-05 19:45:46
+
+Moved internal "QuickHull: library away to avoid conflict with the official "ConvexHull" library
+
+-
+Version 4.8.0.0
+Date 2014-04-21 00:16:12
+
+New method to export as ROI
+New method to fill inside a sequence
+Fixed perimeter calculation in 2D and 3D (corrects for digitisation artefacts)
+
+-
+Version 4.7.0.1
+Date 2014-01-13 11:09:58
+
+* never discard Z edges in 2D
+* fix edge discard label in block mode
+
+-
+Version 4.7.0.0
+Date 2013-11-04 20:36:42
+
+New: Connected Components now works on the input sequence ROI
+
+-
+Version 4.6.2.1
+Date 2013-10-30 19:16:42
+
+Updated to Icy 1.4.0.0
+
+-
+Version 4.6.2.0
+Date 2013-10-28 11:12:58
+
+Optimize the computation of the convex envelope
+
+-
+Version 4.6.1.0
+Date 2013-07-30 14:30:17
+
+Optimized intersection calculation
+
+-
+Version 4.6.0.0
+Date 2013-03-22 14:31:16
+
+New: 3D ROI support
+
+-
+Version 4.5.1.0
+Date 2013-02-04 11:18:40
+
+Sort ellipse fit such that the first value is always the large axis
+
+-
+Version 4.5.0.0
+Date 2012-11-13 19:14:23
+
+Added new object measures in the .xls file:
+ - 2D perimeter (or 3D surface)
+ - ellipse axes (X,Y,Z)
+ - hull fill ratio (2D and 3D)
+
+-
+Version 4.4.1.1
+Date 2012-11-12 15:33:18
+
+Re-upload jar file (version issue ?)
+
+-
+Version 4.4.1.0
+Date 2012-11-08 14:59:42
+
+Excel results are now exported in real metric units (according to the resolution of the input sequence)
+
+-
+Version 4.4.0.0
+Date 2012-10-31 18:39:23
+
+New: output the list of ROI in block mode
+
+-
+Version 4.3.3.1
+Date 2012-10-11 16:43:55
+
+Automatically add a ".xls" extension to the export file (useful when using a sequence file name as the export file)
+
+-
+Version 4.3.3.0
+Date 2012-09-26 16:26:47
+
+* Safety to ensure that the xls export file is not null
+* (Blocks) Removed deprecated BlockInfo implementation
+
+-
+Version 4.3.2.1
+Date 2012-09-11 11:09:30
+
+Fixed jar export
+
+-
+Version 4.3.2.0
+Date 2012-09-11 09:38:33
+
+Connected Components are now channel-aware (but extraction remains in the first channel)
+
+-
+Version 4.3.1.0b
+Date 2012-09-03 14:45:45
+
+Added sequence name at the first line of the generated spreadsheet.
+
+-
+Version 4.3.0.0b
+Date 2012-08-09 16:25:03
+
+New: Added the Excel export functionality to protocols (NOTE: this is experimental and will be replaced by a more stable export system later on)
+
+-
+Version 4.2.0.3
+Date 2012-08-02 16:13:53
+
+- throw appropriate errors when working on an empty sequence
+- try to fix a concurrent modification exception when creating ROIs on the original sequence
+
+-
+Version 4.2.0.2
+Date 2012-07-19 19:04:14
+
+implemented BlockInfo interface in ConnectedComponentDescriptor (name  should be more user friendly in Protocols)
+
+-
+Version 4.2.0.1
+Date 2012-07-16 14:05:25
+
+Show an error message if the input is null
+
+-
+Version 4.2.0.0
+Date 2012-07-10 11:20:42
+
+* Replaced deprecated VarArray by VarGenericArray
+* new methods in ConnectedComponent: intersects, paintOnSequence
+* ShapeDescriptor methods not static anymore
+* Merged CCShape (block) and ShapeDescriptor into ConnectedComponentDescriptor (block)
+
+-
+Version 4.0.0.0
+Date 2012-06-21 13:30:55
+
+Support for Blocks programming.
+First available blocks: connected components (main plugin) + minimal shape descriptor
+
+-
+Version 3.3.0.0
+Date 2012-05-31 15:23:27
+
+fix: catch error when computing 3D ellipse fit
+adjusted fields visibility (changed from private to protected)
+
+-
+Version 3.2.1.0
+Date 2012-05-21 11:06:51
+
+caught exception when computing the ellipse in 2D (singular matrix)
+
+-
+Version 3.2.0.0
+Date 2012-05-11 18:57:48
+
+new: option to sort components in the labeled output (currently by ascending or descending Z)
+del: removed ConnectedComponentsPainter class (becomes useless and shows incorrect results after sorting)
+
+-
+Version 3.0.0.0
+Date 2012-04-17 20:01:31
+
+NEW: shape measurement toolbox with numerous descriptors (accessible via static methods, or automatically included when exporting results to .xls files)
+
+-
+Version 2.4.1.0
+Date 2012-03-22 17:20:27
+
+renamed internal methods to add/remove points
+new method to add points manually
+
+-
+Version 2.4.0.0
+Date 2012-03-22 16:47:03
+
+new: added method to extract contour points from a component
+fix: component's (mass center) coords weren't updated correctly
+
+-
+Version 2.3.0.2
+Date 2012-02-29 19:19:08
+
+Amend to the previous update (jar issue ?)
+
+-
+Version 2.3.0.1
+Date 2012-02-20 13:07:23
+
+Updated to EzPlug 1.6.4.1
+
+-
+Version 2.3.0.0
+Date 2012-02-15 19:31:05
+
+New: Export the list of components to a .xls file for further manipulation with your favorite sheet software.
+
+-
+Version 2.2.2.1
+Date 2011-12-07 16:20:07
+
+new build to reflect Detection API changes
+
+-
+Version 2.2.2.0
+Date 2011-11-28 15:39:29
+
+added computeMinIntensity(...) methods
+
+-
+Version 2.2.1.0
+Date 2011-11-19 19:17:50
+
+Minor speed improvement in the pixel scanning process
+
+-
+Version 2.2.0.0
+Date 2011-11-16 23:07:41
+
+New feature: objects can now be exported as ROIs on the original image
+
+-
+Version 2.1.0.0
+Date 2011-11-14 22:45:41
+
+Major update:
+ * fixed bug in the 2D extraction process (error along right-hand vertical edge)
+ * output available as a DetectionResult to use with the Icy tracker
+
+-
+Version 2.0.5.0
+Date 2011-11-09 13:20:27
+
+updated to icy.type.DataType
+outputs components to console
+
+-
+Version 2.0.4.0
+Date 2011-09-09 19:20:44
+
+new: added method to compute the major axis of a component by returning the vector between the two most distant points
+
+-
+Version 2.0.3.1
+Date 2011-07-15 14:21:03
+
+updated build to Icy 1.0.6.0 (replaced deprecated method call by new one)
+
+-
+Version 2.0.3.0
+Date 2011-05-20 13:51:16
+
+added method to compute the maximum distance between a connected component and a user-defined point
+
+-
+Version 2.0.2.2
+Date 2011-04-27 17:12:23
+
+minor revision: removed display of the temporary labeling (after first pass)
+
+-
+Version 2.0.2.1
+Date 2011-04-27 17:08:19
+
+revised version that removes debug information
+
+-
+Version 2.0.2.0
+Date 2011-04-27 17:05:54
+
+Fixed bug in the labeling algorithm, which occurs only in very rare geometrical configurations
+
+-
+Version 2.0.1.0
+Date 2011-04-21 11:57:02
+
+- Z flag disappears automatically for 2D images
+- Added description label to explain extraction modes to the user
+- javadoc improved
+
+-
+Version 2.0.0.0
+Date 2011-04-19 16:29:31
+
+New milestone (breaks backwards compatibility):
+ - extracted inner class to multiple files to make code lighter => dependent plugins just need to change the import commands, everything else is compatible
+ - improved painter
+ - possibility to compute intersections between components
+
+-
+Version 1.3.0.0
+Date 2011-02-04 17:02:20
+
+Possibility to compute a component's average intensity in a given sequence
+
+-
+Version 1.2.0.2
+Date 2011-01-31 18:14:22
+
+bug fixes of v.1.2.0.0 to make it (finally) operational.
+NOTE: retro-compatibility is broken with version 1.2.0.1 and before 1.2.x
+
+-
+Version 1.2.0.1
+Date 2011-01-31 13:35:58
+
+Regression from version 1.1.0.0
+
+-
+Version 1.2.0.0
+Date 2011-01-31 13:06:59
+
+- Improved edge discard options
+- Components\' points list return as vecmath.Point3i[]
+NOTE: this version breaks retro-compatibility due to the change in accessors of connected components. Refer to the javadoc of the ConnectedComponent class to see the adjustments to perform in dependent plugins
+
+-
+Version 1.1.0.0
+Date 2011-01-26 20:41:35
+
+- New feature: discard components on the image edge (in XY or XYZ)
+- Object count is printed on the interface for convenience purposes
+
+-
+Version 1.0.0.0
+Date 2011-01-25 16:11:01
+
+
+
+]]></changelog><web><![CDATA[http://icy.bioimageanalysis.org/plugin/Connected_Components]]></web><dependencies><dependency><classname>plugins.adufour.ezplug.EzPlug</classname></dependency><dependency><classname>plugins.fab.trackmanager.TrackManager</classname></dependency><dependency><classname>plugins.nchenouard.spot.DetectionResult</classname></dependency><dependency><classname>plugins.adufour.blocks.Blocks</classname></dependency></dependencies></root>

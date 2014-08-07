@@ -1,0 +1,229 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<root>
+<url><![CDATA[http://icy.bioimageanalysis.org/repository/getXMLPluginFile.php?pluginId=122&beta=0]]></url><name>Micro-Manager for Icy</name><version>1.5.2.0</version><required_kernel_version>1.5.0.0</required_kernel_version><kernel_ver>1.5.0.0</kernel_ver><jar_url><![CDATA[http://icy.bioimageanalysis.org/repository/getJarFile.php?pluginId=122&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=639]]></icon_url><image_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=665]]></image_url><description><![CDATA[Micro-Manager plugin for Icy. Use your microscope and microscopic devices in Icy! Now compatible with MM 1.4.14.]]></description><classname><![CDATA[plugins.tprovoost.Microscopy.MicroManagerForIcy.MicromanagerPlugin]]></classname><author><![CDATA[tprovoost - Thomas Provoost]]></author><changelog><![CDATA[-
+Version 1.5.2.0
+Date 2014-07-15 11:33:17
+
+Minors fixes, tweak and refactoring.
+
+-
+Version 1.5.1.0
+Date 2014-07-10 14:04:44
+
+* Reverted to MicroManager main class name.
+* some tweaks and fixes.
+
+-
+Version 1.5.0.1
+Date 2014-07-03 22:47:23
+
+Fixed AWT thread issue.
+
+-
+Version 1.5.0.0
+Date 2014-07-03 22:17:41
+
+Complete rewrite of the plugin.
+Now auto detect the Micro Manger folder and use dynamic lbrary loading (don't require anymore the micro manager lib plugin).
+Many general improvements, should have better compatibility and work faster.
+
+Compatible with Micro Manager 1.4.15 or above.
+
+
+-
+Version 1.4.1.2
+Date 2014-06-12 16:38:13
+
+- Micro Manager folder detection.
+- Fixed minor issue on binning combo box.
+
+-
+Version 1.4.1.1b
+Date 2013-09-24 17:43:36
+
+Updated to the last version of Micro-Manager : 1.4.15
+
+-
+Version 1.4.1.0
+Date 2013-08-26 10:11:01
+
+
+
+-
+Version 1.4.0.0
+Date 2013-06-05 18:06:24
+
+* Now Handles better the metadata : 
+- pixel size X / Y / Z
+- exposure
+- channel names
+
+Coming Soon : 
+- time of acquisition
+- Time interval
+
+-
+Version 1.3.0.0
+Date 2013-04-09 17:47:23
+
+* Now fully functionnal with 1.4.14!
+
+-
+Version 1.2.2.2
+Date 2013-03-18 10:27:18
+
+
+
+-
+Version 1.2.2.1
+Date 2013-02-25 17:48:52
+
+* updated for script editor last version
+
+-
+Version 1.2.2.0
+Date 2013-02-19 11:03:50
+
+* better support of Scripting.
+
+-
+Version 1.2.1.1
+Date 2013-01-25 17:42:04
+
+* corrected issue on loading previous file
+* needs testing ! notifyConfigAbout/Changed should work better
+
+-
+Version 1.2.1.0
+Date 2013-01-25 16:38:23
+
+* Sends more signals to plugins if they need them.
+
+-
+Version 1.2.0.0
+Date 2013-01-22 16:28:44
+
+* now automatically loads last file
+
+-
+Version 1.1.0.0
+Date 2013-01-16 11:47:13
+
+* now automatically last opened file
+* corrected "loading frame" issue with size
+* corrected dipose() / delete() issue that appeared in 1.3
+
+-
+Version 1.0.3.8
+Date 2013-01-15 16:54:13
+
+* Now prevents creating a sequence with a pixel size = 0.
+
+-
+Version 1.0.3.7
+Date 2013-01-11 15:51:21
+
+* updated for last kernel
+* small change in closing.
+
+-
+Version 1.0.3.6
+Date 2013-01-07 11:14:59
+
+Corrected an issue with the closing, should not have a memory leak now.
+
+-
+Version 1.0.3.5
+Date 2012-12-10 17:01:38
+
+Too early function call corrected, since new release is not available.
+
+-
+Version 1.0.3.4
+Date 2012-12-05 17:15:59
+
+Until a stable version working with 1.4.13 is released, few corrections with 1.4.10:
+- drag fixed
+- painters back for now
+- absolute histogram fixed
+
+-
+Version 1.0.3.3
+Date 2012-06-26 15:44:36
+
+removed a useless interface
+
+-
+Version 1.0.3.2
+Date 2012-05-24 14:50:26
+
+* StageMover corrected: will not prevent application from closing.
+
+-
+Version 1.0.3.1
+Date 2012-05-22 17:58:10
+
+Small modifications for a better compatibility with other microscopy plugins.
+
+-
+Version 1.0.3.0
+Date 2012-05-15 17:18:43
+
+* Updated to last version of ÂµManager 1.4.10.
+
+* Painters are not visible anymore, they will be reimplemented soon as Daemon Plugins.
+
+* Please do not forget to update needed files along with the update of the plugin (thus, install the last version of ÂµManager to get them).
+
+-
+Version 1.0.2.3
+Date 2012-04-16 14:05:49
+
+* inversion of Z
+* switch X and Y (if camera rotated 90Â°)
+
+-
+Version 1.0.2.2
+Date 2012-03-05 14:23:22
+
+Small fix concerning exitlistener error.
+
+-
+Version 1.0.2.0
+Date 2012-01-16 11:30:06
+
+Updated to 1.2
+
+-
+Version 1.0.1.2
+Date 2011-11-16 13:17:31
+
+
+
+-
+Version 1.0.1.0
+Date 2011-11-09 15:26:26
+
+Updated to be fully compatible with last Icy version.
+
+Painters added: now you have painters on all sequences, containing information about the position.
+
+-
+Version 1.0.0.2
+Date 2011-09-22 16:42:19
+
+
+
+-
+Version 1.0.0.1
+Date 2011-09-22 14:44:06
+
+Small fix: no more refresh issue when closing the window while no plugin is active.
+
+-
+Version 1.0.0.0
+Date 2011-09-22 14:32:07
+
+
+
+]]></changelog><web><![CDATA[http://icy.bioimageanalysis.org/plugin/Micro-Manager_for_Icy]]></web><dependencies><dependency><classname>plugins.tprovoost.scripteditor.main.ScriptEditorPlugin</classname></dependency></dependencies></root>

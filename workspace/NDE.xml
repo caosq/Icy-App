@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root description="" name="NDE">
+<task name="NDE">
+<band name="Hardware">
+<item classname="plugins.tprovoost.Microscopy.MicroManagerForIcy.MicromanagerPlugin" priority="top"/>
+</band>
+<band name="Misc">
+<item classname="plugins.adufour.protocols.Protocols" priority="top"/>
+<item classname="plugins.adufour.rotation3d.Rotation3D" priority="med"/>
+<item classname="plugins.adufour.projection.Projection" priority="med"/>
+</band>
+<band name="Signal Processing">
+<item classname="plugins.oeway.featureExtraction.FeatureExtractionEngine" priority="top"/>
+<item classname="plugins.worm.waveletfilter.WaveletFilter" priority="med"/>
+<item classname="plugins.tlecomte.histogram.HistogramEqualization" priority="med"/>
+<item classname="plugins.vannary.morphomaths.MorphoMaths" priority="low"/>
+<item classname="plugins.spop.advancefilters.PeronaMalikFilter" priority="low"/>
+<item classname="plugins.oeway.featureExtraction.Projections" priority="med"/>
+<item classname="plugins.adufour.thresholder.Thresholder" priority="low"/>
+<item classname="plugins.spop.medianfilter.MedianFilter" priority="low"/>
+</band>
+<band name="Evaluation">
+<item classname="plugins.fab.intensityprofile.IntensityProfile" priority="med"/>
+<item classname="plugins.oeway.IntensityInRectangle" priority="top"/>
+<item classname="plugins.adufour.activecontours.ActiveContours" priority="med"/>
+<item classname="plugins.fab.anglehelper.AngleHelper" priority="med"/>
+<item classname="plugins.fab.Ruler.Ruler" priority="top"/>
+<item classname="plugins.adufour.roi.ROIMeasures" priority="med"/>
+</band>
+</task>
+</root>

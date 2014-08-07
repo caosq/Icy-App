@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<root>
+<url><![CDATA[http://icy.bioimageanalysis.org/repository/getXMLPluginFile.php?pluginId=243&beta=0]]></url><name>Jython execnet for Icy</name><version>0.10.0.0</version><required_kernel_version>1.4.3.5</required_kernel_version><kernel_ver>1.4.3.5</kernel_ver><jar_url><![CDATA[http://icy.bioimageanalysis.org/repository/getJarFile.php?pluginId=243&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=1986]]></icon_url><image_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=1985]]></image_url><description><![CDATA[Enables Python scripts that are run inside Icy to communicate with other Python instances outside Icy. This allows the access to CPython-only libraries such as Numpy.]]></description><classname><![CDATA[plugins.tlecomte.jythonExecnetForIcy.JythonExecnetForIcy]]></classname><author><![CDATA[tlecomte - Timothée Lecomte]]></author><changelog><![CDATA[-
+Version 0.10.0.0
+Date 2013-12-09 17:00:27
+
+Update to development version 1.2.0dev1 plus a lock fix. This fixes the use of execnet as a gateway pool for multiprocess computation.
+
+-
+Version 0.9.0.0
+Date 2013-11-27 14:58:58
+
+- Make Numpy array writable.
+
+-
+Version 0.8.0.0
+Date 2013-11-26 16:20:39
+
+- Send binary data arrays from Icy to Numpy and back. This dramatically improves the speed of the data transfer between Icy and an external Python interpreter (was taking several seconds for a 512x512 image, now instantaneous). This also enables the transfer of images of any data types without conversion (with some restrictions when sending numpy arrays to Icy), whereas the transfer was limited to double before.
+
+- Fix the deadlock caused by the handling of errors on the local side inside the 'with'-block.
+
+
+-
+Version 0.7.0.0
+Date 2013-11-21 09:50:33
+
+- Fix missing file (execnet/gateway_base.py)
+
+- Please note that since JythonForIcy version 0.5, it is not necessary anymore to manually import the \'with\' statement.
+
+-
+Version 0.6.0.0
+Date 2013-11-18 12:34:20
+
+Update for the new extraction mechanism provided by the Python Extractor plugin.
+
+-
+Version 0.5.0.0
+Date 2013-11-05 14:17:12
+
+Update for the new annotation system of Jython For Icy 0.4.
+
+-
+Version 0.4.0.0
+Date 2013-06-25 16:52:07
+
+Fixes for previous update (typo in apipkg.py, locations of Icy execnet helper scripts).
+
+-
+Version 0.2.0.1
+Date 2013-06-25 15:50:15
+
+Extract python library files to disk instead of loading from the jars. This improves the readability of backtraces. It also improves the compatibility with python libraries like execnet that play with the source files.
+
+Move back to execnet code from upstream (current git), since local modifications are no longer needed.
+
+Provide new functions pack_image and unpack_image to exchange images between Jython and CPython/Numpy. They replace the methods send_image and receive_image.
+
+
+-
+Version 0.2.0.0
+Date 2013-03-18 16:51:21
+
+Now provides a class named IcyExecnetGateway. It setups a fully-functioning interpreter with properly redirected standard streams, provides helper methods to exchange images with Icy and is designed to be used via the 'with' statement so that resources are properly cleanup at exit.
+
+-
+Version 0.0.1.0
+Date 2013-03-05 09:53:14
+
+
+
+]]></changelog><web><![CDATA[http://icy.bioimageanalysis.org/plugin/Jython_execnet_for_Icy]]></web><dependencies><dependency><classname>plugins.tlecomte.jythonForIcy.JythonForIcy</classname></dependency></dependencies></root>

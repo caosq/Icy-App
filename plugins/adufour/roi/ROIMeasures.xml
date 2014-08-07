@@ -1,0 +1,239 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<root>
+<url><![CDATA[http://icy.bioimageanalysis.org/repository/getXMLPluginFile.php?pluginId=106&beta=0]]></url><name>ROI Statistics</name><version>3.2.3.0</version><required_kernel_version>1.4.3.5</required_kernel_version><kernel_ver>1.4.3.5</kernel_ver><jar_url><![CDATA[http://icy.bioimageanalysis.org/repository/getJarFile.php?pluginId=106&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=515]]></icon_url><image_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=516]]></image_url><description><![CDATA[This tool compute measures on the ROIs of the chosen sequence, updates the measures live when ROIs are changed and allows to copy/paste the measures to 3rd-party sheet edition softwares. Measures include geometric (bounding box) and intensity information.]]></description><classname><![CDATA[plugins.adufour.roi.ROIMeasures]]></classname><author><![CDATA[adufour - Alexandre Dufour]]></author><changelog><![CDATA[-
+Version 3.2.3.0
+Date 2014-08-05 19:14:56
+
+Hopefully fixed the "4000+" cell style bug
+
+-
+Version 3.2.2.0
+Date 2014-06-18 13:53:32
+
+Fixed an issue causing the plugin to crash on second execution
+
+-
+Version 3.2.1.0
+Date 2014-06-17 19:04:44
+
+Fixed an issue causing the following error message:
+"java.lang.IllegalStateException: The maximum number of cell styles was exceeded. You can define up to 4000 styles in a .xls workbook"
+
+-
+Version 3.2.0.0
+Date 2014-05-13 01:10:11
+
+* Fixed min intensity calculation
+* Added standard deviation intensity
+
+-
+Version 3.1.1.0
+Date 2014-02-17 22:06:35
+
+Fixed intensity calculations on multiple channels
+
+-
+Version 3.1.0.0
+Date 2014-02-17 13:03:59
+
+* Fixed mass center calculation when no sequence was provided
+* Added methods to compute the mass center of 2D and 3D ROI (NOTE: these methods will be deprecated as soon as they are included in the ROIUtil toolbox)
+
+-
+Version 3.0.0.1
+Date 2014-02-11 21:24:29
+
+Fixed class-name issue (preventing the update from being visible)
+
+-
+Version 3.0.0.0
+Date 2014-02-11 09:46:11
+
+* Merged the "ROI Measures" plugin and "ROI Statistics" into a single Plugin/Block (fewer code, easier to fix and update)
+* Uses the new Workbooks v.2.0 (more responsive interface)
+* All opened sequences will appear in separate tabs (no more sequence selector)
+* Option to save data as spreadsheet or tab-delimited text file
+
+-
+Version 2.3.0.0
+Date 2014-01-21 19:57:05
+
+* Rewrote & fixed intensity calculation
+* Added mass center information
+* Renamed standalone plugin to "ROI Statistics" to match protocol version
+
+-
+Version 2.2.3.0
+Date 2014-01-08 10:59:13
+
+ROI Statistics block: Fixed bug in intensity calculation with out of bounds ROI
+
+-
+Version 2.2.2.0
+Date 2013-11-13 10:08:39
+
+Fixed ROI calculation in protocols
+
+-
+Version 2.2.1.0
+Date 2013-11-05 15:33:46
+
+Fixed an error in the ROI Statistics when calculating intensity measures on 2D ROI
+
+-
+Version 2.2.0.0
+Date 2013-11-05 00:38:16
+
+* Intensity measures as well as surface/volume are now computed in 3D as well
+* The same measures are now computed in the plug-in and the block version
+
+-
+Version 2.1.1.1
+Date 2013-10-04 18:18:30
+
+Fixed ROI Statistics block not being found in protocols if the ROI Measures plugin is not installed
+
+-
+Version 2.1.1.0
+Date 2013-06-12 16:49:18
+
+3D intensity is now saved in the workbook (in block mode)
+
+-
+Version 2.1.0.0
+Date 2013-06-07 15:44:04
+
+* Added extra sequence for intensity statistics computation
+* Minor code refactoring
+
+-
+Version 2.0.2.0
+Date 2013-04-11 21:51:20
+
+ROI statistics block now works even if the ROI have no sequence attached.
+
+-
+Version 2.0.1.0
+Date 2013-03-14 17:31:48
+
+Fixed bug in ROI Statistics block due to oversized workbook sheet names (they now get truncated to 31 characters)
+
+-
+Version 2.0.0.0
+Date 2013-03-12 20:45:48
+
+NEW: Block support (ROI Statistics)
+* Minor bug fixes
+
+-
+Version 1.5.0.2
+Date 2013-01-16 10:41:40
+
+Re-submission of v.1.5.0.0 (main class was missing from previous archive)
+
+-
+Version 1.5.0.1
+Date 2013-01-15 20:04:16
+
+Regression from version 1.4.0.0
+
+-
+Version 1.5.0.0
+Date 2013-01-15 17:51:19
+
+New: support for Protocols (uses the Apache POI library to create workbooks)
+
+-
+Version 1.4.0.0
+Date 2012-03-20 16:57:48
+
+- fixed minor errors
+- added Z selection
+
+-
+Version 1.3.3.2
+Date 2012-02-21 11:12:55
+
+(Re-)updated to EzPlug 1.6.4.1
+
+-
+Version 1.3.3.1
+Date 2012-02-20 13:06:07
+
+Updated to EzPlug 1.6.4.1
+
+-
+Version 1.3.3.0
+Date 2012-02-07 15:20:03
+
+minor updates and fixes to comply with EzPlug 1.6+
+
+-
+Version 1.3.2.1
+Date 2011-12-01 16:26:14
+
+quick fix trying to avoid a bug when the selected sequence has no viewer (really odd situation...)
+
+-
+Version 1.3.2.0
+Date 2011-11-15 01:53:19
+
+* added more intensity statistics
+* fixed EDT bug
+
+-
+Version 1.3.1.1
+Date 2011-10-25 09:57:54
+
+re-build due to a strange error in the dependencies
+
+-
+Version 1.3.1.0
+Date 2011-10-16 23:40:29
+
+adjusted refresh events on sequences having one or more ROIs on load (via persistence)
+
+-
+Version 1.3.0.0
+Date 2011-09-29 18:36:17
+
+ - New: support for 3D images (ROI is duplicated on all slices)
+
+ - Fixed: computation is made on the currently selected time point of the first sequence's viewer
+
+-
+Version 1.2.1.0
+Date 2011-08-25 15:20:22
+
+Fixed bug due to sequences already opened (before the plug-in)
+
+-
+Version 1.2.0.0
+Date 2011-07-25 13:57:46
+
+Bugfixes:
+ - Errors when using multiple plugin instances (backing file closed more than once, views not updated correctly, etc.)
+Major improvements:
+ - Export all measures to a .csv file
+Minor improvements:
+ - "run" button renamed to "update"
+ - "run" button hidden if auto-update checked
+ - interface width increased for better readability
+
+-
+Version 1.1.0.0
+Date 2011-07-22 19:53:51
+
+Major improvements:
+ - Intensity values in each channel
+ - Multiple sequences
+ - Multiple windows in parallel
+ - Support for "on-request" update instead of live (for slower systems)
+
+-
+Version 1.0.0.0
+Date 2011-07-20 20:40:34
+
+
+
+]]></changelog><web><![CDATA[http://icy.bioimageanalysis.org/plugin/ROI_Statistics]]></web><dependencies><dependency><classname>plugins.adufour.ezplug.EzPlug</classname></dependency><dependency><classname>plugins.adufour.workbooks.Workbooks</classname></dependency><dependency><classname>plugins.adufour.blocks.Blocks</classname></dependency></dependencies></root>

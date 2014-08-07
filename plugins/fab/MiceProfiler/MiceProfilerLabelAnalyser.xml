@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<root>
+<url><![CDATA[http://icy.bioimageanalysis.org/repository/getXMLPluginFile.php?pluginId=156&beta=0]]></url><name>Mice Profiler Label Analyser</name><version>7.0.0.8</version><required_kernel_version>1.2.3.1</required_kernel_version><kernel_ver>1.2.3.1</kernel_ver><jar_url><![CDATA[http://icy.bioimageanalysis.org/repository/getJarFile.php?pluginId=156&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=1007]]></icon_url><image_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=1008]]></image_url><description><![CDATA[Mice profiler temporal analysis of data]]></description><classname><![CDATA[plugins.fab.MiceProfiler.MiceProfilerLabelAnalyser]]></classname><author><![CDATA[fab - Fabrice de Chaumont]]></author><changelog><![CDATA[-
+Version 7.0.0.8
+Date 2014-07-18 17:25:09
+
+Now provides much more output settings for transition graph generation
+
+-
+Version 7.0.0.7
+Date 2014-07-17 17:47:31
+
+User can now set start and end time to export using export all data (in pool).
+
+-
+Version 7.0.0.6
+Date 2014-06-18 12:20:10
+
+Fix a bug if animals are removed manually from the swimming pool viewer
+
+-
+Version 7.0.0.5
+Date 2014-06-12 14:17:01
+
+Fix a bug in the output of the transition graph.
+
+-
+Version 7.0.0.4
+Date 2013-11-15 11:29:08
+
+Fix a problem in the outputs if events were at the very beginning of the timeline.
+
+-
+Version 7.0.0.3
+Date 2013-10-15 16:06:53
+
+Some GUI change.
+New automated export (to be improved)
+
+-
+Version 7.0.0.2
+Date 2012-09-05 10:59:59
+
+An empty graph now export nothing without crash.
+Export all data with empty pool does not crash anymore
+
+-
+Version 7.0.0.1
+Date 2012-07-06 16:11:06
+
+Now supports any fps
+
+-
+Version 7.0.0.0
+Date 2012-05-16 13:39:07
+
+Now works with x64 architectures
+
+-
+Version 0.0.1.0
+Date 2012-03-05 14:22:12
+
+
+
+]]></changelog><web><![CDATA[http://icy.bioimageanalysis.org/plugin/Mice_Profiler_Label_Analyser]]></web><dependencies><dependency><classname>plugins.fab.MiceProfiler.MiceProfilerTracker</classname></dependency><dependency><classname>plugins.fab.MiceProfiler.MiceProfilerVideoLabelMaker</classname></dependency></dependencies></root>

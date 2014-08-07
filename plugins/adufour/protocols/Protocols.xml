@@ -1,0 +1,328 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<root>
+<url><![CDATA[http://icy.bioimageanalysis.org/repository/getXMLPluginFile.php?pluginId=186&beta=0]]></url><name>Protocols</name><version>2.1.1.0</version><required_kernel_version>1.5.3.1</required_kernel_version><kernel_ver>1.5.3.1</kernel_ver><jar_url><![CDATA[http://icy.bioimageanalysis.org/repository/getJarFile.php?pluginId=186&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=1311]]></icon_url><image_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=2028]]></image_url><description><![CDATA[Visual programming environment, letting you develop image processing protocols graphically. No programming skills required !!]]></description><classname><![CDATA[plugins.adufour.protocols.Protocols]]></classname><author><![CDATA[adufour - Alexandre Dufour]]></author><changelog><![CDATA[-
+Version 2.1.1.0
+Date 2014-08-04 17:21:52
+
+Improved error handling, and fixed a few GUI glitches
+
+-
+Version 2.1.0.0
+Date 2014-07-24 19:16:43
+
+* Major code refactoring: better separation between the engine (Protocols SDK) and the graphical user interface (Protocols)
+* Fixed memory leak
+* Improved error and message handling
+* Fixed drag'n'drop operations not working on some systems
+
+-
+Version 2.0.6.0
+Date 2014-07-23 00:05:09
+
+Fixed the "cancel" button when closing the window
+
+-
+Version 2.0.5.0
+Date 2014-06-18 14:02:41
+
+Fixed a copy/paste issue within inner workflows
+
+-
+Version 2.0.4.0
+Date 2014-06-17 18:33:02
+
+Fixed an issue when copying links that contain an exposed variable (ignored for now)
+
+-
+Version 2.0.3.0
+Date 2014-06-17 14:45:14
+
+Improved graphical layout & block descriptions
+
+-
+Version 2.0.2.0
+Date 2014-05-21 19:15:51
+
+Update by Ludovic Laborde
+
+* Updated to Icy 1.5
+* Fixed drag'n'drop issue from the search bar
+
+-
+Version 2.0.1.0
+Date 2014-05-19 12:49:39
+
+Fixed bug when closing a protocol and saving it (would not re-open it afterwards)
+
+-
+Version 2.0.0.1
+Date 2014-05-18 20:03:52
+
+Updated jar file (line numbers did not match in bug reports)
+
+-
+Version 2.0.0.0
+Date 2014-05-16 21:21:18
+
+Update by Ludovic Laborde
+
+Integrated search bar: find your blocks fast and easily, insert them with a simple drag'n'drop operation.
+
+-
+Version 1.7.5.0
+Date 2014-05-12 20:36:21
+
+Fixed a bug causing the window closing operation not allowing to be cancelled
+
+-
+Version 1.7.4.0
+Date 2014-04-27 15:45:29
+
+Fixed the "save as" button
+
+-
+Version 1.7.3.0
+Date 2014-04-24 18:45:50
+
+* Removed "insert block" button from main interface (only accessible through right-click for the time being)
+* Adjusted tool bar and tool tips to be more explicit
+
+-
+Version 1.7.2.2
+Date 2014-01-27 13:56:44
+
+Customize error message when blocks cannot be installed via Icy4Eclipse
+
+-
+Version 1.7.2.1
+Date 2013-11-15 21:44:58
+
+Updated to Icy 1.4.2.0 (removed deprecated calls), no logic change
+
+-
+Version 1.7.2.0
+Date 2013-10-28 11:35:56
+
+* Reload the interface when a protocol is opened from disk *after* a plugin reload event
+* Describe the loading process with an announcement frame
+
+-
+Version 1.7.1.0
+Date 2013-10-14 17:33:05
+
+Online protocols are now downloaded to a new "protocols" subfolder inside Icy, so you can carry them with you at all times!
+
+-
+Version 1.7.0.0
+Date 2013-10-12 18:09:36
+
+Fixed multiple reloading issues:
+* The Protocols interface now reloads only when a protocol requires the installation of one or more new plugins.
+* Reloading now correctly preserves and reloads previous state. No more data loss
+
+-
+Version 1.6.0.0
+Date 2013-07-12 13:46:25
+
+New option to clean protocol results to save memory
+
+-
+Version 1.5.8.0
+Date 2013-07-12 13:33:36
+
+Screenshots saved along protocols now have an extra "_protocols" suffix to avoid name clashes
+
+-
+Version 1.5.7.0
+Date 2013-05-27 18:05:30
+
+* Fixed an issue causing all online protocols appearing in a search result to be downloaded locally (even if never used).
+* Selected protocols from the search bar are now downloaded to the default protocols folder
+
+-
+Version 1.5.6.0
+Date 2013-05-26 19:30:43
+
+Upgraded online protocol provider to the new kernel (should reduce server load)
+
+-
+Version 1.5.5.0
+Date 2013-05-18 23:39:41
+
+Updated to Icy 1.3.5.0 (removed deprecation calls)
+
+-
+Version 1.5.4.0
+Date 2013-03-25 09:13:05
+
+* Images dropped in protocols are now opened in Icy
+* Fixed an issue causing Protocols to reload properly when the class loader changes
+
+-
+Version 1.5.3.0
+Date 2013-03-22 14:35:36
+
+Fixed an issue causing Protocols to fail opening properly after Icy restarts
+
+-
+Version 1.5.2.0
+Date 2013-03-12 20:34:09
+
+Show an error message when opening a wrong XML file (rather than a bug report)
+
+-
+Version 1.5.1.0
+Date 2013-03-08 15:05:08
+
+Updated to Blocks v.2.4
+
+-
+Version 1.5.0.0
+Date 2013-02-28 19:58:29
+
+Protocols can now be searched and loaded directly from Icy's search bar!
+
+-
+Version 1.4.3.0
+Date 2013-01-07 13:05:25
+
+Fixed a memory leak (caused by the file drag'n'drop mechanism)
+
+-
+Version 1.4.2.0
+Date 2012-12-07 17:42:47
+
+Fixed memory leaks
+
+-
+Version 1.4.1.0
+Date 2012-11-07 17:16:58
+
+* NEW: the snapshot button has been removed from the interface; the snapshot is always saved alongside the xml file
+* Fixed minor drag'n'drop issue causing the interface border to disappear (the border is now no longer highlighted when dropping file(s))
+
+-
+Version 1.4.0.0
+Date 2012-11-07 16:53:00
+
+* NEW: Drag protocols directly into the Protocols interface
+* Minor interface fixes when quitting Icy
+
+-
+Version 1.3.2.0
+Date 2012-10-16 15:01:01
+
+Fixed loading bug (from 1.3.1.0)
+
+-
+Version 1.3.1.0
+Date 2012-10-15 16:57:28
+
+Static access to the main frame (allows launching a protocol from outside the interface)
+
+-
+Version 1.3.0.0
+Date 2012-09-27 15:50:55
+
+* Fixed support for live plugin loading/saving
+* Status bar indicates loading status
+
+-
+Version 1.2.0.0
+Date 2012-09-26 16:56:17
+
+Resubmit jar file
+
+-
+Version 1.1.2.3
+Date 2012-09-26 16:20:58
+
+* Updated to Blocks 1.8.0.0
+* New: the Protocols interface automatically saves its state and reloads when plugins are reloaded
+
+-
+Version 1.1.2.2
+Date 2012-09-06 16:28:32
+
+Updated to Blocks 1.7
+
+-
+Version 1.1.2.1
+Date 2012-09-03 14:58:47
+
+Improved error reporting (no logic change)
+
+-
+Version 1.1.2.0
+Date 2012-08-30 15:45:47
+
+Updated to Blocks engine 1.6: ability to stop a running protocol
+
+-
+Version 1.1.1.0
+Date 2012-08-07 18:52:01
+
+Updated to Blocks 1.5.0.0
+
+-
+Version 1.1.0.0
+Date 2012-08-03 12:03:49
+
+Fixed bug reporting issue (bugs were never sent by email)
+
+-
+Version 1.0.2.0
+Date 2012-07-11 18:07:43
+
+Snapshot feature restricts to the contents of the workflow
+
+-
+Version 1.0.1.0
+Date 2012-07-09 17:48:34
+
+- Improved file saving dialog (overwrite prompt, auto-add extension)
+- Fixed a few memory leaks
+
+-
+Version 1.0.0.0
+Date 2012-07-06 12:06:58
+
+First officially stable release !
+- Workflows can now be embedded into loops (useful for batch processing)
+
+-
+Version 0.9.9.2
+Date 2012-07-04 11:51:35
+
+Updated to Blocks 0.12
+
+-
+Version 0.9.9.1
+Date 2012-07-03 18:52:50
+
+Release Candidate 1:
+- Updated to Blocks 0.11.0.0
+- New status bar for each protocol
+- Removed "colorize links" button (true by default)
+- Collapse feature de-activated (will be improved in a later release)
+
+-
+Version 0.0.3.0
+Date 2012-06-29 19:07:58
+
+* Improved interface labels and access to menus and blocks.
+* added second status bar for future use to monitor a running process
+
+-
+Version 0.0.2.0
+Date 2012-06-28 17:17:11
+
+Added snapshot feature
+
+-
+Version 0.0.1.0
+Date 2012-06-22 14:11:11
+
+
+
+]]></changelog><web><![CDATA[http://icy.bioimageanalysis.org/plugin/Protocols]]></web><dependencies><dependency><classname>plugins.adufour.blocks.Blocks</classname></dependency><dependency><classname>plugins.tprovoost.javadocparser.JavaDocParser</classname></dependency></dependencies></root>

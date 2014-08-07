@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<root>
+<url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getXMLPluginFile.php?pluginId=39&beta=0]]></url><name>MaskEditor</name><version>1.2.1.0</version><required_kernel_version>0.0.0.0</required_kernel_version><kernel_ver>0.0.0.0</kernel_ver><jar_url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getJarFile.php?pluginId=39&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=167]]></icon_url><image_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=177]]></image_url><description><![CDATA[This plugin is designed to manipulate binary masks over images. It contains all the basic tools to manage such objects.]]></description><classname><![CDATA[plugins.nherve.maskeditor.MaskEditor]]></classname><author><![CDATA[nherve - Nicolas Hervé]]></author><changelog><![CDATA[-
+Version 1.2.1.0
+Date 2013-03-14 12:16:32
+
+
+
+-
+Version 1.2.0.3
+Date 2011-09-15 11:42:33
+
+
+
+-
+Version 1.2.0.2
+Date 2011-07-28 11:42:51
+
+
+
+-
+Version 1.2.0.0
+Date 2011-07-28 10:26:30
+
+
+
+-
+Version 1.1.0.8
+Date 2011-07-04 17:37:31
+
+
+
+-
+Version 1.1.0.7
+Date 2011-06-28 17:48:35
+
+
+
+-
+Version 1.1.0.6
+Date 2011-05-04 10:20:22
+
+
+
+-
+Version 1.1.0.5
+Date 2011-04-19 17:32:43
+
+
+
+-
+Version 1.1.0.4
+Date 2011-04-19 17:13:58
+
+
+
+-
+Version 1.1.0.3
+Date 2011-03-18 16:57:30
+
+
+
+-
+Version 1.1.0.2
+Date 2011-03-01 16:56:23
+
+
+
+-
+Version 1.1.0.1
+Date 2011-03-01 14:56:05
+
+
+
+-
+Version 1.1.0.0
+Date 2011-03-01 14:47:39
+
+
+
+-
+Version 1.0.0.9
+Date 2011-02-21 15:28:55
+
+
+
+-
+Version 1.0.0.8
+Date 2011-02-14 09:51:05
+
+
+
+-
+Version 1.0.0.7
+Date 2011-02-09 17:31:25
+
+
+
+-
+Version 1.0.0.6
+Date 2011-02-03 17:50:01
+
+
+
+-
+Version 1.0.0.5
+Date 2011-02-02 18:17:08
+
+
+
+-
+Version 1.0.0.4
+Date 2011-02-01 15:33:55
+
+
+
+-
+Version 1.0.0.3
+Date 2011-01-28 11:54:34
+
+
+
+-
+Version 1.0.0.2
+Date 2011-01-26 13:29:44
+
+
+
+-
+Version 1.0.0.1
+Date 2011-01-26 10:46:17
+
+
+
+-
+Version 1.0.0.0
+Date 2011-01-21 13:06:10
+
+
+
+-
+Version 1.0.0.0
+Date 2011-01-25 14:34:32
+
+
+
+-
+Version 1.0.0.0
+Date 2011-01-26 10:31:39
+
+
+
+]]></changelog><web><![CDATA[http://icy.bioimageanalysis.org/plugin/MaskEditor]]></web><dependencies><dependency><classname>plugins.nherve.toolbox.NherveToolbox</classname></dependency></dependencies></root>

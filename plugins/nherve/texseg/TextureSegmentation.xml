@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<root>
+<url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getXMLPluginFile.php?pluginId=87&beta=0]]></url><name>Texture Segmentation</name><version>1.2.0.4</version><required_kernel_version>0.0.0.0</required_kernel_version><kernel_ver>0.0.0.0</kernel_ver><jar_url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getJarFile.php?pluginId=87&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=364]]></icon_url><image_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=366]]></image_url><description><![CDATA[It is a toy plugin to test semi-supervised texture segmentation using the new SLBPriu texture descriptor.]]></description><classname><![CDATA[plugins.nherve.texseg.TextureSegmentation]]></classname><author><![CDATA[nherve - Nicolas Hervé]]></author><changelog><![CDATA[-
+Version 1.2.0.4
+Date 2013-03-14 12:27:02
+
+
+
+-
+Version 1.2.0.3
+Date 2011-09-15 11:43:21
+
+
+
+-
+Version 1.2.0.2
+Date 2011-07-28 11:43:44
+
+
+
+-
+Version 1.2.0.0
+Date 2011-07-28 10:27:47
+
+
+
+-
+Version 1.0.0.2
+Date 2011-05-09 09:39:33
+
+
+
+-
+Version 1.0.0.1
+Date 2011-04-19 17:14:54
+
+
+
+-
+Version 1.0.0.0
+Date 2011-03-18 17:01:40
+
+
+
+]]></changelog><web><![CDATA[http://icy.bioimageanalysis.org/plugin/Texture_Segmentation]]></web><dependencies><dependency><classname>plugins.nherve.maskeditor.MaskEditor</classname></dependency><dependency><classname>plugins.nherve.toolbox.NherveToolbox</classname></dependency><dependency><classname>plugins.nherve.toolbox.imageanalysis.NherveImageAnalysisToolbox</classname></dependency></dependencies></root>

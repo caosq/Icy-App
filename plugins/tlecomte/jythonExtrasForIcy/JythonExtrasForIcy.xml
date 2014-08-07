@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<root>
+<url><![CDATA[http://icy.bioimageanalysis.org/repository/getXMLPluginFile.php?pluginId=242&beta=0]]></url><name>Jython Extras for Icy</name><version>0.5.0.1</version><required_kernel_version>1.4.2.0</required_kernel_version><kernel_ver>1.4.2.0</kernel_ver><jar_url><![CDATA[http://icy.bioimageanalysis.org/repository/getJarFile.php?pluginId=242&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=1975]]></icon_url><image_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=1976]]></image_url><description><![CDATA[Supplementary material for the Jython engine (Lib, jline, jni, etc.).]]></description><classname><![CDATA[plugins.tlecomte.jythonExtrasForIcy.JythonExtrasForIcy]]></classname><author><![CDATA[tlecomte - Timothée Lecomte]]></author><changelog><![CDATA[-
+Version 0.5.0.1
+Date 2013-11-18 13:09:57
+
+Move more classes from JythonForIcy to this plugin to fix plugin size issue (8MB max).
+
+-
+Version 0.5.0.0
+Date 2013-11-18 12:38:37
+
+- Update to Jython 2.7b1 (from upstream repository on Bitbucket, commit 7b44ea13, dated 2013-11-18).
+
+- Update with the new extraction mechanism provided by the Python Extractor plugin.
+
+
+-
+Version 0.4.0.0
+Date 2013-11-05 14:16:30
+
+Update to the new annotation system of JythonForIcy 0.4
+
+-
+Version 0.3.0.0
+Date 2013-06-25 15:48:11
+
+Extract python library files to disk instead of loading from the jars. This improves the readability of backtraces. It also improves the compatibility with python libraries like execnet that play with the source files.
+
+
+-
+Version 0.2.0.0
+Date 2013-03-18 16:46:06
+
+New module to retrieve the source code of a python module loaded by the Java classloader (extends the getsource function of the standard inspect module).
+
+-
+Version 0.0.1.0
+Date 2013-02-28 15:09:58
+
+
+
+]]></changelog><web><![CDATA[http://icy.bioimageanalysis.org/plugin/Jython_Extras_for_Icy]]></web><dependencies><dependency><classname>plugins.tlecomte.jythonForIcy.JythonForIcy</classname></dependency></dependencies></root>

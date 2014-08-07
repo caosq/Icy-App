@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<root>
+<url><![CDATA[http://icy.bioimageanalysis.org/repository/getXMLPluginFile.php?pluginId=291&beta=0]]></url><name>Python Plugin Packager</name><version>0.3.0.0</version><required_kernel_version>1.4.2.0</required_kernel_version><kernel_ver>1.4.2.0</kernel_ver><jar_url><![CDATA[http://icy.bioimageanalysis.org/repository/getJarFile.php?pluginId=291&beta=0]]></jar_url><icon_url></icon_url><image_url></image_url><description><![CDATA[This plugin allows to create an Icy plugin from a Python script, and produce a jar that can distributed to other Icy users (through Icy website in particular).
+
+Thanks to this took, neither Eclipse nor the JDK are needed to develop plugins for Icy.]]></description><classname><![CDATA[plugins.tlecomte.pythonPackager.PythonPluginPackager]]></classname><author><![CDATA[tlecomte - Timothée Lecomte]]></author><changelog><![CDATA[-
+Version 0.3.0.0
+Date 2013-11-21 19:05:25
+
+Fix issue preventing jar from being loaded by Icy (leading slash in entries paths)
+
+
+-
+Version 0.2.0.0
+Date 2013-11-21 11:51:51
+
+- Run in a thread not to block the user interface.
+
+- The jar file is produced in the plugin dir. The dialog only asks for the jar name, instead of a full path. The .jar extension is appended if the user did not give it. If the file exists, the user is asked for confirmation before overwriting.
+
+-
+Version 0.1.0.0
+Date 2013-11-18 11:52:42
+
+Update version and kernel dependency.
+
+-
+Version 0.0.1.0
+Date 2013-11-18 11:50:15
+
+
+
+]]></changelog><web><![CDATA[http://icy.bioimageanalysis.org/plugin/Python_Plugin_Packager]]></web><dependencies><dependency><classname>plugins.tlecomte.jythonForIcy.JythonForIcy</classname></dependency></dependencies></root>

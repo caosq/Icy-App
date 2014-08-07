@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<root>
+<url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getXMLPluginFile.php?pluginId=188&beta=0]]></url><name>3D Rotation</name><version>1.0.1.0</version><required_kernel_version>1.4.1.0</required_kernel_version><kernel_ver>1.4.1.0</kernel_ver><jar_url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getJarFile.php?pluginId=188&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=1417]]></icon_url><image_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=2030]]></image_url><description><![CDATA[Takes the active 3D VTK viewer and records a 360-degree rotation of the data into a video sequence.]]></description><classname><![CDATA[plugins.adufour.rotation3d.Rotation3D]]></classname><author><![CDATA[adufour - Alexandre Dufour]]></author><changelog><![CDATA[-
+Version 1.0.1.0
+Date 2013-11-13 19:43:35
+
+Attempt to fix an issue causing the capture to freeze on windows systems
+
+-
+Version 1.0.0.0
+Date 2013-11-08 10:49:49
+
+First "officially stable" version:
+* Fixes issue with transparency
+* Optimized rendering
+* Captures as fast as possible (no more timer necessary)
+
+-
+Version 0.0.3.0
+Date 2013-11-07 16:15:06
+
+More code simplification (thanks to Icy 1.4)
+
+-
+Version 0.0.2.1
+Date 2013-11-07 15:58:37
+
+Changed the way the plugin sleeps between captures
+
+-
+Version 0.0.2.0
+Date 2013-11-07 15:54:50
+
+A bit of logging to show the progression (and try to understand why the rotation freezes on some systems)
+
+-
+Version 0.0.1.1
+Date 2013-11-07 15:15:16
+
+Updated to Icy 1.4
+
+-
+Version 0.0.1.0
+Date 2012-08-02 18:53:00
+
+
+
+]]></changelog><web><![CDATA[http://icy.bioimageanalysis.org/plugin/3D_Rotation]]></web><dependencies><dependency><classname>plugins.adufour.ezplug.EzPlug</classname></dependency></dependencies></root>

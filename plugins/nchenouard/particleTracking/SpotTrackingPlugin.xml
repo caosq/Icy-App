@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<root>
+<url><![CDATA[http://icy.bioimageanalysis.org/repository/getXMLPluginFile.php?pluginId=91&beta=0]]></url><name>Spot Tracking</name><version>3.1.0.7</version><required_kernel_version>1.4.0.2</required_kernel_version><kernel_ver>1.4.0.2</kernel_ver><jar_url><![CDATA[http://icy.bioimageanalysis.org/repository/getJarFile.php?pluginId=91&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=693]]></icon_url><image_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=2906]]></image_url><description><![CDATA[This plugin ships automated methods for extracting trajectories of multiples objects in a sequence of 2D or 3D images. Up to version 2 it was known as the 'Probabilistic particle tracker' plugin.
+
+A number of precious features for object tracking in microscopy images are embedded: the number of targets can vary through time (objects can appear and disappear), false detection (not originating from a target) are automatically detected and discarded, different target dynamics are available (diffusive, directed movement, or both).
+The tracking methods relies on a published method (Chenouard et al., TPAMI, 2013) which is termed ‘multiframe’ in the sense that at a given time point of the image sequence multiple past and futures frames are considered for building the best set of tracks. It is part of the family of ‘probabilistic’ tracking methods in the sense that a statistical model of the particle trajectories and acquisition device is built such as tracking decisions are optimal according to a given statistical criterion with respect to this model. By default, a rough estimation of the parameters of the statistical model will be evaluated by the software such that virtually no parameter tuning is required from the user. However, for optimal control of the methods, a dedicated interface can give access to the full set of parameters.
+The tracking methods are freely provided for use and modification. By using the provided methods you agree to properly reference the scientific work at their roots in any written or oral communication exposing a work that took advantage of them. The exact reference is: Nicolas Chenouard, Isabelle Bloch, Jean-Christophe Olivo-Marin, "Multiple Hypothesis Tracking for Cluttered Biological Image Sequences," IEEE Transactions on Pattern Analysis and Machine Intelligence, vol. 35, no. 11, pp. 2736-3750, Nov., 2013 
+Pubmed link: http://www.ncbi.nlm.nih.gov/pubmed/23689865
+
+]]></description><classname><![CDATA[plugins.nchenouard.particletracking.SpotTrackingPlugin]]></classname><author><![CDATA[nchenouard - Nicolas Chenouard]]></author><changelog><![CDATA[-
+Version 3.1.0.7
+Date 2014-04-18 05:31:17
+
+Allows loading tracks from trackmanager.
+
+-
+Version 3.1.0.6
+Date 2013-11-20 06:27:17
+
+Detections in tracks keep the spot (pixel mask) information, which is useful for the TrackProcessorIntensityProfile processor.
+
+-
+Version 3.1.0.5
+Date 2013-11-19 05:51:35
+
+Fixed mac os architecture issue
+
+-
+Version 3.1.0.4
+Date 2013-11-18 20:10:48
+
+Added 'about' and ' manual' information.
+
+Fixed some class path name issues.
+
+-
+Version 3.1.0.3
+Date 2013-11-13 22:24:46
+
+
+
+-
+Version 3.1.0.2
+Date 2013-11-13 22:17:29
+
+
+
+-
+Version 3.1.0.1
+Date 2013-11-13 22:12:37
+
+
+
+-
+Version 3.1.0.0
+Date 2013-11-13 21:58:28
+
+Major changes at all levels of the plugin: new interface and new tracking algorithm.
+
+See documentation for a complete description.
+
+Note that the algorithm from previous version (2.1.0.4) is still accessible through the gui by selecting the 'legacy tracker interface'
+
+-
+Version 2.1.0.4
+Date 2013-10-11 21:44:45
+
+
+
+-
+Version 2.1.0.3
+Date 2013-10-11 21:08:23
+
+IMM 3D bugfix.
+
+-
+Version 2.1.0.2
+Date 2013-10-11 17:58:02
+
+Bug fix for multiple dynamic models (IMM) in 3D.
+
+-
+Version 2.1.0.1
+Date 2013-10-11 00:23:12
+
+Bugfix for multiple motion models.
+
+If the spot detector plugin is used for detection, the detection mask is included in the track.
+
+-
+Version 2.1.0.0
+Date 2012-11-28 22:09:03
+
+Allows the user to choose between two types of IMM filer: Brownian - Brownian, and Brownian - Directed.
+
+-
+Version 2.0.0.2
+Date 2012-10-31 17:41:21
+
+Fixed wrong jdk version.
+
+-
+Version 2.0.0.1
+Date 2012-10-29 23:37:54
+
+corrected class names
+
+-
+Version 2.0.0.0
+Date 2012-10-29 23:31:47
+
+Improved the GUI in multiples ways.
+
+Enabled stopping the tracking process.
+
+Corrected the multiple motion model tracking.
+
+-
+Version 1.0.1.6
+Date 2012-01-16 14:46:47
+
+Fix: now it uses properly the gate factor
+
+-
+Version 1.0.1.5
+Date 2011-12-07 16:43:09
+
+
+
+-
+Version 1.0.1.4
+Date 2011-12-07 16:05:37
+
+update to fit with new detection data structure
+
+-
+Version 1.0.1.3
+Date 2011-10-06 14:40:47
+
+Fix : shared files with the benchmark generator (fab)
+
+-
+Version 1.0.1.2
+Date 2011-10-06 14:15:39
+
+Fix: GUI problem with the detection chooser (invoke later was missing). (fab)
+
+-
+Version 1.0.1.1
+Date 2011-10-06 14:06:38
+
+stable version
+
+-
+Version 1.0.1.0b
+Date 2011-10-06 13:36:28
+
+- removed main title bar to make the interface a little smaller
+- SpotTrack now supports min max and mean intensity
+
+(by fab)
+
+-
+Version 1.0.0.3
+Date 2011-04-11 23:19:24
+
+changed incorrect virtual spot statement
+
+-
+Version 1.0.0.2
+Date 2011-03-27 14:42:51
+
+fixed a jar export issue
+
+-
+Version 1.0.0.1
+Date 2011-03-27 14:36:58
+
+Source files have been refactored and some deprecated features have been removed.
+
+-
+Version 1.0.0.0
+Date 2011-03-25 14:45:33
+
+
+
+]]></changelog><web><![CDATA[http://icy.bioimageanalysis.org/plugin/Spot_Tracking]]></web><dependencies><dependency><classname>plugins.nchenouard.spot.DetectionResult</classname></dependency><dependency><classname>plugins.fab.trackmanager.TrackManager</classname></dependency><dependency><classname>plugins.fab.spotDetector.SpotDetector</classname></dependency></dependencies></root>

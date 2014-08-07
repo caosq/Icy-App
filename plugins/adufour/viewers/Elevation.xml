@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<root>
+<url><![CDATA[http://icy.bioimageanalysis.org/repository/getXMLPluginFile.php?pluginId=193&beta=0]]></url><name>Elevation Map</name><version>2.3.0.0</version><required_kernel_version>1.5.3.1</required_kernel_version><kernel_ver>1.5.3.1</kernel_ver><jar_url><![CDATA[http://icy.bioimageanalysis.org/repository/getJarFile.php?pluginId=193&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=1473]]></icon_url><image_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=1470]]></image_url><description><![CDATA[View a single channel of a 2D image as a 3D elevation map (X,Y,Intensity).]]></description><classname><![CDATA[plugins.adufour.viewers.Elevation]]></classname><author><![CDATA[adufour - Alexandre Dufour]]></author><changelog><![CDATA[-
+Version 2.3.0.0
+Date 2014-07-11 12:12:45
+
+* New: the viewer now listens to change on the original data. Can be useful to visualise live changing data (e.g. from a microscope)
+* Fixed a few memory leaks
+
+-
+Version 2.2.0.0
+Date 2014-05-20 15:36:31
+
+Updated to Icy 1.5 with VTK 6
+
+-
+Version 2.1.2.0
+Date 2014-05-12 23:57:48
+
+Fixed issue when switching channels
+
+-
+Version 2.1.1.0
+Date 2014-01-30 11:41:43
+
+Display a warning message when VTK is not found
+
+-
+Version 2.1.0.1
+Date 2013-11-07 15:03:21
+
+Updated to Icy 1.4 (no change)
+
+-
+Version 2.1.0.0
+Date 2013-07-23 17:04:38
+
+* Speed optimization
+* Mouse interaction imitates the 2D viewer
+* Tooltip message with instructions
+* Screenshot support
+
+-
+Version 2.0.0.1
+Date 2013-07-23 10:12:37
+
+Re-uploaded jar file (seemed to have issues).
+
+-
+Version 2.0.0.0
+Date 2013-07-19 17:59:50
+
+Rewrote the plugin => now an image canvas, to be more accessible, usable, and fast
+
+-
+Version 1.1.1.0
+Date 2013-01-28 10:34:15
+
+Catch an error when the selected sequence image does not exist (should display an error message)
+
+-
+Version 1.1.0.1
+Date 2012-10-22 15:48:27
+
+Catch an error and display a message if VTK is not present on the system
+
+-
+Version 1.1.0.0
+Date 2012-09-10 19:50:37
+
+* Fixed map inversion issue
+* Fixed incorrect intensity scale bar values
+* New scale parameter to adjust the aspect ratio of the intensity axis
+
+-
+Version 1.0.0.0
+Date 2012-08-30 23:49:16
+
+Code cleaning and performance improvements
+
+-
+Version 0.0.1.0
+Date 2012-08-09 18:30:57
+
+
+
+]]></changelog><web><![CDATA[http://icy.bioimageanalysis.org/plugin/Elevation_Map]]></web><dependencies></dependencies></root>

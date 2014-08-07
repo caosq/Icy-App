@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='no'?>
+<root>
+<url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getXMLPluginFile.php?pluginId=102&beta=0]]></url><name>Histogram Equalization</name><version>1.0.0.7</version><required_kernel_version>1.2.5.0</required_kernel_version><kernel_ver>1.2.5.0</kernel_ver><jar_url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getJarFile.php?pluginId=102&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=478]]></icon_url><image_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=1209]]></image_url><description><![CDATA[Enhances the global contrast by equalizing the histogram. 
+
+This plugin transforms pixel intensities so that they are uniformly distributed over the gray-scale range. It operates on the selected channel of each image of a sequence.
+
+This operation is also called "histogram flattening".]]></description><classname><![CDATA[plugins.tlecomte.histogram.HistogramEqualization]]></classname><author><![CDATA[tlecomte - Timothée Lecomte]]></author><changelog><![CDATA[-
+Version 1.0.0.7
+Date 2012-06-21 09:23:03
+
+Provide a Blocks interface to use the Histogram equalization in the visual programming environment. 
+
+-
+Version 1.0.0.6
+Date 2012-06-14 11:02:39
+
+Oops, previous jar was exported from wrong source branch...
+
+-
+Version 1.0.0.5
+Date 2012-06-14 10:58:54
+
+Use the continuous version of the algorithm even for integer-type sequences. The continuous version is much more memory-savy
+
+-
+Version 1.0.0.4
+Date 2012-02-22 09:26:18
+
+Rebuild for EzPlug ABI changes.
+
+-
+Version 1.0.0.3
+Date 2012-02-09 11:27:41
+
+Fix the missing lower bound for the channel index selector.
+
+-
+Version 1.0.0.2
+Date 2012-02-08 13:40:07
+
+- Rebuild for EzPlug/Vars library changes
+- Fix the detection of float data types
+
+-
+Version 1.0.0.1
+Date 2011-06-21 10:02:12
+
+Fix the channel selector.
+
+-
+Version 1.0.0.0
+Date 2011-06-20 17:01:59
+
+Initial version.
+
+]]></changelog><dependencies><dependency><classname>plugins.adufour.ezplug.EzPlug</classname><version>0.0.0.1</version></dependency><dependency><classname>plugins.adufour.blocks.Blocks</classname><version>0.0.0.1</version></dependency><dependency><classname>plugins.adufour.vars.lang.Var</classname><version>0.0.0.1</version></dependency></dependencies></root>

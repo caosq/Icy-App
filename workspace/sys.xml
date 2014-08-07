@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root description="System workspace" name="sys">
+<task name="Plugins">
+<band name="Setup"/>
+<band name="New"/>
+<band name="Others">
+<item classname="plugins.adufour.activemeshes.ActiveMeshes" priority="low"/>
+<item classname="plugins.big.bigsnake.BIGSnake" priority="low"/>
+<item classname="plugins.big.bigsnake3d.BIGSnake3D" priority="low"/>
+<item classname="plugins.spop.clahe.Clahe" priority="low"/>
+<item classname="plugins.vannary.morphomaths.AnalyzeSkeleton" priority="low"/>
+<item classname="plugins.tutorial.basics.AnimatedMarkPainter" priority="low"/>
+<item classname="plugins.spop.advancefilters.WeickertFilter" priority="low"/>
+<item classname="plugins.tprovoost.note.Annotation" priority="low"/>
+<item classname="plugins.worm.bandpassfilter.BandpassFilter" priority="low"/>
+<item classname="plugins.tutorial.basics.BarChartDemo1" priority="low"/>
+<item classname="plugins.nchenouard.trackprocessorperformance.BatchMSDsandDistanceComputation" priority="low"/>
+<item classname="plugins.tprovoost.bestthreshold.BestThreshold" priority="low"/>
+<item classname="plugins.oeway.viewers.Chart1DCanvas" priority="low"/>
+<item classname="plugins.tprovoost.chronometer.Chronometer" priority="low"/>
+<item classname="plugins.ylemontag.complex.ComplexFeaturePlugin" priority="low"/>
+<item classname="plugins.adufour.connectedcomponents.ConnectedComponents" priority="low"/>
+<item classname="plugins.tutorial.basics.CreateAreaROI" priority="low"/>
+<item classname="plugins.adufour.sequenceutil.SequenceCropper" priority="low"/>
+<item classname="plugins.oeway.DcmImporter" priority="low"/>
+<item classname="plugins.tutorial.basics.DeviationRendererDemo2" priority="low"/>
+<item classname="plugins.vannary.contourdetection.ContourDetection" priority="low"/>
+<item classname="plugins.oeway.EvaRawImporter" priority="low"/>
+<item classname="plugins.adufour.tutorial.EzPlugTutorial" priority="low"/>
+<item classname="plugins.praveen.fft.FFT" priority="low"/>
+<item classname="plugins.adufour.morphology.FillHolesInROI" priority="low"/>
+<item classname="plugins.adufour.filtering.FilterToolbox" priority="low"/>
+<item classname="plugins.nherve.flickr.FlickrImageRetrieve" priority="low"/>
+<item classname="plugins.tutorial.basics.GenerateABugTutorial" priority="low"/>
+<item classname="plugins.tutorial.gui.SequenceActionFrameExample" priority="low"/>
+<item classname="plugins.tutorial.gui.GuiBuildExample01" priority="low"/>
+<item classname="plugins.tutorial.basics.HelloWorldPlugin" priority="low"/>
+<item classname="plugins.adufour.hierarchicalkmeans.HierarchicalKMeans" priority="low"/>
+<item classname="plugins.tutorial.basics.GenerateImageOfDifferentType" priority="low"/>
+<item classname="plugins.tutorial.basics.TransparentlyProcessAnyImageDataType" priority="low"/>
+<item classname="plugins.nherve.browser.ImageBrowser" priority="low"/>
+<item classname="plugins.fab.invert.Invert" priority="low"/>
+<item classname="plugins.nchenouard.isotropicwavelets.IsotropicWavelets" priority="low"/>
+<item classname="plugins.nherve.colorquantization.KMeansColorQuantization" priority="low"/>
+<item classname="plugins.tutorial.basics.ListOfRegisteredPlugins" priority="low"/>
+<item classname="plugins.tutorial.event.MainListenerUse" priority="low"/>
+<item classname="plugins.nherve.maskeditor.MaskEditor" priority="low"/>
+<item classname="plugins.ylemontag.mathoperations.MathOperationPlugin" priority="low"/>
+<item classname="plugins.ylemontag.mathoperationspp.MathOperationPPPlugin" priority="low"/>
+<item classname="plugins.oeway.featureExtraction.MaxProjection" priority="low"/>
+<item classname="plugins.oeway.featureExtraction.MeanProjection" priority="low"/>
+<item classname="plugins.fab.MiceProfiler.MiceProfilerLabelAnalyser" priority="low"/>
+<item classname="plugins.fab.MiceProfiler.MiceProfilerTracker" priority="low"/>
+<item classname="plugins.fab.MiceProfiler.MiceProfilerVideoLabelMaker" priority="low"/>
+<item classname="plugins.adufour.viewers.Montage2D" priority="low"/>
+<item classname="plugins.tprovoost.painting.Painting" priority="low"/>
+<item classname="plugins.nchenouard.particleTracking.sequenceGenerator.TrackingBenchmarkGenerator" priority="low"/>
+<item classname="plugins.stef.demo.particle.Particles" priority="low"/>
+<item classname="plugins.spop.advancefilters.ShockFilter" priority="low"/>
+<item classname="plugins.fab.projection.Projection" priority="low"/>
+<item classname="plugins.fab.protractor.Protractor" priority="low"/>
+<item classname="plugins.tlecomte.pythonPackager.PythonPluginPackager" priority="low"/>
+<item classname="plugins.tlecomte.pythonExtractor.PythonExtractorManager" priority="low"/>
+<item classname="plugins.tutorial.roi.ProcessingFromROI" priority="low"/>
+<item classname="plugins.nchenouard.roiintensityevolution.ROIIntensityEvolution" priority="low"/>
+<item classname="plugins.tutorial.basics.IntensityOverRoi" priority="low"/>
+<item classname="plugins.fab.ROIPool.ROIPool" priority="low"/>
+<item classname="plugins.fab.ROITagger.ROITagger" priority="low"/>
+<item classname="plugins.adufour.roi.ROIStatistics" priority="low"/>
+<item classname="plugins.tprovoost.scripteditor.main.ScriptEditorPlugin" priority="low"/>
+<item classname="plugins.ylemontag.sequencecomparator.gui.SequenceComparator" priority="low"/>
+<item classname="plugins.oeway.featureExtraction.SequenceExtractor" priority="low"/>
+<item classname="plugins.tutorial.painter.SimplePainter01" priority="low"/>
+<item classname="plugins.tutorial.painter.SimplePainter02" priority="low"/>
+<item classname="plugins.fab.spotDetector.SpotDetector" priority="low"/>
+<item classname="plugins.nchenouard.particletracking.SpotTrackingPlugin" priority="low"/>
+<item classname="plugins.ylemontag.ssim.SSIMPlugin" priority="low"/>
+<item classname="plugins.spop.rotation3D.StackRotation" priority="low"/>
+<item classname="plugins.spop.rotation3D.StackRotationByAngle" priority="low"/>
+<item classname="plugins.tutorial.basics.SwimmingPoolEmitterTutorial" priority="low"/>
+<item classname="plugins.tutorial.basics.SwimmingPoolListenerTutorial" priority="low"/>
+<item classname="plugins.nherve.texseg.TextureSegmentation" priority="low"/>
+<item classname="plugins.fab.trackmanager.TrackManager" priority="low"/>
+<item classname="plugins.tprovoost.recorder.Recorder" priority="low"/>
+<item classname="plugins.tutorial.vtk.VtkPainterExamples" priority="low"/>
+<item classname="plugins.praveen.PSF.WideFieldPSF" priority="low"/>
+<item classname="plugins.adufour.workbooks.Workbooks" priority="low"/>
+<item classname="plugins.tprovoost.workspaceeditor.WorkspaceEditorPlugin" priority="low"/>
+<item classname="plugins.tprovoost.xugglerslider.XugglerSlider" priority="low"/>
+</band>
+</task>
+</root>

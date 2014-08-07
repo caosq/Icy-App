@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<root>
+<url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getXMLPluginFile.php?pluginId=48&beta=0]]></url><name>KMeans Color Quantization</name><version>1.2.0.4</version><required_kernel_version>0.0.0.0</required_kernel_version><kernel_ver>0.0.0.0</kernel_ver><jar_url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getJarFile.php?pluginId=48&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=135]]></icon_url><image_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=179]]></image_url><description><![CDATA[Quantize a color image in any given number of colors.]]></description><classname><![CDATA[plugins.nherve.colorquantization.KMeansColorQuantization]]></classname><author><![CDATA[nherve - Nicolas Hervé]]></author><changelog><![CDATA[-
+Version 1.2.0.4
+Date 2013-03-14 12:23:44
+
+
+
+-
+Version 1.2.0.3
+Date 2011-09-15 11:42:15
+
+
+
+-
+Version 1.2.0.2
+Date 2011-07-28 11:43:08
+
+
+
+-
+Version 1.2.0.0
+Date 2011-07-28 10:26:49
+
+
+
+-
+Version 1.0.0.10
+Date 2011-04-19 17:14:15
+
+
+
+-
+Version 1.0.0.9
+Date 2011-03-18 16:57:47
+
+
+
+-
+Version 1.0.0.8
+Date 2011-02-21 15:29:33
+
+
+
+-
+Version 1.0.0.7
+Date 2011-02-17 15:08:46
+
+
+
+-
+Version 1.0.0.6
+Date 2011-02-14 09:51:20
+
+
+
+-
+Version 1.0.0.5
+Date 2011-02-09 17:32:26
+
+
+
+-
+Version 1.0.0.4
+Date 2011-02-03 17:50:40
+
+
+
+-
+Version 1.0.0.3
+Date 2011-02-02 18:17:21
+
+
+
+-
+Version 1.0.0.2
+Date 2011-02-01 15:34:12
+
+
+
+-
+Version 1.0.0.1
+Date 2011-01-28 11:55:10
+
+
+
+-
+Version 1.0.0.0
+Date 2011-01-27 15:24:43
+
+
+
+]]></changelog><web><![CDATA[http://icy.bioimageanalysis.org/plugin/KMeans_Color_Quantization]]></web><dependencies><dependency><classname>plugins.nherve.toolbox.NherveToolbox</classname></dependency><dependency><classname>plugins.nherve.maskeditor.MaskEditor</classname></dependency></dependencies></root>

@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<root>
+<url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getXMLPluginFile.php?pluginId=76&beta=0]]></url><name>Invert</name><version>1.0.0.3</version><required_kernel_version>0.0.0.0</required_kernel_version><kernel_ver>0.0.0.0</kernel_ver><jar_url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getJarFile.php?pluginId=76&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=401]]></icon_url><image_url></image_url><description><![CDATA[Invert the image]]></description><classname><![CDATA[plugins.fab.invert.Invert]]></classname><author><![CDATA[fab - Fabrice de Chaumont]]></author><changelog><![CDATA[-
+Version 1.0.0.3
+Date 2013-08-07 13:27:08
+
+Removed deprecated functions
+Set invert method to public static.
+
+-
+Version 1.0.0.2
+Date 2011-08-25 11:49:38
+
+Fix deprectation
+
+-
+Version 1.0.0.1
+Date 2011-02-21 14:56:26
+
+
+
+-
+Version 1.0.0.0
+Date 2011-02-21 14:47:16
+
+
+
+]]></changelog><web><![CDATA[http://icy.bioimageanalysis.org/plugin/Invert]]></web><dependencies></dependencies></root>

@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='no'?>
+<root>
+<url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getXMLPluginFile.php?pluginId=98&beta=0]]></url><name>Stack Rotation by Angle</name><version>1.1.0.0</version><required_kernel_version>0.0.0.0</required_kernel_version><kernel_ver>0.0.0.0</kernel_ver><jar_url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getJarFile.php?pluginId=98&beta=0]]></jar_url><icon_url></icon_url><image_url></image_url><description><![CDATA[The plugin rotates each 2D image of the stack with a preset angle.
+The angle can be set for each 2D plane: XY, XZ,YZ.
+
+crop option - extracts a 3D stack from the output to fit the input stack.
+
+the interpolation method is the bilinear interpolation.]]></description><classname><![CDATA[plugins.spop.rotation3D.StackRotationByAngle]]></classname><author><![CDATA[spop - Sorin Pop]]></author><changelog><![CDATA[-
+Version 1.1.0.0
+Date 2012-06-21 10:24:38
+
+plugin ready for Block programming 
+
+-
+Version 1.0.0.1
+Date 2012-02-20 15:57:46
+
+
+
+-
+Version 1.0.0.0
+Date 2011-05-02 15:11:55
+
+
+
+]]></changelog><dependencies><dependency><classname>plugins.adufour.ezplug.EzPlug</classname><version>0.0.0.1</version></dependency><dependency><classname>plugins.spop.rotation3D.StackRotation</classname><version>0.0.0.1</version></dependency><dependency><classname>plugins.adufour.blocks.Blocks</classname><version>0.0.0.1</version></dependency><dependency><classname>plugins.adufour.protocols.Protocols</classname><version>0.0.0.1</version></dependency></dependencies></root>

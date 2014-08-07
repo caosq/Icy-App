@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='no'?>
+<root>
+<url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getXMLPluginFile.php?pluginId=143&beta=0]]></url><name>Annotation</name><version>1.2.0.0</version><required_kernel_version>1.2.0.0</required_kernel_version><kernel_ver>1.2.0.0</kernel_ver><jar_url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getJarFile.php?pluginId=143&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=816]]></icon_url><image_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=1289]]></image_url><description><![CDATA[Simple tool for annotations / notes on your sequences. (This plugin requires Icy v. 1.2.0.0)]]></description><classname><![CDATA[plugins.tprovoost.note.Annotation]]></classname><author><![CDATA[tprovoost - Thomas Provoost]]></author><changelog><![CDATA[-
+Version 1.2.0.0
+Date 2012-03-12 15:07:43
+
+New feature: painters for notes.
+- Not a painter for every note anymore
+- Notes are grouped by specific painters called PainterNotes
+
+Warning XML Modifications: XML files are no longer compatibles with this version of Annotation. A small fix is necessary.
+
+-
+Version 1.1.0.0
+Date 2012-01-16 11:28:49
+
+Updated to 1.2
+
+-
+Version 1.0.0.0
+Date 2011-12-16 16:56:56
+
+More intuitive.
+More powerful.
+XMLPersistent data.
+
+-
+Version 0.0.1.0
+Date 2011-12-13 17:15:15
+
+
+
+]]></changelog><dependencies></dependencies></root>

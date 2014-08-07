@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<root>
+<url><![CDATA[http://icy.bioimageanalysis.org/repository/getXMLPluginFile.php?pluginId=116&beta=0]]></url><name>Track Processor Time Clip</name><version>1.0.0.5</version><required_kernel_version>0.0.0.0</required_kernel_version><kernel_ver>0.0.0.0</kernel_ver><jar_url><![CDATA[http://icy.bioimageanalysis.org/repository/getJarFile.php?pluginId=116&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=579]]></icon_url><image_url></image_url><description><![CDATA[Clip time processor for the Track Manager plugin]]></description><classname><![CDATA[plugins.fab.trackmanager.processors.TrackProcessorTimeClip]]></classname><author><![CDATA[fab - Fabrice de Chaumont]]></author><changelog><![CDATA[-
+Version 1.0.0.5
+Date 2014-04-15 11:52:01
+
+Fix a crash when all sequences were closed
+
+-
+Version 1.0.0.4
+Date 2014-02-05 16:44:52
+
+- Fix a nullPointer nasty bug if no viewer was open with a sequence.
+
+-
+Version 1.0.0.3
+Date 2012-10-07 11:37:46
+
+Fix a crash when the selected sequence was "no sequence"
+
+-
+Version 1.0.0.2
+Date 2011-12-07 16:08:35
+
+update to fit with new detection data structure
+
+-
+Version 1.0.0.1
+Date 2011-09-02 16:14:12
+
+minor fixes
+
+-
+Version 1.0.0.0
+Date 2011-08-25 16:12:49
+
+
+
+]]></changelog><web><![CDATA[http://icy.bioimageanalysis.org/plugin/Track_Processor_Time_Clip]]></web><dependencies></dependencies></root>

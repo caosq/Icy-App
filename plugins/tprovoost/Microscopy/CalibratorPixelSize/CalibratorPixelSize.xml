@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<root>
+<url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getXMLPluginFile.php?pluginId=129&beta=0]]></url><name>Microscope Calibrator Pixel Size</name><version>1.0.1.1</version><required_kernel_version>1.3.1.0</required_kernel_version><kernel_ver>1.3.1.0</kernel_ver><jar_url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getJarFile.php?pluginId=129&beta=0]]></jar_url><icon_url></icon_url><image_url></image_url><description><![CDATA[Calibrator for Pixel Size.]]></description><classname><![CDATA[plugins.tprovoost.Microscopy.CalibratorPixelSize.CalibratorPixelSize]]></classname><author><![CDATA[tprovoost - Thomas Provoost]]></author><changelog><![CDATA[-
+Version 1.0.1.1
+Date 2013-01-25 16:39:38
+
+
+
+-
+Version 1.0.1.0
+Date 2011-11-16 13:21:30
+
+
+
+-
+Version 1.0.0.0
+Date 2011-09-30 12:31:37
+
+
+
+]]></changelog><web><![CDATA[http://icy.bioimageanalysis.org/plugin/Microscope_Calibrator_Pixel_Size]]></web><dependencies><dependency><classname>plugins.tprovoost.Microscopy.CalibratorManager.CalibratorManagerPlugin</classname></dependency><dependency><classname>plugins.tprovoost.Microscopy.MicroManagerForIcy.MicromanagerPlugin</classname></dependency><dependency><classname>plugins.tprovoost.Microscopy.MicroscopeLive.MicroscopeLivePlugin</classname></dependency></dependencies></root>

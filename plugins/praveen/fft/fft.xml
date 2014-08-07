@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<root>
+<url><![CDATA[http://icy.bioimageanalysis.org/repository/getXMLPluginFile.php?pluginId=145&beta=0]]></url><name>Fast Fourier Transform</name><version>1.3.0.0</version><required_kernel_version>1.2.5.0</required_kernel_version><kernel_ver>1.2.5.0</kernel_ver><jar_url><![CDATA[http://icy.bioimageanalysis.org/repository/getJarFile.php?pluginId=145&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=1318]]></icon_url><image_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=1316]]></image_url><description><![CDATA[Fast Fourier Transform (FFT) for 2D/3D images]]></description><classname><![CDATA[plugins.praveen.fft.FFT]]></classname><author><![CDATA[praveen - Praveen Pankajakshan]]></author><changelog><![CDATA[-
+Version 1.3.0.0
+Date 2012-10-18 10:38:23
+
+- Fix and simplify swapping code. The swap was incorrect on the phase for 2D transforms, and was not done on the kz direction for 3D transforms.
+- Greatly speed up the swapping code by ordering the loops in a cache-friendly way.
+- Handle gracefully the case of a 3D transform asked on a 2D sequence.
+
+
+-
+Version 1.2.0.1
+Date 2012-07-16 14:58:51
+
+Rename the "fft" class to "FFT" to follow java naming conventions (these conventions are used by the Blocks/Protocols system to properly format the block name).
+
+-
+Version 1.2.0.0
+Date 2012-06-29 15:33:10
+
+-Make the quadrant swapping code reusable in other plugins.
+-Use function type from Colt (DoubleDoubleFunction) instead of defining it ourselves.
+-Make real/imag/mangitude/angle functions
+reusable in other plugins.
+
+-
+Version 1.1.0.0
+Date 2012-06-25 15:28:18
+
+- Provide a Blocks interface for the new visual programming environment.
+- Do one fewer data copy.
+- Factor the quadrant swapping code and the magnitude/angle code for less code
+duplication
+- Use direct data array operations instead of setDataAsDouble calls. The former are much faster.
+- Name the channels in FFT3D.
+
+-
+Version 1.0.0.1
+Date 2012-04-11 15:04:24
+
+Error in EzVarFloat corrected.
+
+-
+Version 1.0.0.0
+Date 2012-02-13 16:52:30
+
+1. Removed bug in quadrant swapping.
+2. Magnitude/Phase and Real/Imaginary Channels are labelled correctly.
+
+-
+Version 0.0.1.2
+Date 2011-12-23 21:41:58
+
+1. Improved 3D FFT.
+2. Added 3D quadrant swap.
+
+
+-
+Version 0.0.1.1
+Date 2011-12-22 18:06:38
+
+Removed bug in the data recovery with jTransform.
+
+-
+Version 0.0.1.0b
+Date 2011-12-21 15:46:28
+
+
+
+]]></changelog><web><![CDATA[http://icy.bioimageanalysis.org/plugin/Fast_Fourier_Transform]]></web><dependencies><dependency><classname>plugins.adufour.ezplug.EzPlug</classname></dependency><dependency><classname>plugins.adufour.viewers.LogCanvas2D</classname></dependency><dependency><classname>plugins.adufour.blocks.Blocks</classname></dependency></dependencies></root>

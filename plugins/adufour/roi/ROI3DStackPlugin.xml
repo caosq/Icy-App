@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<root>
+<url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getXMLPluginFile.php?pluginId=275&beta=0]]></url><name>3D ROI stacks</name><version>1.1.1.0</version><required_kernel_version>1.3.6.0</required_kernel_version><kernel_ver>1.3.6.0</kernel_ver><jar_url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getJarFile.php?pluginId=275&beta=0]]></jar_url><icon_url></icon_url><image_url></image_url><description><![CDATA[Toolbox providing the basic functionalities for creating and manipulating 3D regions of interest as Z-stacks of any kind of 2D regions of interest]]></description><classname><![CDATA[plugins.adufour.roi.ROI3DStackPlugin]]></classname><author><![CDATA[adufour - Alexandre Dufour]]></author><changelog><![CDATA[-
+Version 1.1.1.0
+Date 2013-10-25 23:21:36
+
+Fixed z coordinates for each slice
+
+-
+Version 1.1.0.0
+Date 2013-07-19 17:33:05
+
+* Fixed an issue causing ROI selection not to be exclusive
+* Added a new (improved) painter class to simplify the use of extending classes
+
+-
+Version 1.0.1.0
+Date 2013-07-18 13:43:49
+
+Fixed an issue causing StackOverflowError when changing some ROI properties (name, color, etc.)
+
+-
+Version 1.0.0.1
+Date 2013-07-16 11:45:40
+
+fixed classpath again...
+
+-
+Version 1.0.0.0
+Date 2013-07-16 11:36:45
+
+Fixed class name in the submitted plugin
+
+-
+Version 0.0.1.0
+Date 2013-07-16 11:13:28
+
+
+
+]]></changelog><web><![CDATA[http://icy.bioimageanalysis.org/plugin/3D_ROI_stacks]]></web><dependencies></dependencies></root>

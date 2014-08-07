@@ -7,6 +7,29 @@
 <key name="autoUpdate" value="false"/>
 <key name="autoCheckUpdate" value="false"/>
 <key name="alwaysOnTop" value="false"/>
+<section name="toolTips"/>
+<section name="confirms"/>
+<section name="ROIPanel">
+<key name="col_type" value="false"/>
+<key name="position_x" value="false"/>
+<key name="position_y" value="false"/>
+<key name="position_z" value="false"/>
+<key name="position_t" value="false"/>
+<key name="position_c" value="false"/>
+<key name="size_x" value="false"/>
+<key name="size_y" value="false"/>
+<key name="size_z" value="false"/>
+<key name="size_t" value="false"/>
+<key name="size_c" value="false"/>
+<key name="col_contour" value="false"/>
+<key name="col_points" value="false"/>
+<key name="col_surface_area" value="false"/>
+<key name="col_volume" value="false"/>
+<key name="col_min_int" value="false"/>
+<key name="col_mean_int" value="false"/>
+<key name="col_max_int" value="false"/>
+<key name="col_standard_dev" value="false"/>
+</section>
 </section>
 
 <section name="repositories">
@@ -26,6 +49,151 @@
 <key name="autoUpdate" value="false"/>
 <key name="autoCheckUpdate" value="false"/>
 <key name="allowBeta" value="false"/>
+<section name="local"/>
+<section name="online"/>
+</section>
+<key name="maxMemory" value="8160"/>
+<section name="canvas"/>
+<section name="network"/>
+<section name="chat"/>
+<section name="workspaces">
+<section name="local">
+<section name="actives">
+<key name="NDE" value="true"/>
+</section>
+</section>
+<section name="online"/>
+</section>
+<section name="loader">
+<section name="entry0">
+<key name="nbFile" value="0"/>
+</section>
+<section name="entry1">
+<key name="nbFile" value="0"/>
+</section>
+<section name="entry2">
+<key name="nbFile" value="0"/>
+</section>
+<section name="entry3">
+<key name="nbFile" value="0"/>
+</section>
+<section name="entry4">
+<key name="nbFile" value="0"/>
+</section>
+<section name="entry5">
+<key name="nbFile" value="0"/>
+</section>
+<section name="entry6">
+<key name="nbFile" value="0"/>
+</section>
+<section name="entry7">
+<key name="nbFile" value="0"/>
+</section>
+<section name="entry8">
+<key name="nbFile" value="0"/>
+</section>
+<section name="entry9">
+<key name="nbFile" value="0"/>
+</section>
+</section>
+<key name="os" value="win64"/>
+<key name="version" value="1.5.3.1"/>
+</section>
+<section name="plugins">
+<section name="plugins.tprovoost.Microscopy.MicroManagerForIcy.MicromanagerPlugin"/>
+</section>
+<section name="frame">
+<section name="main">
+<key name="XE" value="113"/>
+<key name="YE" value="105"/>
+<key name="WidthE" value="2460"/>
+<key name="HeightE" value="1292"/>
+<key name="MaximizedE" value="true"/>
+</section>
+<section name="inspector">
+<key name="XC" value="1999"/>
+<key name="YC" value="0"/>
+<key name="XE" value="600"/>
+<key name="YE" value="140"/>
+<key name="XI" value="600"/>
+<key name="YI" value="140"/>
+<key name="WidthC" value="561"/>
+<key name="HeightC" value="1215"/>
+<key name="WidthE" value="300"/>
+<key name="HeightE" value="600"/>
+<key name="WidthI" value="300"/>
+<key name="HeightI" value="600"/>
+<key name="Panelized" value="true"/>
+<key name="Externalized" value="false"/>
+<key name="MaximizedI" value="false"/>
+<key name="MaximizedE" value="false"/>
+</section>
+<section name="roiPanel">
+<key name="XC" value="5"/>
+<key name="YC" value="34"/>
+<key name="XE" value="100"/>
+<key name="YE" value="100"/>
+<key name="XI" value="100"/>
+<key name="YI" value="100"/>
+<key name="WidthC" value="551"/>
+<key name="HeightC" value="1122"/>
+<key name="WidthE" value="400"/>
+<key name="HeightE" value="600"/>
+<key name="WidthI" value="400"/>
+<key name="HeightI" value="600"/>
+<key name="Panelized" value="true"/>
+<key name="Externalized" value="false"/>
+<key name="MaximizedI" value="false"/>
+<key name="MaximizedE" value="false"/>
+</section>
+<section name="outputConsole">
+<key name="XC" value="5"/>
+<key name="YC" value="34"/>
+<key name="XE" value="200"/>
+<key name="YE" value="200"/>
+<key name="XI" value="200"/>
+<key name="YI" value="200"/>
+<key name="WidthC" value="551"/>
+<key name="HeightC" value="1122"/>
+<key name="WidthE" value="400"/>
+<key name="HeightE" value="300"/>
+<key name="WidthI" value="400"/>
+<key name="HeightI" value="300"/>
+<key name="Panelized" value="true"/>
+<key name="Externalized" value="false"/>
+<key name="MaximizedI" value="false"/>
+<key name="MaximizedE" value="false"/>
+</section>
+<section name="chatPanel">
+<key name="XC" value="5"/>
+<key name="YC" value="34"/>
+<key name="XE" value="200"/>
+<key name="YE" value="200"/>
+<key name="XI" value="200"/>
+<key name="YI" value="200"/>
+<key name="WidthC" value="551"/>
+<key name="HeightC" value="1122"/>
+<key name="WidthE" value="400"/>
+<key name="HeightE" value="300"/>
+<key name="WidthI" value="400"/>
+<key name="HeightI" value="300"/>
+<key name="Panelized" value="true"/>
+<key name="Externalized" value="false"/>
+<key name="MaximizedI" value="false"/>
+<key name="MaximizedE" value="false"/>
+</section>
+<section name="preference">
+<key name="XE" value="100"/>
+<key name="YE" value="100"/>
+<key name="XI" value="100"/>
+<key name="YI" value="100"/>
+<key name="WidthE" value="640"/>
+<key name="HeightE" value="480"/>
+<key name="WidthI" value="640"/>
+<key name="HeightI" value="480"/>
+<key name="Externalized" value="false"/>
+<key name="MaximizedI" value="false"/>
+<key name="MaximizedE" value="false"/>
 </section>
 </section>
 </root>

@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<root>
+<url><![CDATA[http://icy.bioimageanalysis.org/repository/getXMLPluginFile.php?pluginId=258&beta=0]]></url><name>Fill holes in ROI</name><version>1.1.2.0</version><required_kernel_version>1.4.3.5</required_kernel_version><kernel_ver>1.4.3.5</kernel_ver><jar_url><![CDATA[http://icy.bioimageanalysis.org/repository/getJarFile.php?pluginId=258&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=2483]]></icon_url><image_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=2231]]></image_url><description><![CDATA[Fills the holes in all the ROI of the active sequence (also works in Protocols).]]></description><classname><![CDATA[plugins.adufour.morphology.FillHolesInROI]]></classname><author><![CDATA[adufour - Alexandre Dufour]]></author><changelog><![CDATA[-
+Version 1.1.2.0
+Date 2014-05-13 19:07:33
+
+Fixed issue causing the number of ROI to grow at each protocol run
+
+-
+Version 1.1.1.2
+Date 2014-05-12 22:45:04
+
+Fixed class name again!!
+
+-
+Version 1.1.1.1
+Date 2014-05-12 22:41:49
+
+Fixed issue in the class name
+
+-
+Version 1.1.1.0
+Date 2014-05-12 22:33:31
+
+Adjusted package name (seemed to cause updating issues)
+
+-
+Version 1.1.0.0
+Date 2014-05-12 21:30:22
+
+* Updated to Icy 1.4.3.5
+* Moved to a new package (without breaking backward compatibility)
+
+-
+Version 1.0.0.0
+Date 2013-07-03 10:00:45
+
+Handle dummy cases (no sequence opened)
+
+-
+Version 0.0.1.0
+Date 2013-05-30 15:40:20
+
+
+
+]]></changelog><web><![CDATA[http://icy.bioimageanalysis.org/plugin/Fill_holes_in_ROI]]></web><dependencies><dependency><classname>plugins.adufour.ezplug.EzPlug</classname></dependency><dependency><classname>plugins.adufour.blocks.Blocks</classname></dependency></dependencies></root>

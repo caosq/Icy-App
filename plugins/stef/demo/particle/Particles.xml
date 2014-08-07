@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<root>
+<url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getXMLPluginFile.php?pluginId=89&beta=0]]></url><name>Particles animation</name><version>1.1.0.0</version><required_kernel_version>1.3.0.0</required_kernel_version><kernel_ver>1.3.0.0</kernel_ver><jar_url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getJarFile.php?pluginId=89&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=377]]></icon_url><image_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=381]]></image_url><description><![CDATA[Simple particles animation.
+Up to 100 000 particles following the mouse cursor movement.
+]]></description><classname><![CDATA[plugins.stef.demo.particle.Particles]]></classname><author><![CDATA[stef - Stephane Dallongeville]]></author><changelog><![CDATA[-
+Version 1.1.0.0
+Date 2013-03-06 16:12:59
+
+Simple optimization.
+
+-
+Version 1.0.0.8
+Date 2012-12-14 16:06:43
+
+Updated to last kernel.
+
+-
+Version 1.0.0.7
+Date 2012-03-13 09:44:39
+
+fixed NPE with Canvas3D (Canvas3D is not supported).
+
+-
+Version 1.0.0.6
+Date 2011-08-30 17:53:57
+
+Minor change for better integration with next ICY :)
+
+-
+Version 1.0.0.5
+Date 2011-03-28 15:54:49
+
+fixed physic.
+
+-
+Version 1.0.0.4
+Date 2011-03-28 14:45:36
+
+added painter drawing support.
+
+-
+Version 1.0.0.3
+Date 2011-03-25 15:02:21
+
+* changed priority to minimum to improve image refresh.
+
+-
+Version 1.0.0.2
+Date 2011-03-25 13:22:57
+
+removed beta flag
+
+-
+Version 1.0.0.1b
+Date 2011-03-25 13:08:56
+
+* limited image refreshing to 50 time per second.
+
+-
+Version 1.0.0.0b
+Date 2011-03-25 11:53:03
+
+
+
+]]></changelog><web><![CDATA[http://icy.bioimageanalysis.org/plugin/Particles_animation]]></web><dependencies></dependencies></root>

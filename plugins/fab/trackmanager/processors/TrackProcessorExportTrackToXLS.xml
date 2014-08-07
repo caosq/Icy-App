@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<root>
+<url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getXMLPluginFile.php?pluginId=198&beta=0]]></url><name>Track Processor export track to Excel</name><version>0.0.1.0</version><required_kernel_version>0.0.0.0</required_kernel_version><kernel_ver>0.0.0.0</kernel_ver><jar_url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getJarFile.php?pluginId=198&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=1493]]></icon_url><image_url></image_url><description><![CDATA[This processor exports the tracks in an xls file.]]></description><classname><![CDATA[plugins.fab.trackmanager.processors.TrackProcessorExportTrackToXLS]]></classname><author><![CDATA[fab - Fabrice de Chaumont]]></author><changelog><![CDATA[-
+Version 0.0.1.0
+Date 2012-09-06 13:12:31
+
+
+
+]]></changelog><web><![CDATA[http://icy.bioimageanalysis.org/plugin/Track_Processor_export_track_to_Excel]]></web><dependencies><dependency><classname>plugins.fab.trackmanager.TrackManager</classname></dependency></dependencies></root>

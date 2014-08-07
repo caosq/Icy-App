@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<root>
+<url><![CDATA[http://icy.bioimageanalysis.org/repository/getXMLPluginFile.php?pluginId=191&beta=0]]></url><name>Motion Profiler</name><version>3.0.2.0</version><required_kernel_version>1.5.3.1</required_kernel_version><kernel_ver>1.5.3.1</kernel_ver><jar_url><![CDATA[http://icy.bioimageanalysis.org/repository/getJarFile.php?pluginId=191&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=3059]]></icon_url><image_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=3060]]></image_url><description><![CDATA[Track manager plug-in measuring motion statistics in 2D/3D, including min/max/avg/total displacement (absolute & relative to origin), and displacement profiles along all spatial axes.]]></description><classname><![CDATA[plugins.adufour.trackprocessors.speed.SpeedProfiler]]></classname><author><![CDATA[adufour - Alexandre Dufour]]></author><changelog><![CDATA[-
+Version 3.0.2.0
+Date 2014-07-21 18:43:42
+
+Improved track filtering performance
+
+-
+Version 3.0.1.0
+Date 2014-07-21 15:23:50
+
+- Moved the "export" button on the upper interface panel
+- Fixed the "Filter tracks" option which wasn't working
+- The statistics table now includes the name of each group and the track's ID within the group 
+
+-
+Version 3.0.0.1
+Date 2014-06-20 16:41:22
+
+Re-uploaded JAR file (rolled back class path to initial one)
+
+-
+Version 3.0.0.0
+Date 2014-06-20 16:24:45
+
+New feature: tracks can now be filtered based on the available motion statistics
+
+-
+Version 2.0.0.4
+Date 2014-06-19 17:00:55
+
+Fixing the JAR file (again)
+
+-
+Version 2.0.0.3
+Date 2014-06-19 16:54:58
+
+Regression from version 2.0.0.1
+
+-
+Version 2.0.0.2
+Date 2014-06-19 16:53:50
+
+Re-uploading the correct JAR file
+
+-
+Version 2.0.0.1
+Date 2014-06-19 16:51:31
+
+Regression from version 1.0.1.0
+
+-
+Version 2.0.0.0
+Date 2014-06-19 16:49:56
+
+Rewrote plug-in from scratch. New interface, faster calculations, new display for plots & graphs, and export functionalities
+
+-
+Version 1.0.1.0
+Date 2013-07-02 16:09:58
+
+Fixed display issue in the track manager
+
+-
+Version 1.0.0.0
+Date 2012-08-08 16:13:07
+
+- Fixed error when setting the display sequence to null
+- Graphical layout adjusted
+
+-
+Version 0.0.1.0
+Date 2012-08-08 15:44:29
+
+
+
+]]></changelog><web><![CDATA[http://icy.bioimageanalysis.org/plugin/Motion_Profiler]]></web><dependencies><dependency><classname>plugins.fab.trackmanager.TrackManager</classname></dependency><dependency><classname>plugins.nchenouard.spot.DetectionResult</classname></dependency></dependencies></root>

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<root>
+<url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getXMLPluginFile.php?pluginId=69&beta=0]]></url><name>Simple painter 1</name><version>1.0.0.1</version><required_kernel_version>1.3.0.0</required_kernel_version><kernel_ver>1.3.0.0</kernel_ver><jar_url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getJarFile.php?pluginId=69&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=261]]></icon_url><image_url></image_url><description><![CDATA[An example of a very simple painter]]></description><classname><![CDATA[plugins.tutorial.painter.SimplePainter01]]></classname><author><![CDATA[tutorial - Fab and Stef]]></author><changelog><![CDATA[-
+Version 1.0.0.1
+Date 2012-12-14 15:53:25
+
+Updated to last kernel.
+
+-
+Version 1.0.0.0
+Date 2011-02-17 16:14:19
+
+
+
+]]></changelog><web><![CDATA[http://icy.bioimageanalysis.org/plugin/Simple_painter_1]]></web><dependencies></dependencies></root>

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<root>
+<url><![CDATA[http://icy.bioimageanalysis.org/repository/getXMLPluginFile.php?pluginId=339&beta=0]]></url><name>EvaRawImporter</name><version>1.1.0.0</version><required_kernel_version>0.0.0.0</required_kernel_version><kernel_ver>0.0.0.0</kernel_ver><jar_url><![CDATA[http://icy.bioimageanalysis.org/repository/getJarFile.php?pluginId=339&beta=0]]></jar_url><icon_url></icon_url><image_url></image_url><description><![CDATA[EzPlug version of the imagej raw inporter, auto reload sequence when the parameters changed.
+]]></description><classname><![CDATA[plugins.oeway.EvaRawImporter]]></classname><author><![CDATA[oeway - Wei Ouyang]]></author><changelog><![CDATA[-
+Version 1.1.0.0
+Date 2014-08-01 18:25:08
+
+* show the offset byte of file according to mouse position
+
+-
+Version 1.0.0.0
+Date 2014-07-31 10:51:17
+
+* change JDK version to 1.6 to be capatible with lower version
+
+-
+Version 0.0.1.0
+Date 2014-07-31 08:39:09
+
+
+
+]]></changelog><web><![CDATA[http://icy.bioimageanalysis.org/plugin/EvaRawImporter]]></web><dependencies></dependencies></root>

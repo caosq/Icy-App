@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<root>
+<url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getXMLPluginFile.php?pluginId=75&beta=0]]></url><name>Projection</name><version>1.0.0.6</version><required_kernel_version>0.0.0.0</required_kernel_version><kernel_ver>0.0.0.0</kernel_ver><jar_url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getJarFile.php?pluginId=75&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=399]]></icon_url><image_url></image_url><description><![CDATA[Projects data over Z-Stack or over Time, using max, min, mean, sum saturated, and sum unsaturated. Sum saturated means that if sum is greated than the data type of the image, then the value will be the max value available with this data type.]]></description><classname><![CDATA[plugins.fab.projection.Projection]]></classname><author><![CDATA[fab - Fabrice de Chaumont]]></author><changelog><![CDATA[-
+Version 1.0.0.6
+Date 2013-02-19 10:38:58
+
+xml and icon removed from jar file
+
+-
+Version 1.0.0.5
+Date 2011-08-23 11:42:27
+
+Fixed : a crash could occur if there is no image in sequence
+
+-
+Version 1.0.0.4
+Date 2011-05-12 16:25:28
+
+Removed deprecated calls
+
+-
+Version 1.0.0.3
+Date 2011-02-24 09:52:40
+
+fixed a bug when no sequence is opened.
+
+-
+Version 1.0.0.2
+Date 2011-02-22 15:17:53
+
+
+
+-
+Version 1.0.0.1b
+Date 2011-02-22 15:16:41
+
+beta test
+
+-
+Version 1.0.0.0
+Date 2011-02-21 10:52:19
+
+
+
+]]></changelog><web><![CDATA[http://icy.bioimageanalysis.org/plugin/Projection]]></web><dependencies></dependencies></root>

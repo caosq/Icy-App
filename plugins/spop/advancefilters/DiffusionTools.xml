@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='no'?>
+<root>
+<url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getXMLPluginFile.php?pluginId=80&beta=0]]></url><name>Diffusion Filters Tool</name><version>1.1.0.1</version><required_kernel_version>0.0.0.0</required_kernel_version><kernel_ver>0.0.0.0</kernel_ver><jar_url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getJarFile.php?pluginId=80&beta=0]]></jar_url><icon_url></icon_url><image_url></image_url><description><![CDATA[Some functions for PDE filtering]]></description><classname><![CDATA[plugins.spop.advancefilters.DiffusionTools]]></classname><author><![CDATA[spop - Sorin Pop]]></author><changelog><![CDATA[-
+Version 1.1.0.1
+Date 2012-08-06 18:10:37
+
+
+
+-
+Version 1.1.0.0
+Date 2012-08-06 16:50:57
+
+
+
+-
+Version 1.0.0.2
+Date 2012-04-23 16:12:30
+
+matching the Filter plugin update
+
+-
+Version 1.0.0.1
+Date 2012-02-20 15:44:59
+
+matching the EzPlug update
+
+-
+Version 1.0.0.0
+Date 2011-03-09 14:22:11
+
+
+
+]]></changelog><dependencies></dependencies></root>

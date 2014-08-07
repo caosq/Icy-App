@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='no'?>
+<root>
+<url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getXMLPluginFile.php?pluginId=45&beta=]]></url><url_stable><![CDATA[http://www.bioimageanalysis.org/icy/repository/getXMLPluginFile.php?pluginId=45&beta=0]]></url_stable><url_beta></url_beta><name>NHerve Matrix</name><version>1.0.0.2</version><jar_url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getJarFile.php?pluginId=45&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=133]]></icon_url><image_url></image_url><description><![CDATA[A patched version of the Jama library.
+
+Internal structures accessors and package name added.
+
+The original version can be found here : <a href="http://math.nist.gov/javanumerics/jama/">http://math.nist.gov/javanumerics/jama/</a>]]></description><classname><![CDATA[plugins.nherve.matrix.NHerveMatrix]]></classname><author><![CDATA[nherve - Nicolas Hervé]]></author><changelog><![CDATA[-----------------------------------
+Version 1.0.0.2
+Date 2011-07-28 10:26:02
+
+
+
+-----------------------------------
+Version 1.0.0.1
+Date 2011-02-01 15:33:12
+
+
+
+-----------------------------------
+Version 1.0.0.0
+Date 2011-01-26 11:58:10
+
+
+
+]]></changelog><dependencies></dependencies></root>

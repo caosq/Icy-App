@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='no'?>
+<root>
+<url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getXMLPluginFile.php?pluginId=83&beta=0]]></url><name>Anisotropic Filter</name><version>1.1.0.0</version><required_kernel_version>0.0.0.0</required_kernel_version><kernel_ver>0.0.0.0</kernel_ver><jar_url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getJarFile.php?pluginId=83&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=340]]></icon_url><image_url></image_url><description><![CDATA[Anisotropic filter implements the classical Coherence Enhancing Diffusion Filter [Weickert].
+
+The plugins works on the first band of a 2D, 3D and 4D sequence. 
+
+2D and 3D algorithms are proposed.
+For the 3D case 2 options are available:
+CED 1D option is the classical filter that acts mainly on the most homogeneous structure direction; 
+CED 2D option acts on the tangential plane of the structure.
+ ]]></description><classname><![CDATA[plugins.spop.advancefilters.WeickertFilter]]></classname><author><![CDATA[spop - Sorin Pop]]></author><changelog><![CDATA[-
+Version 1.1.0.0
+Date 2012-06-21 10:34:51
+
+plugin ready for Block programming 
+
+-
+Version 1.0.0.7
+Date 2012-04-23 16:11:15
+
+matching the Filter plugin update
+
+-
+Version 1.0.0.6
+Date 2012-02-20 15:43:33
+
+change in order to respond properly to the last version of EzPlug
+
+-
+Version 1.0.0.5
+Date 2011-12-01 15:38:36
+
+bug fix
+
+-
+Version 1.0.0.4
+Date 2011-12-01 14:45:21
+
+bug fix
+
+-
+Version 1.0.0.3
+Date 2011-03-24 11:55:05
+
+eliminate deprecated methods
+
+-
+Version 1.0.0.2
+Date 2011-03-09 18:44:02
+
+visualisation problem fixed
+
+-
+Version 1.0.0.1
+Date 2011-03-09 17:42:14
+
+
+
+-
+Version 1.0.0.0
+Date 2011-03-09 17:12:44
+
+
+
+]]></changelog><dependencies><dependency><classname>plugins.adufour.ezplug.EzPlug</classname><version>0.0.0.1</version></dependency><dependency><classname>plugins.spop.advancefilters.DiffusionTools</classname><version>0.0.0.1</version></dependency><dependency><classname>plugins.adufour.filtering.FilterToolbox</classname><version>0.0.0.1</version></dependency><dependency><classname>plugins.adufour.blocks.Blocks</classname><version>0.0.0.1</version></dependency><dependency><classname>plugins.adufour.protocols.Protocols</classname><version>0.0.0.1</version></dependency></dependencies></root>

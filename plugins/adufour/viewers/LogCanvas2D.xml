@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<root>
+<url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getXMLPluginFile.php?pluginId=144&beta=0]]></url><name>Logarithmic 2D viewer</name><version>0.0.2.0</version><required_kernel_version>1.3.6.0</required_kernel_version><kernel_ver>1.3.6.0</kernel_ver><jar_url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getJarFile.php?pluginId=144&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=827]]></icon_url><image_url></image_url><description><![CDATA[2D viewer allowing to view image data in logarithmic scale. Useful to observe high dynamic range images, e.g. Fourier spectra or 16-bits images.]]></description><classname><![CDATA[plugins.adufour.viewers.LogCanvas2D]]></classname><author><![CDATA[adufour - Alexandre Dufour]]></author><changelog><![CDATA[-
+Version 0.0.2.0
+Date 2013-05-23 20:56:36
+
+* Updated deprecated methods
+* Fixed issue when dealing with empty (null) image
+
+-
+Version 0.0.1.0
+Date 2011-12-21 14:33:36
+
+
+
+]]></changelog><web><![CDATA[http://icy.bioimageanalysis.org/plugin/Logarithmic_2D_viewer]]></web><dependencies></dependencies></root>

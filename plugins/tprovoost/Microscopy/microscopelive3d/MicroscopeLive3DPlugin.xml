@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<root>
+<url><![CDATA[http://icy.bioimageanalysis.org/repository/getXMLPluginFile.php?pluginId=171&beta=0]]></url><name>Microscope Live 3D</name><version>1.0.2.0</version><required_kernel_version>1.5.0.0</required_kernel_version><kernel_ver>1.5.0.0</kernel_ver><jar_url><![CDATA[http://icy.bioimageanalysis.org/repository/getJarFile.php?pluginId=171&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=1133]]></icon_url><image_url></image_url><description><![CDATA[Display your data in real time 3D (depending on your hardware).]]></description><classname><![CDATA[plugins.tprovoost.Microscopy.microscopelive3d.MicroscopeLive3DPlugin]]></classname><author><![CDATA[tprovoost - Thomas Provoost]]></author><changelog><![CDATA[-
+Version 1.0.2.0
+Date 2014-07-15 11:34:05
+
+Minors fixes, tweak and refactoring.
+
+-
+Version 1.0.1.0
+Date 2014-07-10 14:07:13
+
+* Reverted to MicroManager main class name.
+* some tweaks / fixes.
+
+-
+Version 1.0.0.0
+Date 2014-07-03 22:58:42
+
+Complete rewrite !
+
+-
+Version 0.0.1.0
+Date 2012-05-15 14:18:59
+
+
+
+]]></changelog><web><![CDATA[http://icy.bioimageanalysis.org/plugin/Microscope_Live_3D]]></web><dependencies><dependency><classname>plugins.tprovoost.Microscopy.MicroManagerForIcy.MicromanagerPlugin</classname></dependency></dependencies></root>

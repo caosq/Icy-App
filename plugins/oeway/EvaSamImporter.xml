@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<root>
+<url><![CDATA[http://icy.bioimageanalysis.org/repository/getXMLPluginFile.php?pluginId=337&beta=0]]></url><name>EvaSamImporter</name><version>1.0.0.0</version><required_kernel_version>0.0.0.0</required_kernel_version><kernel_ver>0.0.0.0</kernel_ver><jar_url><![CDATA[http://icy.bioimageanalysis.org/repository/getJarFile.php?pluginId=337&beta=0]]></jar_url><icon_url></icon_url><image_url></image_url><description><![CDATA[SAM File importer for PVA TePla Scanning Acoustic Microscope]]></description><classname><![CDATA[plugins.oeway.EvaSamImporter]]></classname><author><![CDATA[oeway - Wei Ouyang]]></author><changelog><![CDATA[-
+Version 1.0.0.0
+Date 2014-07-31 10:53:34
+
+* change JDK version to 1.6 to be capatible with lower version
+
+-
+Version 0.0.1.0
+Date 2014-07-26 16:30:54
+
+
+
+]]></changelog><web><![CDATA[http://icy.bioimageanalysis.org/plugin/EvaSamImporter]]></web><dependencies></dependencies></root>

@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='no'?>
+<root>
+<url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getXMLPluginFile.php?pluginId=117&beta=0]]></url><name>Chronometer</name><version>1.0.1.1</version><required_kernel_version>0.0.0.0</required_kernel_version><kernel_ver>0.0.0.0</kernel_ver><jar_url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getJarFile.php?pluginId=117&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=588]]></icon_url><image_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=589]]></image_url><description><![CDATA[Simple chronometer for Icy.]]></description><classname><![CDATA[plugins.tprovoost.chronometer.Chronometer]]></classname><author><![CDATA[tprovoost - Thomas Provoost]]></author><changelog><![CDATA[-
+Version 1.0.1.1
+Date 2011-09-30 12:09:34
+
+Nanotime precision.
+
+-
+Version 1.0.1.0
+Date 2011-09-30 11:29:13
+
+Lap system implemented.
+
+-
+Version 1.0.0.3
+Date 2011-08-29 17:07:56
+
+Minor fix on start/stop.
+Only one at a time.
+
+-
+Version 1.0.0.2
+Date 2011-08-29 16:26:56
+
+
+
+-
+Version 1.0.0.1
+Date 2011-08-29 16:21:37
+
+
+
+-
+Version 1.0.0.0
+Date 2011-08-29 15:59:08
+
+
+
+]]></changelog><dependencies></dependencies></root>

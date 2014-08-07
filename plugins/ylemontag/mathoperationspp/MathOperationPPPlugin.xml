@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<root>
+<url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getXMLPluginFile.php?pluginId=194&beta=0]]></url><name>Math operations++</name><version>2.0.0.0</version><required_kernel_version>1.3.2.0</required_kernel_version><kernel_ver>1.3.2.0</kernel_ver><jar_url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getJarFile.php?pluginId=194&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=1454]]></icon_url><image_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=1990]]></image_url><description><![CDATA[Execute complex math operations on sequences, such as '3*sequence1 + log(sequence2)/sequence3', in a single step. All the operations are executed pointwise.]]></description><classname><![CDATA[plugins.ylemontag.mathoperationspp.MathOperationPPPlugin]]></classname><author><![CDATA[ylemontag - Yoann Le Montagner]]></author><changelog><![CDATA[-
+Version 2.0.0.0
+Date 2013-04-16 10:31:02
+
+Major code refactoring... This plugin is about to be deleted and embedded in Math Operations.
+
+-
+Version 1.2.0.0
+Date 2012-12-10 14:52:39
+
+Fix: compatibility issue with Math operations v1.2.0.0
+
+-
+Version 1.1.0.0
+Date 2012-09-14 16:26:50
+
+Fix: documentation, synchronize version number with the MathOperations plugin.
+
+-
+Version 0.0.4.0
+Date 2012-09-05 17:25:59
+
+Fix: VarExpression values can now be loaded from a XML file.
+
+-
+Version 0.0.3.0
+Date 2012-08-30 17:14:02
+
+Add: support the Blocks framework
+
+-
+Version 0.0.2.0b
+Date 2012-08-16 14:16:58
+
+Fix: add dependency on 'Math operations'
+
+-
+Version 0.0.1.0b
+Date 2012-08-16 14:10:35
+
+
+
+]]></changelog><web><![CDATA[http://icy.bioimageanalysis.org/plugin/Math_operations++]]></web><dependencies><dependency><classname>plugins.ylemontag.mathoperations.MathOperationPlugin</classname></dependency></dependencies></root>

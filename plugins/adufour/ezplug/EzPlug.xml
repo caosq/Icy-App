@@ -1,0 +1,902 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<root>
+<url><![CDATA[http://icy.bioimageanalysis.org/repository/getXMLPluginFile.php?pluginId=37&beta=0]]></url><name>EzPlug SDK</name><version>3.6.4.0</version><required_kernel_version>1.5.3.1</required_kernel_version><kernel_ver>1.5.3.1</kernel_ver><jar_url><![CDATA[http://icy.bioimageanalysis.org/repository/getJarFile.php?pluginId=37&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=1402]]></icon_url><image_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=2029]]></image_url><description><![CDATA[The swiss army knife of plugin developers. Automatically generates elegant graphical interfaces with rich and intuitive user interaction based on your algorithm's parameters.]]></description><classname><![CDATA[plugins.adufour.ezplug.EzPlug]]></classname><author><![CDATA[adufour - Alexandre Dufour]]></author><changelog><![CDATA[-
+Version 3.6.4.0
+Date 2014-08-04 12:47:15
+
+switched default ROI array editor to a simple (label) viewer, since user input doesn't make sense here
+
+-
+Version 3.6.3.0
+Date 2014-08-04 12:33:55
+
+Minor improvement on EzVarSequence: getVariable() will now return a VarSequence instead of the generic Var<Sequence>
+
+-
+Version 3.6.2.0
+Date 2014-07-29 15:13:52
+
+* Fixed an issue causing indefinite events firing when a variable changes value
+* Fixed issue with the Spinner component not displaying the correct value in some circumstances
+
+-
+Version 3.6.1.0
+Date 2014-07-24 17:35:58
+
+Fixed VarMutable setting the value instead of the type from a TypeSelectionModel
+
+-
+Version 3.6.0.0
+Date 2014-07-23 12:41:00
+
+* Mutable variables now accept Boolean type
+* Fixed an issue causing graphical components not to listen to their preferred size
+
+-
+Version 3.5.0.0
+Date 2014-07-23 00:04:46
+
+* Spinner component should be more responsive
+* Improved ChanneSelector component
+* Improved error handling
+
+-
+Version 3.4.2.0
+Date 2014-05-08 18:38:57
+
+Fixed remaining issues in EzVarChannel. Should now be operational
+
+-
+Version 3.4.1.0
+Date 2014-05-01 04:14:31
+
+Fixed some backward compatibility issues with some plugins
+
+-
+Version 3.4.0.0
+Date 2014-04-24 19:41:56
+
+* Many improvements to the internal engine: EzPlug should now be 99% toolkit independent.
+* Fixed enumeration not displaying properly
+* Fixed plugin list not displaying properly
+* Other minor engine and interface fixes
+
+-
+Version 3.3.16.1
+Date 2013-11-13 17:16:32
+
+Patch on the previous update (EzLabel)
+
+-
+Version 3.3.16.0
+Date 2013-11-13 16:43:53
+
+EzLabel: new methods to adjust width and height
+
+-
+Version 3.3.15.0
+Date 2013-11-06 16:54:06
+
+Fixed minor issue causing the Swimming Object chooser component not to allow the selection of the first list item
+
+-
+Version 3.3.14.1
+Date 2013-10-30 19:00:19
+
+Upgrade to Icy 1.4.0.0
+
+-
+Version 3.3.14.0
+Date 2013-10-22 12:31:44
+
+Fixed an issue with the graphical interface not updating correctly when values are changed programmatically
+
+-
+Version 3.3.13.1
+Date 2013-10-14 17:25:48
+
+Minor fix on the previous update
+
+-
+Version 3.3.13.0
+Date 2013-10-14 16:48:00
+
+Fixed an issue when displaying an array with null values as a text
+
+-
+Version 3.3.12.0
+Date 2013-10-08 17:41:14
+
+Fixed progress bar not displaying "running" state properly
+
+-
+Version 3.3.11.0
+Date 2013-08-30 17:18:46
+
+Minor graphical adjustment for mutable variable (will mainly affect protocols using mutable variables)
+
+-
+Version 3.3.10.0
+Date 2013-08-12 17:37:16
+
+Rewrote EzGroup internals to give more flexible access to the underlying component list.
+
+-
+Version 3.3.9.0
+Date 2013-07-25 14:37:07
+
+Fixed issues causing "No Sequence" selection in VarSequence not to reload properly from XML files (in standalone or block mode)
+
+-
+Version 3.3.8.0
+Date 2013-07-17 14:15:12
+
+VarException are now handled similarly to EzException => they throw out a IcyHandledException
+
+-
+Version 3.3.7.0
+Date 2013-07-12 13:25:40
+
+VarPlugin should now save correctly into XML (for individual parameter files as well as in protocols)
+
+-
+Version 3.3.6.0
+Date 2013-06-17 13:54:42
+
+Fixed timing issue while generating the graphical interface
+
+-
+Version 3.3.5.0
+Date 2013-06-07 23:56:57
+
+* EzVarDimensionPicker can now be deactivated to release the constraint (useful in block mode where constraints may not apply at design time)
+* fixed Spinner component not adjusting the underlying model
+
+-
+Version 3.3.4.0
+Date 2013-05-31 13:52:49
+
+Fixed bug in VarXXXArrayNative causing non-array references to cause class-cast exception
+
+-
+Version 3.3.3.0
+Date 2013-03-21 10:24:42
+
+Fixed EzVarEnum<T>(String, T[], T) constructor with non-standard T[] array
+
+-
+Version 3.3.2.0
+Date 2013-03-14 18:26:20
+
+TypeSelectionModel: Replace null by Object for "anything"
+
+-
+Version 3.3.1.0
+Date 2013-03-12 15:31:19
+
+EzDialogs can now be closed properly (not just with the close button)
+
+-
+Version 3.3.0.0
+Date 2013-03-07 17:58:22
+
+New: variable now possess a referencing policy (allows of forbid in-bound and/or out-bound referencing)
+
+-
+Version 3.2.0.0
+Date 2013-03-07 15:17:29
+
+* New: VarTrigger (provides a trigger button that increments an internal trigger counter or call user functions)
+* New: Variables have a method to forbid referencing (i.e. variables may not reference another one)
+
+-
+Version 3.1.3.0
+Date 2013-02-22 17:02:11
+
+Fixed graphical interface layout strategy (visibility triggers should now work in standalone and dialog mode)
+
+-
+Version 3.1.2.0
+Date 2013-02-21 19:02:27
+
+* Updated to latest kernel version
+* Fixed EzDialog.show() modality issue
+* Fixed help URL access
+
+-
+Version 3.1.1.0
+Date 2013-02-21 18:39:55
+
+AWT-threading issues fixed again
+
+-
+Version 3.1.0.0
+Date 2013-02-21 18:28:57
+
+* Replaced main interface buttons by icons.
+* Added access to the online page of the plugin via a "?" button.
+
+-
+Version 3.0.0.1
+Date 2013-02-21 18:00:31
+
+Fixed AWT-threading issue
+
+-
+Version 3.0.0.0
+Date 2013-02-21 17:51:40
+
+New: EzDialog class lets you exploit the power of EzPlug to create powerful user dialogs in no time.
+
+-
+Version 2.9.0.0
+Date 2013-01-30 18:07:14
+
+Improved handling of arrays, and especially lists of sequences
+
+-
+Version 2.8.6.0
+Date 2013-01-28 10:57:12
+
+Fixed EzVarDimensionPicker causing the interface not to refresh correctly when the active sequence changes
+
+-
+Version 2.8.5.0
+Date 2013-01-24 17:10:55
+
+Fixed several issues with mutable variables
+
+-
+Version 2.8.4.0
+Date 2013-01-18 20:25:32
+
+Numeric variables switched to primitive type (should be backward compatible, and should be more flexible)
+
+-
+Version 2.8.3.0
+Date 2013-01-16 14:59:09
+
+* Adjust Label vertical auto-resize factor to 0 (shouldn't need vertical resizing)
+* VarArray<T> implements Iterable<T>
+* VarROIArray overrides Var.getValueAsString() to be more user friendly
+* SequenceChooser should correctly select "Active Sequence" by default
+
+-
+Version 2.8.2.0
+Date 2013-01-10 16:52:40
+
+Second fix to the previous issue (graphical interface creation and handling of variable editors vs. viewers)
+
+-
+Version 2.8.1.0
+Date 2013-01-10 15:36:44
+
+Fixed issue in v.2.8.0.0 causing some plugins to crash on startup (for instance ROI Measures)
+
+-
+Version 2.8.0.0
+Date 2013-01-08 18:29:18
+
+* Removed VarTable and TableEditor (the POI plugin provides workbook editing support)
+* VarEditor is now more generic and pluggable
+* Fixed VarSequence reset issue (when loading parameters from XML)
+
+-
+Version 2.7.0.0
+Date 2012-12-07 17:40:53
+
+NEW:
+ - MutableVarEditor (adapts display to variable type)
+ - SequenceViewer (for use in Blocks)
+
+-
+Version 2.6.2.0
+Date 2012-11-06 18:04:46
+
+Fix default maximum width of Label<T>
+
+-
+Version 2.6.1.0
+Date 2012-10-31 17:24:23
+
+Fixed ValueTypeSelectionModel not taking into account the default initial value
+
+-
+Version 2.6.0.0
+Date 2012-10-31 17:12:53
+
+New: VarROIArray
+
+-
+Version 2.5.3.0
+Date 2012-10-24 15:40:29
+
+TypeChooser now listens to type changed event to update the GUI accordingly
+
+-
+Version 2.5.2.0
+Date 2012-10-03 17:24:36
+
+new custom TypeSelectionModel constructor
+
+-
+Version 2.5.1.0
+Date 2012-10-03 17:10:02
+
+Be more permissive in VarMutable.setValue() => prevents errors when casting boxed primitives
+
+-
+Version 2.5.0.0
+Date 2012-10-02 19:19:08
+
+New: VarPlugin & its PluginChooser component
+New: TypeChooser component for VarMutable
+
+-
+Version 2.4.1.0
+Date 2012-09-26 19:56:07
+
+Fixed the multi-line EzVarText component not displaying properly
+
+-
+Version 2.4.0.0
+Date 2012-09-26 19:45:30
+
+New: EzVarText has new constructors to give default text, and allows to select a text area with multiple lines
+
+-
+Version 2.3.0.0
+Date 2012-09-26 17:11:23
+
+New: each variable keeps a list of variables referencing it. This information is accessible via the Var.getReferrers() and Var.isReferenced() methods
+
+-
+Version 2.2.3.0
+Date 2012-09-19 14:28:15
+
+Hopefully fixed a long lasting issue causing EzVarSequence to return the wrong value depending on how it is initialized
+
+-
+Version 2.2.2.0
+Date 2012-09-13 16:31:07
+
+* New: EzGUI.setStopButtonText(String) method
+* New: EzGUI.clickRun() method (used to run the plugin as if clicked on the run button)
+
+-
+Version 2.2.1.0
+Date 2012-09-12 16:57:42
+
+* Fixed minor bug in EzVarDimensionPicker not reacting to already opened sequences
+* Fixed shadow painting rationale (to support future updates of Substance and SwingX libraries)
+
+-
+Version 2.2.0.0
+Date 2012-09-11 09:41:13
+
+EzVarDimensionPicker now based on Var<Sequence> instead of EzVarSequence
+
+-
+Version 2.1.0.1
+Date 2012-08-31 11:58:12
+
+Added static section to force delete the Vars library from Icy (it is integrated into EzPlug v.2.0+)
+
+-
+Version 2.1.0.0
+Date 2012-08-30 20:49:07
+
+* New component: EzVarDimensionPicker: lets you enter a value for a given dimension (XYZCT) with automatic bounds adjustment and automatic hiding / showing
+* New: a running process can be fully interrupted by closing the EzPlug window (WARNING: may have unwanted side effects, use with caution)
+
+-
+Version 2.0.0.2
+Date 2012-07-12 14:55:59
+
+Regression from version 2.0.0.0
+
+-
+Version 2.0.0.1
+Date 2012-07-12 14:53:21
+
+Var need not extend Plugin anymore (avoids runtime warnings when instantiating anonymous Var subclasses)
+
+-
+Version 2.0.0.0
+Date 2012-07-12 14:44:56
+
+EzPlug now integrates (and deprecates) the Vars library. Development should now be even simpler for beginners !
+
+-
+Version 1.9.1.0
+Date 2012-07-02 14:26:31
+
+* fix: EzVarInteger was not initializing the inner variable properly
+* EzPlug extends PluginActionable (update problems from Icy v.1.1.3.0 our now filtered)
+
+-
+Version 1.9.0.0
+Date 2012-06-24 23:01:16
+
+* Rollback to PluginImageAnalysis
+* New: native array type variables
+
+-
+Version 1.8.8.0
+Date 2012-06-21 17:43:50
+
+Users: Load/Save parameter dialogs remember path (within same session)
+Developers: minor API improvements
+
+-
+Version 1.8.7.1
+Date 2012-06-07 16:40:53
+
+fix: EzPlug.isHeadLess() return the opposite of the expected result...
+
+-
+Version 1.8.7.0
+Date 2012-06-07 13:35:57
+
+new: EzPlug.isHeadLess() (for command-line based interaction)
+new: EzPlug windows place themselves sort-of smartly, trying not to overlap with other windows
+
+-
+Version 1.8.6.0
+Date 2012-06-01 16:25:17
+
+Updated to Vars v.0.6.4.0
+
+-
+Version 1.8.5.0
+Date 2012-05-31 14:01:22
+
+upgraded to Vars 0.6
+
+-
+Version 1.8.4.0
+Date 2012-05-24 14:48:19
+
+New: the progress bar is now monitored via a variable object which can be passed down to any process for monitoring purposes.
+
+-
+Version 1.8.3.0
+Date 2012-05-21 16:41:56
+
+new: EzButton.setText()
+
+-
+Version 1.8.2.0
+Date 2012-05-21 14:07:48
+
+Make EzButton focusable (will cause user-editable fields to validate input when losing focus)
+
+-
+Version 1.8.1.0
+Date 2012-04-24 17:14:53
+
+Fixed behavior of the sequence chooser component (was not responding to a setValue method with a non-opened sequence)
+
+-
+Version 1.8.0.0
+Date 2012-04-11 19:05:30
+
+* Updated to Vars 0.4
+* Stability improvements
+
+-
+Version 1.7.2.0
+Date 2012-03-08 10:55:38
+
+added setToolTipText(String) method in EzComponent => usable in all extending components (EzVar, EzButton, EzLabel, EzGroup).
+
+-
+Version 1.7.1.0
+Date 2012-03-05 15:31:41
+
+* updated to Vars 0.3.1.0
+* return to the PluginImageAnalysis interface to remain backwards compatible
+* display warning message for outdated versions of Icy (below 1.2.x)
+
+-
+Version 1.6.5.0
+Date 2012-02-22 18:58:21
+
+fixed: visibility triggers did not support null variable values
+
+-
+Version 1.6.4.1
+Date 2012-02-20 11:47:02
+
+**WARNING** Plugins using EzPlug must be recompiled + resubmitted (no code change needed) !!
+
+- EzVar***.getValue(...) methods moved to the EzVar class
+- EzPlug extends PluginActionable instead of implementing deprecated interface PluginImageAnalysis
+
+-
+Version 1.6.3.1
+Date 2012-02-09 16:12:19
+
+fixed erroneous method renaming
+
+-
+Version 1.6.3.0
+Date 2012-02-09 13:40:32
+
+* fixed previous update (EzVarSequence not caring about user input anymore)
+* Listeners created by the plug's initialize() method are now fired a first time upon GUI creation
+
+-
+Version 1.6.2.0
+Date 2012-02-09 11:19:02
+
+fix EzVarSequence causing stack overflow error if attached to a var listener in some cases
+
+-
+Version 1.6.1.1
+Date 2012-02-07 17:05:38
+
+fixed var listener behavior (n-th time fixing...)
+
+-
+Version 1.6.1.0
+Date 2012-02-07 14:38:20
+
+* fixed externalization issue
+* fixed group (un)fold handling
+* fixed GUI creation timing
+
+-
+Version 1.6.0.0
+Date 2012-02-06 14:37:21
+
+- New: EzPlug steps closer towards MVC by using the "Vars" library
+- Re-inserted support for Icy's detached mode (v.1.5.0.0)
+
+-
+Version 1.5.1.3
+Date 2012-01-18 12:00:37
+
+Regression from version 1.4.4.0
+
+-
+Version 1.5.1.2
+Date 2012-01-17 10:15:52
+
+Re-inserted EzGUI.setProgressBarMessage()
+
+-
+Version 1.5.1.1
+Date 2012-01-12 17:13:36
+
+Re-inserted commits which disappeared by mistake in v.1.5.0.0b:
+- main execution thread handling
+- EzGUI.setProgressBarValue()
+
+-
+Version 1.5.0.0b
+Date 2012-01-12 15:01:46
+
+New feature: EzPlug windows can now be externalized from the main interface.
+
+-
+Version 1.4.4.0
+Date 2012-01-11 18:43:19
+
+various stability and performance improvements on the graphical interface, in particular on numeric spinner objects
+
+-
+Version 1.4.3.1
+Date 2012-01-10 19:15:11
+
+fix: MainListener.viewerFocused() is not necessarily called on the EDT
+
+-
+Version 1.4.3.0
+Date 2011-12-16 10:43:53
+
+Minor fix to the previous commit (EDT threading issue on component refresh)
+
+-
+Version 1.4.2.0
+Date 2011-12-16 10:33:56
+
+Fixed several bugs and improved logic in EzVarSwimmingObject. This component should now be fully functional.
+
+-
+Version 1.4.1.0
+Date 2011-12-14 13:28:34
+
+catch error when loading a parameter file containing an invalid (or renamed) parameter
+
+-
+Version 1.4.0.2
+Date 2011-12-13 16:51:21
+
+missing file in jar..
+
+-
+Version 1.4.0.1
+Date 2011-12-13 16:48:08
+
+fixed constructor accessibility
+
+-
+Version 1.4.0.0b
+Date 2011-11-24 16:32:46
+
+* new variable for Swimming objects
+
+-
+Version 1.3.9.1
+Date 2011-10-25 09:57:26
+
+re-build due to a strange error in some dependencies
+
+-
+Version 1.3.9.0
+Date 2011-10-10 16:42:07
+
+fix: EzVarFile.getValue(boolean) now actually "uses" the boolean...
+
+-
+Version 1.3.8.0
+Date 2011-09-22 18:36:51
+
+fixed thread execution handling (again)
+
+-
+Version 1.3.7.0
+Date 2011-09-22 18:06:25
+
+Replaces bugfix of v.1.3.6.0: execution thread is now correctly monitored and therefore should be stopped (or interrupted) in due time before down-stream exceptions can occur 
+
+-
+Version 1.3.6.0
+Date 2011-09-22 17:39:54
+
+fixed a bug causing EzPlugs to raise exceptions when closed while running (this might not be a complete fix but works in the majority of cases)
+
+-
+Version 1.3.5.0
+Date 2011-08-25 17:18:42
+
+GUI adjustments:
+ - adjusted title bar layout (size/font)
+ - stopped re-packing on L'n'F change
+
+-
+Version 1.3.4.0
+Date 2011-08-22 17:39:03
+
+- Added resize support
+- Stop firing newly added variable change listeners
+
+-
+Version 1.3.3.0
+Date 2011-08-16 17:40:47
+
+- Fixed bug when changing look'n'feel
+- Adjusted title colors according to the selected look'n'feel
+
+-
+Version 1.3.2.0
+Date 2011-07-25 13:20:31
+
+1) Added access methods to further personalize the graphical interface:
+ - hide/show the load/save parameters button
+ - hide/show the action panel (buttons and progress bar)
+ - adjust the text of the "run" button
+2) Added instance counter, allowing the plugin to check how many plugin instances are running simultaneously
+
+-
+Version 1.3.1.0
+Date 2011-07-22 19:51:30
+
+automatic cleaning of variable change listeners when EzPlug-ins (or Icy) are closed
+
+-
+Version 1.3.0.0
+Date 2011-07-20 20:44:20
+
+- added a method to easily add custom AWT components within the plug-in interface)
+- fixed a bug causing the interface to "dismantle" when clicking the run button (in some rare cases).
+
+-
+Version 1.2.9.0
+Date 2011-07-08 14:07:47
+
+added EzVar.{get/set}DefaultValues to work with combo box values (when applicable)
+
+-
+Version 1.2.8.0
+Date 2011-05-31 17:03:42
+
+Minor graphical adjustments on the title bar:
+ - "ICY" removed from the title bar
+ - Border adjusted
+ - Shading effects reworked
+
+-
+Version 1.2.7.2
+Date 2011-05-03 16:05:51
+
+updated for ICY Kernel 1.0.5.0
+
+-
+Version 1.2.7.1
+Date 2011-04-28 17:00:59
+
+EzVar.setValue() was missing the Thread-safe bugfixes added in 1.2.7.0
+
+-
+Version 1.2.7.0
+Date 2011-04-27 12:04:22
+
+Thread-safe improvements to the entire framework. Plugins should now run fine whether they are used via the graphical interface or via code
+
+-
+Version 1.2.6.4
+Date 2011-04-22 14:28:23
+
+- Thread-safe fix in EzVarBoolean
+- EzVarFile shows error message on null value
+
+-
+Version 1.2.6.3
+Date 2011-04-21 22:41:40
+
+bugfix: EzVarNumericArray was missing from the JAR release (due to compile warnings)
+
+-
+Version 1.2.6.2
+Date 2011-04-21 16:27:14
+
+minor updates:
+ - added EzComponent.getVisible()
+ - bugfix in EzVarBoolean thread-safe impl.
+
+-
+Version 1.2.6.1
+Date 2011-04-21 15:03:42
+
+- bugfix: EzVarNumeric now shows an error message if value is null
+
+-
+Version 1.2.6.0
+Date 2011-04-21 11:53:40
+
+- EzLabel now uses JTextArea to display multi-line text
+- bugfix in frame packing
+- bugfix in variable change listener
+
+-
+Version 1.2.5.1
+Date 2011-04-19 17:14:56
+
+fixed bug when setting a variable's value with no GUI attached
+
+-
+Version 1.2.5.0
+Date 2011-04-19 16:23:30
+
+- bugfix in components visibility triggers
+ - EzVarFile now implements EzStorable (xml I/O)
+ - EzVarNumericArray.getValue() returns null if empty (NullPointer not raised anymore, except in user plugin if not handled properly)
+
+-
+Version 1.2.4.1
+Date 2011-03-29 17:38:24
+
+- fixed EzVarNumericArray behavior with user input
+- EzComponent and EzVar can now be set (in)visible via code
+
+-
+Version 1.2.4.0
+Date 2011-03-15 14:25:25
+
+added EzVarFolder, EzVarFloat and EzVarFloarArray
+
+-
+Version 1.2.3.0
+Date 2011-03-11 13:55:37
+
+EzVarFile now implements (overrides) EzVar.setValue()
+
+-
+Version 1.2.2.0
+Date 2011-03-10 15:17:57
+
+EzVarNumeric<N extends Number> implements EzTextParser<N>
+
+-
+Version 1.2.1.1
+Date 2011-03-03 18:55:34
+
+stable release of version 1.2.1.0b
+
+-
+Version 1.2.1.0b
+Date 2011-03-03 18:40:28
+
+Release candidate version
+- Fixed bug on look'n'feel switching
+- Moved action buttons upwards to free space
+- Adjusted text position in title bar
+
+-
+Version 1.2.0.0b
+Date 2011-03-03 17:28:10
+
+The graphical interface now extends JInternalFrame and integrates the control buttons to save space
+
+-
+Version 1.1.3.0
+Date 2011-03-02 23:34:45
+
+Minor change: status message now prints on the progress bar instead of the run button
+
+-
+Version 1.1.2.0
+Date 2011-02-28 18:23:29
+
+fixed invalid default min value in EzVarDouble
+
+-
+Version 1.1.1.0
+Date 2011-02-22 13:52:22
+
+added EzVarSequence.getValue(boolean throwExceptionIfNull)
+
+-
+Version 1.1.0.0
+Date 2011-02-21 09:50:46
+
+New feature: EzVarFolder variable
+
+Minor changes:
+ - increased title frame by 10px
+
+-
+Version 1.0.2.1
+Date 2011-02-03 15:13:32
+
+New build to conform with the new release of icy.jar
+
+-
+Version 1.0.2.0
+Date 2011-01-31 13:04:37
+
+Adjusted EzGroup behavior
+
+-
+Version 1.0.1.0
+Date 2011-01-26 20:39:25
+
+Adjusted exception handling and error messages to improve bug tracking
+
+-
+Version 1.0.0.0
+Date 2011-01-21 11:50:04
+
+Initial release on the ICY repository.
+Features:
+ - GUI Components for variables of type:
+  > numeric values and arrays (int, int[], double, double[])
+  > Sequences (icy.sequence.Sequence)
+  > File(s) (File, File[])
+  > Text (String)
+  > Enumerations (Enum)
+ - Convenience GUI Components:
+  > foldable groups of variables
+  > text labels,
+  > buttons
+ - Visibility triggers (displays only the variables you need)
+ - Parameter save/load via XML files
+ - Threaded execution
+ - Interface to support stopping the execution process
+ - Listeners to monitor when variables change
+ - Exception handling
+ - Minimal messaging output (console, dialogs)
+
+]]></changelog><web><![CDATA[http://icy.bioimageanalysis.org/plugin/EzPlug_SDK]]></web><dependencies></dependencies></root>

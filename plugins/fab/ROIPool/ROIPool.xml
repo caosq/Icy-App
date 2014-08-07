@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='no'?>
+<root>
+<url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getXMLPluginFile.php?pluginId=79&beta=]]></url><url_stable><![CDATA[http://www.bioimageanalysis.org/icy/repository/getXMLPluginFile.php?pluginId=79&beta=0]]></url_stable><url_beta></url_beta><name>ROI Pool</name><version>1.0.0.4</version><jar_url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getJarFile.php?pluginId=79&beta=0]]></jar_url><icon_url></icon_url><image_url></image_url><description><![CDATA[Manage a list of ROIs that the user can store and pop back in one click.]]></description><classname><![CDATA[plugins.fab.ROIPool.ROIPool]]></classname><author><![CDATA[fab - Fabrice de Chaumont]]></author><changelog><![CDATA[-----------------------------------
+Version 1.0.0.4
+Date 2011-06-09 17:31:31
+
+Debug output removed
+
+-----------------------------------
+Version 1.0.0.3
+Date 2011-06-09 15:59:37
+
+Fix a problem with the scrollBar
+
+-----------------------------------
+Version 1.0.0.2
+Date 2011-06-07 10:08:14
+
+Fix a crash at start
+
+-----------------------------------
+Version 1.0.0.1
+Date 2011-03-15 14:24:08
+
+Debug output removed
+
+-----------------------------------
+Version 1.0.0.0
+Date 2011-03-07 09:58:38
+
+
+
+]]></changelog><dependencies></dependencies></root>

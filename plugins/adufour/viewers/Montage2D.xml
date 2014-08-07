@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<root>
+<url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getXMLPluginFile.php?pluginId=140&beta=0]]></url><name>Montage 2D</name><version>0.1.0.0</version><required_kernel_version>1.4.1.0</required_kernel_version><kernel_ver>1.4.1.0</kernel_ver><jar_url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getJarFile.php?pluginId=140&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=773]]></icon_url><image_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=2038]]></image_url><description><![CDATA[Displays 3D data as 2D montages of all slices.]]></description><classname><![CDATA[plugins.adufour.viewers.Montage2D]]></classname><author><![CDATA[adufour - Alexandre Dufour]]></author><changelog><![CDATA[-
+Version 0.1.0.0
+Date 2013-11-12 13:36:33
+
+Upgraded to Icy 1.4 (fixes a bug in the montage viewer)
+
+-
+Version 0.0.2.0
+Date 2013-02-21 12:50:16
+
+Display an error message if the data format is not supported
+
+-
+Version 0.0.1.0
+Date 2011-11-25 18:42:13
+
+
+
+]]></changelog><web><![CDATA[http://icy.bioimageanalysis.org/plugin/Montage_2D]]></web><dependencies></dependencies></root>

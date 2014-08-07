@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<root>
+<url><![CDATA[http://icy.bioimageanalysis.org/repository/getXMLPluginFile.php?pluginId=164&beta=0]]></url><name>Crop 5D</name><version>1.0.1.0</version><required_kernel_version>1.2.6.1</required_kernel_version><kernel_ver>1.2.6.1</kernel_ver><jar_url><![CDATA[http://icy.bioimageanalysis.org/repository/getJarFile.php?pluginId=164&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=1381]]></icon_url><image_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=2034]]></image_url><description><![CDATA[Select a portion of a sequence in all 5 dimensions (XYZCT)]]></description><classname><![CDATA[plugins.adufour.sequenceutil.SequenceCropper]]></classname><author><![CDATA[adufour - Alexandre Dufour]]></author><changelog><![CDATA[-
+Version 1.0.1.0
+Date 2012-09-03 11:46:48
+
+Fixed bug causing the wrong channel to be extracted in some cases
+
+-
+Version 1.0.0.0
+Date 2012-07-11 12:10:34
+
+New: crop in all 5 dimensions (XYZCT)
+New: range selection
+New: Blocks support
+
+-
+Version 0.1.2.0
+Date 2012-03-30 15:01:58
+
+fixed interface behavior on sequence change events
+
+-
+Version 0.1.1.0
+Date 2012-03-30 14:40:04
+
+Minor change to the name of the output sequence
+
+-
+Version 0.1.0.0
+Date 2012-03-30 14:34:54
+
+Bug fixes in T and Z extractions
+
+-
+Version 0.0.1.0
+Date 2012-03-30 14:26:21
+
+
+
+]]></changelog><web><![CDATA[http://icy.bioimageanalysis.org/plugin/Crop_5D]]></web><dependencies><dependency><classname>plugins.adufour.ezplug.EzPlug</classname></dependency><dependency><classname>plugins.adufour.blocks.Blocks</classname></dependency></dependencies></root>

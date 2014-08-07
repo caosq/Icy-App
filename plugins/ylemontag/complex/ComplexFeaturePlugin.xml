@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='no'?>
+<root>
+<url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getXMLPluginFile.php?pluginId=158&beta=0]]></url><name>Complex toolbox</name><version>1.0.1.0</version><required_kernel_version>1.2.6.1</required_kernel_version><kernel_ver>1.2.6.1</kernel_ver><jar_url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getJarFile.php?pluginId=158&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=1023]]></icon_url><image_url></image_url><description><![CDATA[This plugin provides some useful functions to work with complex-valued sequences.]]></description><classname><![CDATA[plugins.ylemontag.complex.ComplexFeaturePlugin]]></classname><author><![CDATA[ylemontag - Yoann Le Montagner]]></author><changelog><![CDATA[-
+Version 1.0.1.0
+Date 2012-07-10 11:39:21
+
+Fix: begin/endUpdate when allocating a sequence
+
+-
+Version 1.0.0.0
+Date 2012-06-21 11:51:31
+
+Add: support the Block interface
+
+-
+Version 0.0.3.0
+Date 2012-03-09 18:17:33
+
+Fix: clarify the input variables
+
+-
+Version 0.0.2.0
+Date 2012-03-08 17:34:38
+
+Add: Complex feature extraction can be done either from a complex-valued sequence (with an even number of channels) or from 2 sequences with same size. The latter mode can be used to create complex-valued sequences.
+
+-
+Version 0.0.1.0b
+Date 2012-03-08 15:30:39
+
+
+
+]]></changelog><dependencies><dependency><classname>plugins.adufour.ezplug.EzPlug</classname><version>1.0.0.0</version></dependency><dependency><classname>plugins.adufour.blocks.Blocks</classname><version>1.0.0.0</version></dependency></dependencies></root>

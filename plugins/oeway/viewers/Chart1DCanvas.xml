@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<root>
+<url><![CDATA[http://icy.bioimageanalysis.org/repository/getXMLPluginFile.php?pluginId=270&beta=0]]></url><name>Chart1DCanvas</name><version>5.4.0.0</version><required_kernel_version>1.0.0.0</required_kernel_version><kernel_ver>1.0.0.0</kernel_ver><jar_url><![CDATA[http://icy.bioimageanalysis.org/repository/getJarFile.php?pluginId=270&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=2285]]></icon_url><image_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=2303]]></image_url><description><![CDATA[A canvas plugin using JFreeChart to show intensity profile of a specific row or column. Initially used in a 1-row image of 1D signal representation. Can also used with Micro-Manager for Icy Plugin to show 1D signal from hardware like data acquisition device as waveform. Common 2D+ sequence is also supported. 
+Using it by select the plugin icon in the canvas type combobox of the sequence window, a JFreeChart line chart will show up.
+As an alternative plugin to Intensity Profile, this plugin is modified from "Intensity Profile" by fab,  special thanks to him for giving me the idea to make such a plugin.]]></description><classname><![CDATA[plugins.oeway.viewers.Chart1DCanvas]]></classname><author><![CDATA[oeway - Wei Ouyang]]></author><changelog><![CDATA[-
+Version 5.4.0.0
+Date 2014-08-06 09:36:35
+
+* resize the window in ezchart1d
+
+-
+Version 5.3.0.0
+Date 2014-08-05 05:48:33
+
+* add multi-line chart, reserve single line chart
+
+-
+Version 5.2.0.0
+Date 2014-08-04 19:06:13
+
+* EzVarChart1D now support multi-line chart
+
+-
+Version 5.1.0.0
+Date 2014-08-04 06:30:01
+
+* remove roi implementation
+
+-
+Version 5.0.0.0
+Date 2014-08-02 20:50:20
+
+* Now can be used in protocols, try to add chartDisplay block
+
+-
+Version 4.4.0.0
+Date 2014-08-01 19:20:36
+
+* show legend
+
+-
+Version 4.3.0.0
+Date 2014-08-01 18:24:01
+
+* add export to file button(on the right top corner)
+
+-
+Version 4.2.0.2
+Date 2014-07-31 10:51:57
+
+* change JDK version to 1.6 to be capatible with lower version
+
+-
+Version 4.2.0.1
+Date 2014-07-29 19:34:15
+
+* fixed X-Y nav bar bug
+
+-
+Version 4.2.0.0
+Date 2014-07-29 17:26:36
+
+* override draw function of xyplot to prevent unnecessary bug report 
+
+-
+Version 4.1.0.0
+Date 2014-07-29 11:17:51
+
+* support toggle individual channel
+* improve stability
+* fixed then screen jump problem
+
+-
+Version 3.0.0.0
+Date 2014-07-27 11:05:50
+
+* appearance greatly improved!
+* add title and axis label display
+
+-
+Version 2.4.5.0
+Date 2014-07-27 10:14:12
+
+* fix axis value error
+* add domaincrosshair and rangecrosshair to show the click position
+
+-
+Version 2.4.0.0
+Date 2014-07-27 09:19:44
+
+* axis value is transformed with corresponding pixel size
+* add mouse move event to show x axis value
+* appearance improvement
+
+
+-
+Version 2.3.0.0
+Date 2013-12-18 14:45:09
+
+* flash bug fixed by disabling the auto range adjustment function
+
+-
+Version 2.2.0.2
+Date 2013-11-03 14:20:10
+
+Compatible with Icy1.4
+
+-
+Version 1.2.0.1
+Date 2013-06-26 12:05:57
+
+* Compiling under JDK 1.6
+* Run plugin in the toolbar directly
+
+-
+Version 1.1.0.0
+Date 2013-06-25 17:42:32
+
+* Add X Y and value coordinate display support, mouse position can be tracked now
+* Remove the label row/column index label
+
+
+-
+Version 1.0.0.0b
+Date 2013-06-25 17:35:14
+
+* change the JDK compliance to version 1.6
+* add Z and T navigation slider
+TODO:
+* add support for CanvasMap
+* remove the line roi when closing sequence
+* add coordinate 
+
+-
+Version 0.0.1.0b
+Date 2013-06-21 17:46:20
+
+
+
+]]></changelog><web><![CDATA[http://icy.bioimageanalysis.org/plugin/Chart1DCanvas]]></web><dependencies></dependencies></root>

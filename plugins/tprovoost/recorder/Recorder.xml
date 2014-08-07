@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='no'?>
+<root>
+<url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getXMLPluginFile.php?pluginId=163&beta=0]]></url><name>Video Recorder</name><version>1.1.0.0</version><required_kernel_version>1.2.2.0</required_kernel_version><kernel_ver>1.2.2.0</kernel_ver><jar_url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getJarFile.php?pluginId=163&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=1053]]></icon_url><image_url></image_url><description><![CDATA[Record what you are doing on a sequence as a .avi file, fully compatible with Icy.]]></description><classname><![CDATA[plugins.tprovoost.recorder.Recorder]]></classname><author><![CDATA[tprovoost - Thomas Provoost]]></author><changelog><![CDATA[-
+Version 1.1.0.0
+Date 2012-04-05 17:00:16
+
+* Added Record Screen feature.
+* Supports multiple screen, but not at the same time.
+
+-
+Version 1.0.0.0
+Date 2012-03-16 17:33:39
+
+First Version.
+
+Should allow to record everything you are doing on the sequence.
+
+Not working: switching from 2D to 3D.
+
+-
+Version 0.0.1.0
+Date 2012-03-16 17:32:05
+
+
+
+]]></changelog><dependencies></dependencies></root>

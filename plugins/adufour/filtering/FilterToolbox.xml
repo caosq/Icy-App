@@ -1,0 +1,206 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<root>
+<url><![CDATA[http://icy.bioimageanalysis.org/repository/getXMLPluginFile.php?pluginId=73&beta=0]]></url><name>Filter Toolbox</name><version>4.3.3.0</version><required_kernel_version>1.5.3.1</required_kernel_version><kernel_ver>1.5.3.1</kernel_ver><jar_url><![CDATA[http://icy.bioimageanalysis.org/repository/getJarFile.php?pluginId=73&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=273]]></icon_url><image_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=275]]></image_url><description><![CDATA[Provides a selection of spatial, separable and customizable filters in 1D and 2D, with OpenCL implementation if supported.]]></description><classname><![CDATA[plugins.adufour.filtering.FilterToolbox]]></classname><author><![CDATA[adufour - Alexandre Dufour]]></author><changelog><![CDATA[-
+Version 4.3.3.0
+Date 2014-07-15 18:16:04
+
+Improved multi-threading
+
+-
+Version 4.3.2.0
+Date 2014-02-24 12:01:39
+
+Preserve metadata in selection filters
+
+-
+Version 4.3.1.0
+Date 2014-01-27 16:15:29
+
+Fixed issue in separable convolution (standalone plugin)
+
+-
+Version 4.3.0.0
+Date 2013-07-12 13:24:49
+
+* Re-structured graphical interface
+* Fixed issue causing non-separable 1D kernels to be applied separably
+
+-
+Version 4.2.0.0
+Date 2013-07-12 10:43:14
+
+New selection filter: remove outliers (finds values that are more that 2 standard deviations above or below the window mean, and replace them by the window mean without the outlier)
+
+-
+Version 4.1.2.0
+Date 2013-01-30 11:00:40
+
+Fixed error when exiting the plug-in and no OpenCL is enabled.
+
+-
+Version 4.1.1.0
+Date 2013-01-16 15:30:56
+
+Fixed memory-leak in Convolution1D (was creating too many threads and never shutting them down)
+
+-
+Version 4.1.0.0
+Date 2012-10-31 11:10:52
+
+Catch all OpenCL-related errors and fall back to default CPU mode in case of failure. OpenCL errors are still sent to the console for debugging purposes.
+
+-
+Version 4.0.0.1
+Date 2012-10-25 10:47:13
+
+Catch OpenCL out of memory exception
+
+-
+Version 4.0.0.0
+Date 2012-10-16 15:19:56
+
+* Multi-threaded implementation of most filters (if not in OpenCL mode)
+* New SelectionFilter block
+
+-
+Version 3.2.0.1
+Date 2012-09-24 18:15:56
+
+Block "Gaussian Filter" was missing from the last update
+
+-
+Version 3.2.0.0
+Date 2012-09-21 18:53:24
+
+New feature: convolve a sequence with another sequence (2D only)
+New feature: non-linear filters (currently median and variance). Uses multiple CPUs to speed up the processing.
+
+-
+Version 3.1.0.1
+Date 2012-07-10 11:28:26
+
+Adjust gaussian filter output name
+
+-
+Version 3.0.1.0
+Date 2012-06-29 12:43:47
+
+* Updated to Vars 1.2 (native arrays)
+* Error message when the input is not set
+
+-
+Version 3.0.0.0
+Date 2012-06-21 13:13:17
+
+Support for Blocks programming. 
+First available block: gaussian filter
+
+-
+Version 2.1.0.0
+Date 2012-04-12 13:55:31
+
+New: ConvolutionException class to englobe potential errors
+
+-
+Version 2.0.5.3
+Date 2012-03-30 14:55:28
+
+Throw adequate exception if kernel size is too large for the filtered image
+
+-
+Version 2.0.5.2
+Date 2012-02-23 14:32:07
+
+New build using the Vars library
+
+-
+Version 2.0.5.1
+Date 2012-02-20 13:02:56
+
+Updated to EzPlug 1.6.4.1
+
+-
+Version 2.0.5.0
+Date 2011-12-01 14:29:03
+
+* catch error when no convolution direction is given (non-openCL case)
+
+-
+Version 2.0.4.0
+Date 2011-11-15 21:45:21
+
+* updated to icy.type.DataType
+* caught error on OpenCL loading
+
+-
+Version 2.0.3.0
+Date 2011-07-15 14:18:33
+
+Adjusted interface behavior when dealing with 3D data
+
+-
+Version 2.0.2.0
+Date 2011-05-19 17:18:24
+
+fixed a NullPointerException occurring in 1D convolution for non-double type images. Apparently this bug only occurs when the plugin is called via code by another plugin.
+
+-
+Version 2.0.1.1
+Date 2011-04-26 13:43:13
+
+Minor revision of the previous bugfix for non-OpenCL systems
+
+-
+Version 2.0.1.0
+Date 2011-04-24 07:30:12
+
+fixed bug causing the plugin not to load properly on a non OpenCL-enabled system
+
+-
+Version 2.0.0.0
+Date 2011-04-21 16:26:13
+
+Major update:
+ - Improved interface
+ - OpenCL support
+ - Supports user-defined kernels in 1D/2D
+
+-
+Version 1.0.2.0
+Date 2011-03-25 17:29:05
+
+Adapted to latest ICY update:
+- Fixed intensity rescale bug
+- Removed deprecated code
+
+-
+Version 1.0.1.0
+Date 2011-03-04 16:26:15
+
+added method to retrieve the kernel data as a double array
+
+-
+Version 1.0.0.3
+Date 2011-02-28 13:44:37
+
+Fixed remaining import issue
+
+-
+Version 1.0.0.2
+Date 2011-02-18 14:55:46
+
+same as 1.0.0.1
+
+-
+Version 1.0.0.1
+Date 2011-02-18 10:57:12
+
+adjusted buildpath to point to ICY's ArrayMath utility class
+
+-
+Version 1.0.0.0
+Date 2011-02-17 19:48:22
+
+
+
+]]></changelog><web><![CDATA[http://icy.bioimageanalysis.org/plugin/Filter_Toolbox]]></web><dependencies><dependency><classname>plugins.adufour.ezplug.EzPlug</classname></dependency><dependency><classname>plugins.adufour.blocks.Blocks</classname></dependency></dependencies></root>

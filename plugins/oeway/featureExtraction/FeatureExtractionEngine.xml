@@ -1,0 +1,193 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<root>
+<url><![CDATA[http://icy.bioimageanalysis.org/repository/getXMLPluginFile.php?pluginId=338&beta=0]]></url><name>FeatureExtractionEngine</name><version>2.9.6.0</version><required_kernel_version>1.0.0.0</required_kernel_version><kernel_ver>1.0.0.0</kernel_ver><jar_url><![CDATA[http://icy.bioimageanalysis.org/repository/getJarFile.php?pluginId=338&beta=0]]></jar_url><icon_url></icon_url><image_url></image_url><description><![CDATA[Simplify the feature extraction task by expose a simple feature extraction interface. ]]></description><classname><![CDATA[plugins.oeway.featureExtraction.FeatureExtractionEngine]]></classname><author><![CDATA[oeway - Wei Ouyang]]></author><changelog><![CDATA[-
+Version 2.9.6.0
+Date 2014-08-07 08:19:13
+
+* ugly fix of the listener triggering bug
+
+-
+Version 2.9.5.0
+Date 2014-08-06 18:47:16
+
+× fix bug of event trigger in user plugin
+
+-
+Version 2.9.4.0
+Date 2014-08-06 13:56:52
+
+* add listener to monitor user plugin
+
+-
+Version 2.9.3.0
+Date 2014-08-06 13:26:35
+
+× fixed channel extract bug
+
+-
+Version 2.9.2.0
+Date 2014-08-06 09:37:39
+
+* support live sequence to perform real-time processing
+
+-
+Version 2.9.1.0
+Date 2014-08-05 07:09:22
+
+* Add example to listen to the variables
+
+-
+Version 2.9.0.0
+Date 2014-08-04 06:28:40
+
+* add remove extra output
+
+-
+Version 2.8.0.0
+Date 2014-08-02 20:52:30
+
+* add arraySplitor
+
+-
+Version 2.7.0.0
+Date 2014-08-01 19:04:08
+
+* fixed channel name bug
+
+-
+Version 2.6.0.0
+Date 2014-08-01 18:41:26
+
+* fix progress frame bug
+
+-
+Version 2.5.0.0
+Date 2014-08-01 18:26:14
+
+* fix bugs
+
+-
+Version 2.4.0.0
+Date 2014-07-31 19:08:51
+
+* User plugin extended from featureExtractionPlugin interface can be used as block in protocol 
+
+-
+Version 2.3.0.0
+Date 2014-07-31 13:33:07
+
+* fixed gui initialization bug
+
+-
+Version 2.2.0.0
+Date 2014-07-31 12:22:53
+
+* update customize plugin options when invoke the engine from other plugin
+
+-
+Version 2.1.0.0
+Date 2014-07-31 12:01:02
+
+* Plugins extended from featureExtractionPlugin now can invoke FeatureExtractionEngine from their own
+
+-
+Version 2.0.3.1
+Date 2014-07-31 10:54:25
+
+* change JDK version to 1.6 to be capatible with lower version
+
+-
+Version 2.0.3.0
+Date 2014-07-31 08:36:31
+
+* set metadata for output merged sequence
+
+-
+Version 2.0.2.0
+Date 2014-07-30 14:04:37
+
+* multi-group bug fixed
+
+-
+Version 2.0.1.0
+Date 2014-07-30 13:47:33
+
+* ignore illegal input
+
+-
+Version 2.0.0.0
+Date 2014-07-30 13:28:21
+
+* Totally redesigned the engine, more stable
+* todo: multi-thread processing
+
+-
+Version 1.6.3.1
+Date 2014-07-29 21:39:34
+
+
+
+-
+Version 1.6.3.0
+Date 2014-07-29 20:55:25
+
+* X, Y direction bug
+
+-
+Version 1.6.2.0
+Date 2014-07-29 19:35:11
+
+* fixed bug with X axis
+
+-
+Version 1.6.0.0
+Date 2014-07-29 18:55:46
+
+* changed interface to allow adding EzcCmponent rather than only EzVar
+* fixed bug in transform along X and Y
+
+-
+Version 1.5.4.0
+Date 2014-07-28 20:18:06
+
+* skip output length check
+
+-
+Version 1.5.3.0
+Date 2014-07-28 20:08:40
+
+* fix channel count error
+
+-
+Version 1.5.0.0
+Date 2014-07-28 19:40:14
+
+* fix feature group bug
+
+-
+Version 1.4.0.0
+Date 2014-07-28 18:55:46
+
+* fix feature count bug
+
+-
+Version 1.2.0.0
+Date 2014-07-28 18:23:12
+
+× fix some bugs
+
+-
+Version 1.0.0.0
+Date 2014-07-28 13:57:00
+
+* rename the plugin
+* support protocol block
+* other improvements
+
+-
+Version 0.0.1.0b
+Date 2014-07-27 21:07:39
+
+
+
+]]></changelog><web><![CDATA[http://icy.bioimageanalysis.org/plugin/FeatureExtractionEngine]]></web><dependencies><dependency><classname>plugins.adufour.ezplug.EzPlug</classname></dependency><dependency><classname>plugins.adufour.protocols.Protocols</classname></dependency></dependencies></root>

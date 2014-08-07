@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<root>
+<url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getXMLPluginFile.php?pluginId=250&beta=0]]></url><name>Sequence builder</name><version>1.0.0.0</version><required_kernel_version>1.3.2.0</required_kernel_version><kernel_ver>1.3.2.0</kernel_ver><jar_url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getJarFile.php?pluginId=250&beta=0]]></jar_url><icon_url></icon_url><image_url></image_url><description><![CDATA[This plugin is intended for plugin developers. It provides some tools to dynamically generate sequences in image processing algorithms. See the documentation of the SequenceBuilder class for more details.]]></description><classname><![CDATA[plugins.ylemontag.sequencebuilder.SequenceBuilderLibrary]]></classname><author><![CDATA[ylemontag - Yoann Le Montagner]]></author><changelog><![CDATA[-
+Version 1.0.0.0
+Date 2013-04-22 13:04:10
+
+Fix: set minimum kernel version
+
+-
+Version 0.0.1.0b
+Date 2013-04-22 11:44:37
+
+
+
+]]></changelog><web><![CDATA[http://icy.bioimageanalysis.org/plugin/Sequence_builder]]></web><dependencies></dependencies></root>

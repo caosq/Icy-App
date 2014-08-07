@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='no'?>
+<root>
+<url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getXMLPluginFile.php?pluginId=97&beta=0]]></url><name>Stack Rotation</name><version>1.1.0.0</version><required_kernel_version>0.0.0.0</required_kernel_version><kernel_ver>0.0.0.0</kernel_ver><jar_url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getJarFile.php?pluginId=97&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=452]]></icon_url><image_url></image_url><description><![CDATA[Rotate the 3D stack from Front view to Right view or from Front view to Top view.
+
+
+
+
+
+]]></description><classname><![CDATA[plugins.spop.rotation3D.StackRotation]]></classname><author><![CDATA[spop - Sorin Pop]]></author><changelog><![CDATA[-
+Version 1.1.0.0
+Date 2012-06-21 10:21:20
+
+plugin ready for Block programming 
+
+-
+Version 1.0.0.1
+Date 2012-02-20 15:54:52
+
+matching the EzPlug update
+
+-
+Version 1.0.0.0
+Date 2011-05-02 15:02:52
+
+
+
+]]></changelog><dependencies><dependency><classname>plugins.adufour.ezplug.EzPlug</classname><version>0.0.0.1</version></dependency><dependency><classname>plugins.adufour.blocks.Blocks</classname><version>0.0.0.1</version></dependency><dependency><classname>plugins.adufour.protocols.Protocols</classname><version>0.0.0.1</version></dependency></dependencies></root>
