@@ -1,6 +1,13 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <root>
-<url><![CDATA[http://icy.bioimageanalysis.org/repository/getXMLPluginFile.php?pluginId=200&beta=0]]></url><name>Active Cells SDK</name><version>2.1.0.0</version><required_kernel_version>1.4.5.0</required_kernel_version><kernel_ver>1.4.5.0</kernel_ver><jar_url><![CDATA[http://icy.bioimageanalysis.org/repository/getJarFile.php?pluginId=200&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=2182]]></icon_url><image_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=1527]]></image_url><description><![CDATA[This is an icy package that encapsulates tools to design and implement parametric active contours. The package provides fast 2D and 3D filters for image preprocessing, and a framework to create and evolve snakes defined by a set of control points.]]></description><classname><![CDATA[plugins.big.bigsnakeutils.BIGSnakeUtils]]></classname><author><![CDATA[big - Biomedical Imaging Group]]></author><changelog><![CDATA[-
+<url><![CDATA[http://icy.bioimageanalysis.org/repository/getXMLPluginFile.php?pluginId=200&beta=0]]></url><name>Active Cells SDK</name><version>2.2.0.0</version><required_kernel_version>1.5.3.1</required_kernel_version><kernel_ver>1.5.3.1</kernel_ver><jar_url><![CDATA[http://icy.bioimageanalysis.org/repository/getJarFile.php?pluginId=200&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=2182]]></icon_url><image_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=1527]]></image_url><description><![CDATA[This is an icy package that encapsulates tools to design and implement parametric active contours. The package provides fast 2D and 3D filters for image preprocessing, and a framework to create and evolve snakes defined by a set of control points.]]></description><classname><![CDATA[plugins.big.bigsnakeutils.BIGSnakeUtils]]></classname><author><![CDATA[big - Biomedical Imaging Group]]></author><changelog><![CDATA[-
+Version 2.2.0.0
+Date 2014-08-07 20:13:11
+
+- Bug fixes
+- Updated to latest vtk library
+
+-
 Version 2.1.0.0
 Date 2014-05-03 01:35:15
 

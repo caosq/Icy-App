@@ -4,11 +4,13 @@
 
 <section name="general">
 <key name="sequencePersistence" value="false"/>
-<key name="autoUpdate" value="false"/>
+<key name="autoUpdate" value="true"/>
 <key name="autoCheckUpdate" value="false"/>
 <key name="alwaysOnTop" value="false"/>
 <section name="toolTips"/>
-<section name="confirms"/>
+<section name="confirms">
+<key name="exit" value="true"/>
+</section>
 <section name="ROIPanel">
 <key name="col_type" value="false"/>
 <key name="position_x" value="false"/>
@@ -30,13 +32,15 @@
 <key name="col_max_int" value="false"/>
 <key name="col_standard_dev" value="false"/>
 </section>
+<key name="guiFontSize" value="15"/>
 </section>
 
 <section name="repositories">
 <section name="repos0">
 <key name="name" value="default"/>
-<key name="location" value="http://www.bioimageanalysis.org/icy/repository/"/>
+<key name="location" value="http://icy.bioimageanalysis.org/repository/"/>
 <key name="enabled" value="true"/>
+<key name="supportParam" value="true"/>
 <section name="authentication">
 <key name="login" value=""/>
 <key name="password" value=""/>
@@ -53,9 +57,33 @@
 <section name="online"/>
 </section>
 <key name="maxMemory" value="8160"/>
-<section name="canvas"/>
-<section name="network"/>
-<section name="chat"/>
+<section name="canvas">
+<key name="mouseWheelSensibility" value="5"/>
+<key name="invertMouseWheelAxis" value="false"/>
+<key name="filtering" value="false"/>
+<section name="Canvas2D"/>
+</section>
+<section name="network">
+<key name="proxySetting" value="1"/>
+<key name="proxyHTTPHost" value=""/>
+<key name="proxyHTTPPort" value="80"/>
+<key name="proxyHTTPSHost" value=""/>
+<key name="proxyHTTPSPort" value="447"/>
+<key name="proxyFTPHost" value=""/>
+<key name="proxyFTPPort" value="21"/>
+<key name="proxySOCKSHost" value=""/>
+<key name="proxySOCKSPort" value="1080"/>
+</section>
+<section name="chat">
+<key name="nickname" value="guest6241"/>
+<key name="realname" value="guest6241"/>
+<key name="userPassword" value=""/>
+<key name="extraChannels" value=""/>
+<key name="autoConnect" value="true"/>
+<key name="showStatusMessages" value="false"/>
+<key name="desktopOverlay" value="true"/>
+<key name="desktopChannels" value="icy"/>
+</section>
 <section name="workspaces">
 <section name="local">
 <section name="actives">
@@ -66,7 +94,8 @@
 </section>
 <section name="loader">
 <section name="entry0">
-<key name="nbFile" value="0"/>
+<key name="nbFile" value="1"/>
+<key name="file0" value="D:/S1_6.SAZ"/>
 </section>
 <section name="entry1">
 <key name="nbFile" value="0"/>
@@ -98,9 +127,18 @@
 </section>
 <key name="os" value="win64"/>
 <key name="version" value="1.5.3.1"/>
+<key name="id" value="117212103"/>
+<section name="gui.histo"/>
 </section>
 <section name="plugins">
 <section name="plugins.tprovoost.Microscopy.MicroManagerForIcy.MicromanagerPlugin"/>
+<section name="plugins.tprovoost.scripteditor.main.ScriptEditorPlugin">
+<section name="recentFiles"/>
+<section name="openedFiles">
+<key name="idxTab" value="0"/>
+</section>
+</section>
+<section name="plugins.adufour.protocols.Protocols"/>
 </section>
 <section name="frame">
 <section name="main">
@@ -111,14 +149,14 @@
 <key name="MaximizedE" value="true"/>
 </section>
 <section name="inspector">
-<key name="XC" value="1999"/>
+<key name="XC" value="1606"/>
 <key name="YC" value="0"/>
 <key name="XE" value="600"/>
 <key name="YE" value="140"/>
 <key name="XI" value="600"/>
 <key name="YI" value="140"/>
-<key name="WidthC" value="561"/>
-<key name="HeightC" value="1215"/>
+<key name="WidthC" value="946"/>
+<key name="HeightC" value="1207"/>
 <key name="WidthE" value="300"/>
 <key name="HeightE" value="600"/>
 <key name="WidthI" value="300"/>
@@ -135,8 +173,8 @@
 <key name="YE" value="100"/>
 <key name="XI" value="100"/>
 <key name="YI" value="100"/>
-<key name="WidthC" value="551"/>
-<key name="HeightC" value="1122"/>
+<key name="WidthC" value="936"/>
+<key name="HeightC" value="1114"/>
 <key name="WidthE" value="400"/>
 <key name="HeightE" value="600"/>
 <key name="WidthI" value="400"/>
@@ -153,8 +191,8 @@
 <key name="YE" value="200"/>
 <key name="XI" value="200"/>
 <key name="YI" value="200"/>
-<key name="WidthC" value="551"/>
-<key name="HeightC" value="1122"/>
+<key name="WidthC" value="936"/>
+<key name="HeightC" value="1114"/>
 <key name="WidthE" value="400"/>
 <key name="HeightE" value="300"/>
 <key name="WidthI" value="400"/>
@@ -171,8 +209,8 @@
 <key name="YE" value="200"/>
 <key name="XI" value="200"/>
 <key name="YI" value="200"/>
-<key name="WidthC" value="551"/>
-<key name="HeightC" value="1122"/>
+<key name="WidthC" value="936"/>
+<key name="HeightC" value="1114"/>
 <key name="WidthE" value="400"/>
 <key name="HeightE" value="300"/>
 <key name="WidthI" value="400"/>

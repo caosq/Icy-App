@@ -2,7 +2,10 @@
 <root description="System workspace" name="sys">
 <task name="Plugins">
 <band name="Setup"/>
-<band name="New"/>
+<band name="New">
+<item classname="plugins.worm.bandpassfilter.BandpassFilter" priority="top"/>
+<item classname="plugins.tprovoost.scripteditor.main.ScriptEditorPlugin" priority="top"/>
+</band>
 <band name="Others">
 <item classname="plugins.adufour.activemeshes.ActiveMeshes" priority="low"/>
 <item classname="plugins.big.bigsnake.BIGSnake" priority="low"/>
@@ -12,7 +15,6 @@
 <item classname="plugins.tutorial.basics.AnimatedMarkPainter" priority="low"/>
 <item classname="plugins.spop.advancefilters.WeickertFilter" priority="low"/>
 <item classname="plugins.tprovoost.note.Annotation" priority="low"/>
-<item classname="plugins.worm.bandpassfilter.BandpassFilter" priority="low"/>
 <item classname="plugins.tutorial.basics.BarChartDemo1" priority="low"/>
 <item classname="plugins.nchenouard.trackprocessorperformance.BatchMSDsandDistanceComputation" priority="low"/>
 <item classname="plugins.tprovoost.bestthreshold.BestThreshold" priority="low"/>
@@ -67,7 +69,6 @@
 <item classname="plugins.fab.ROIPool.ROIPool" priority="low"/>
 <item classname="plugins.fab.ROITagger.ROITagger" priority="low"/>
 <item classname="plugins.adufour.roi.ROIStatistics" priority="low"/>
-<item classname="plugins.tprovoost.scripteditor.main.ScriptEditorPlugin" priority="low"/>
 <item classname="plugins.ylemontag.sequencecomparator.gui.SequenceComparator" priority="low"/>
 <item classname="plugins.oeway.featureExtraction.SequenceExtractor" priority="low"/>
 <item classname="plugins.tutorial.painter.SimplePainter01" priority="low"/>
