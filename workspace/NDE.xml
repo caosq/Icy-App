@@ -6,11 +6,12 @@
 </band>
 <band name="Misc">
 <item classname="plugins.adufour.protocols.Protocols" priority="top"/>
-<item classname="plugins.adufour.rotation3d.Rotation3D" priority="med"/>
+<item classname="plugins.spop.rotation3D.StackRotation" priority="med"/>
 <item classname="plugins.adufour.projection.Projection" priority="med"/>
 </band>
 <band name="Signal Processing">
 <item classname="plugins.oeway.featureExtraction.FeatureExtractionEngine" priority="top"/>
+<item classname="plugins.oeway.featureExtraction.FeatureExtractionInPython" priority="med"/>
 <item classname="plugins.worm.waveletfilter.WaveletFilter" priority="med"/>
 <item classname="plugins.tlecomte.histogram.HistogramEqualization" priority="med"/>
 <item classname="plugins.vannary.morphomaths.MorphoMaths" priority="low"/>

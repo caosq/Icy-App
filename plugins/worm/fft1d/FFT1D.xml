@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<root>
+<url><![CDATA[http://icy.bioimageanalysis.org/repository/getXMLPluginFile.php?pluginId=344&beta=0]]></url><name>EvaFFT1D</name><version>1.0.3.0</version><required_kernel_version>0.0.0.0</required_kernel_version><kernel_ver>0.0.0.0</kernel_ver><jar_url><![CDATA[http://icy.bioimageanalysis.org/repository/getJarFile.php?pluginId=344&beta=0]]></jar_url><icon_url></icon_url><image_url></image_url><description><![CDATA[*get the information of 1D singal in frequence domain ]]></description><classname><![CDATA[plugins.worm.fft1d.FFT1D]]></classname><author><![CDATA[worm]]></author><changelog><![CDATA[-
+Version 1.0.3.0
+Date 2014-08-19 14:27:52
+
+*fix the value error
+
+-
+Version 1.0.2.0
+Date 2014-08-19 14:06:10
+
+*fix the value error
+
+-
+Version 0.0.1.0
+Date 2014-08-14 08:48:26
+
+
+
+]]></changelog><web><![CDATA[http://icy.bioimageanalysis.org/plugin/EvaFFT1D]]></web><dependencies></dependencies></root>

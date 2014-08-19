@@ -5,9 +5,14 @@
 <band name="New">
 <item classname="plugins.worm.bandpassfilter.BandpassFilter" priority="top"/>
 <item classname="plugins.tprovoost.scripteditor.main.ScriptEditorPlugin" priority="top"/>
+<item classname="plugins.oeway.featureExtraction.FeatureExtractionInPython" priority="top"/>
+<item classname="plugins.worm.envelopeline.EnvelopeLine" priority="top"/>
+<item classname="plugins.worm.fft1d.FFT1D" priority="top"/>
+<item classname="plugins.worm.mbnfeatureextraction.MBNFeatureExtraction" priority="top"/>
 </band>
 <band name="Others">
 <item classname="plugins.adufour.activemeshes.ActiveMeshes" priority="low"/>
+<item classname="plugins.adufour.rotation3d.Rotation3D" priority="low"/>
 <item classname="plugins.big.bigsnake.BIGSnake" priority="low"/>
 <item classname="plugins.big.bigsnake3d.BIGSnake3D" priority="low"/>
 <item classname="plugins.spop.clahe.Clahe" priority="low"/>
@@ -76,7 +81,6 @@
 <item classname="plugins.fab.spotDetector.SpotDetector" priority="low"/>
 <item classname="plugins.nchenouard.particletracking.SpotTrackingPlugin" priority="low"/>
 <item classname="plugins.ylemontag.ssim.SSIMPlugin" priority="low"/>
-<item classname="plugins.spop.rotation3D.StackRotation" priority="low"/>
 <item classname="plugins.spop.rotation3D.StackRotationByAngle" priority="low"/>
 <item classname="plugins.tutorial.basics.SwimmingPoolEmitterTutorial" priority="low"/>
 <item classname="plugins.tutorial.basics.SwimmingPoolListenerTutorial" priority="low"/>
