@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root description="Detection and tracking tools" name="Detection">
+<task name="Detection &amp; Tracking">
+<band name="Detection">
+<item classname="plugins.big.bigsnake.BIGSnake" priority="top"/>
+<item classname="plugins.big.bigsnake3d.BIGSnake3D" priority="top"/>
+<item classname="plugins.adufour.activecontours.ActiveContours" priority="top"/>
+<item classname="plugins.adufour.activemeshes.ActiveMeshes" priority="top"/>
+<item classname="plugins.fab.spotDetector.SpotDetector" priority="top"/>
+</band>
+<band name="Segmentation">
+<item classname="plugins.adufour.thresholder.Thresholder" priority="top"/>
+<item classname="plugins.adufour.connectedcomponents.ConnectedComponents" priority="top"/>
+<item classname="plugins.adufour.hierarchicalkmeans.HierarchicalKMeans" priority="top"/>
+<item classname="plugins.tprovoost.bestthreshold.BestThreshold" priority="med"/>
+<item classname="plugins.nherve.colorquantization.KMeansColorQuantization" priority="med"/>
+<item classname="plugins.nherve.texseg.TextureSegmentation" priority="med"/>
+</band>
+<band name="Tracking">
+<item classname="plugins.nchenouard.particletracking.SpotTrackingPlugin" priority="top"/>
+<item classname="plugins.fab.trackmanager.TrackManager" priority="top"/>
+<item classname="plugins.fab.MiceProfiler.MiceProfilerTracker" priority="med"/>
+<item classname="plugins.fab.MiceProfiler.MiceProfilerLabelAnalyser" priority="med"/>
+<item classname="plugins.fab.MiceProfiler.MiceProfilerVideoLabelMaker" priority="med"/>
+</band>
+<band name="Find Edges">
+<item classname="plugins.adufour.filtering.FilterToolbox" priority="top"/>
+<item classname="plugins.vannary.contourdetection.ContourDetection" priority="top"/>
+</band>
+</task>
+</root>

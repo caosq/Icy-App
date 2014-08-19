@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root description="Tools for analysis" name="Tools">
+<task name="Tools">
+<band name="Measurement">
+<item classname="plugins.fab.anglehelper.AngleHelper" priority="top"/>
+<item classname="plugins.fab.protractor.Protractor" priority="top"/>
+<item classname="plugins.fab.Ruler.Ruler" priority="top"/>
+<item classname="plugins.adufour.roi.ROIMeasures" priority="top"/>
+<item classname="plugins.tprovoost.chronometer.Chronometer" priority="low"/>
+</band>
+<band name="Annotations">
+<item classname="plugins.tprovoost.note.Annotation" priority="med"/>
+<item classname="plugins.tprovoost.painting.Painting" priority="med"/>
+</band>
+<band name="Interface">
+<item classname="plugins.tprovoost.workspaceeditor.WorkspaceEditorPlugin" priority="top"/>
+<item classname="plugins.nherve.browser.ImageBrowser" priority="med"/>
+<item classname="plugins.nherve.flickr.FlickrImageRetrieve" priority="med"/>
+<item classname="plugins.tprovoost.recorder.Recorder" priority="med"/>
+</band>
+<band name="Matlab">
+<item classname="plugins.ylemontag.matlabimporter.MatlabImporterPlugin" priority="top"/>
+<item classname="plugins.ylemontag.matlabexporter.MatlabExporterPlugin" priority="top"/>
+</band>
+<band name="Scripting">
+<item classname="plugins.adufour.protocols.Protocols" priority="top"/>
+<item classname="plugins.tprovoost.scripteditor.main.ScriptEditorPlugin" priority="top"/>
+</band>
+<band name="Compare">
+<item classname="plugins.ylemontag.sequencecomparator.gui.SequenceComparator" priority="top"/>
+<item classname="plugins.ylemontag.ssim.SSIMPlugin" priority="med"/>
+</band>
+<band name="Visualization">
+<item classname="plugins.adufour.rotation3d.Rotation3D" priority="top"/>
+</band>
+</task>
+</root>

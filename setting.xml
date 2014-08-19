@@ -87,6 +87,10 @@
 <section name="workspaces">
 <section name="local">
 <section name="actives">
+<key name="Microscopy" value="true"/>
+<key name="Processing" value="true"/>
+<key name="Detection" value="true"/>
+<key name="Tools" value="true"/>
 <key name="NDE" value="true"/>
 </section>
 </section>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root description="Acquisition of images" name="Microscopy">
+<task name="Microscopy">
+<band name="Micro-Manager">
+<item classname="plugins.tprovoost.Microscopy.MicroManagerForIcy.MicromanagerPlugin" priority="top"/>
+<item classname="plugins.tprovoost.Microscopy.MicroscopeRemote.MicroscopeRemotePlugin" priority="top"/>
+</band>
+<band name="Acquisition">
+<item classname="plugins.tprovoost.Microscopy.MicroscopeSnapper.MicroscopeSnapperPlugin" priority="top"/>
+<item classname="plugins.tprovoost.Microscopy.MicroscopeLive.MicroscopeLivePlugin" priority="top"/>
+<item classname="plugins.tprovoost.Microscopy.microscopelive3d.MicroscopeLive3DPlugin" priority="top"/>
+<item classname="plugins.tprovoost.Microscopy.MicroscopeAdvancedAcquisition.MicroscopeAdvancedAcquisitionPlugin" priority="top"/>
+<item classname="plugins.tprovoost.Microscopy.CalibratorManager.CalibratorManagerPlugin" priority="top"/>
+</band>
+<band name="PSF">
+<item classname="plugins.praveen.PSF.WideFieldPSF" priority="top"/>
+</band>
+</task>
+</root>
