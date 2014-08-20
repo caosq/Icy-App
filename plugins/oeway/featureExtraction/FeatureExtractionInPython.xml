@@ -1,6 +1,18 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <root>
-<url><![CDATA[http://icy.bioimageanalysis.org/repository/getXMLPluginFile.php?pluginId=345&beta=0]]></url><name>EvaFeatureExtractionInPython</name><version>0.0.1.0</version><required_kernel_version>0.0.0.0</required_kernel_version><kernel_ver>0.0.0.0</kernel_ver><jar_url><![CDATA[http://icy.bioimageanalysis.org/repository/getJarFile.php?pluginId=345&beta=0]]></jar_url><icon_url></icon_url><image_url></image_url><description><![CDATA[Define feature extraction function in python]]></description><classname><![CDATA[plugins.oeway.featureExtraction.FeatureExtractionInPython]]></classname><author><![CDATA[oeway - Wei Ouyang]]></author><changelog><![CDATA[-
+<url><![CDATA[http://icy.bioimageanalysis.org/repository/getXMLPluginFile.php?pluginId=345&beta=0]]></url><name>EvaFeatureExtractionInPython</name><version>1.2.0.0</version><required_kernel_version>0.0.0.0</required_kernel_version><kernel_ver>0.0.0.0</kernel_ver><jar_url><![CDATA[http://icy.bioimageanalysis.org/repository/getJarFile.php?pluginId=345&beta=0]]></jar_url><icon_url></icon_url><image_url></image_url><description><![CDATA[Define feature extraction function in python]]></description><classname><![CDATA[plugins.oeway.featureExtraction.FeatureExtractionInPython]]></classname><author><![CDATA[oeway - Wei Ouyang]]></author><changelog><![CDATA[-
+Version 1.2.0.0
+Date 2014-08-20 11:38:11
+
+* now we can load template from library located in ICY_ROOT/scripts, naming with the pattern "eva_XXXXX.py"
+
+-
+Version 1.1.0.0
+Date 2014-08-20 04:13:59
+
+* add options to the engine
+
+-
 Version 0.0.1.0
 Date 2014-08-19 15:06:38
 
