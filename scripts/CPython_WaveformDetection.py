@@ -40,7 +40,7 @@ def process(input, position):
 	h = 7.08
 	f = 1e8
 	surface = waveSnippet(SearchStart,SearchRange,input)
-	bottom1 = surface.getNextSnippett(distance,waveWidth)
+	bottom1 = surface.getNextSnippet(distance,waveWidth)
 	output = np.array([surface.getMaxLocation(),bottom1.getMaxAmplitude()])
 	return output
 
