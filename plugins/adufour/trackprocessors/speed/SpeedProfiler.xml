@@ -1,6 +1,13 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <root>
-<url><![CDATA[http://icy.bioimageanalysis.org/repository/getXMLPluginFile.php?pluginId=191&beta=0]]></url><name>Motion Profiler</name><version>3.0.2.0</version><required_kernel_version>1.5.3.1</required_kernel_version><kernel_ver>1.5.3.1</kernel_ver><jar_url><![CDATA[http://icy.bioimageanalysis.org/repository/getJarFile.php?pluginId=191&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=3059]]></icon_url><image_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=3060]]></image_url><description><![CDATA[Track manager plug-in measuring motion statistics in 2D/3D, including min/max/avg/total displacement (absolute & relative to origin), and displacement profiles along all spatial axes.]]></description><classname><![CDATA[plugins.adufour.trackprocessors.speed.SpeedProfiler]]></classname><author><![CDATA[adufour - Alexandre Dufour]]></author><changelog><![CDATA[-
+<url><![CDATA[http://icy.bioimageanalysis.org/repository/getXMLPluginFile.php?pluginId=191&beta=0]]></url><name>Motion Profiler</name><version>3.0.3.0</version><required_kernel_version>1.5.3.1</required_kernel_version><kernel_ver>1.5.3.1</kernel_ver><jar_url><![CDATA[http://icy.bioimageanalysis.org/repository/getJarFile.php?pluginId=191&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=3059]]></icon_url><image_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=3060]]></image_url><description><![CDATA[Track manager plug-in measuring motion statistics in 2D/3D, including min/max/avg/total displacement (absolute & relative to origin), and displacement profiles along all spatial axes.]]></description><classname><![CDATA[plugins.adufour.trackprocessors.speed.SpeedProfiler]]></classname><author><![CDATA[adufour - Alexandre Dufour]]></author><changelog><![CDATA[-
+Version 3.0.3.0
+Date 2014-08-21 17:02:11
+
+* Renamed "Relative" to "net" displacement
+* New "tortuosity" measure (ratio of net to total displacement"
+
+-
 Version 3.0.2.0
 Date 2014-07-21 18:43:42
 

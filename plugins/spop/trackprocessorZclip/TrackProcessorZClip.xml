@@ -1,6 +1,6 @@
-<?xml version='1.0' encoding='ISO-8859-1' standalone='no'?>
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <root>
-<url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getXMLPluginFile.php?pluginId=154&beta=0]]></url><name>Track Processor Z Clip</name><version>1.0.0.0</version><required_kernel_version>0.0.0.0</required_kernel_version><kernel_ver>0.0.0.0</kernel_ver><jar_url><![CDATA[http://www.bioimageanalysis.org/icy/repository/getJarFile.php?pluginId=154&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=986]]></icon_url><image_url></image_url><description><![CDATA[Clip depth processor forTrack Manager plugin
+<url><![CDATA[http://icy.bioimageanalysis.org/repository/getXMLPluginFile.php?pluginId=154&beta=0]]></url><name>Track Processor Z Clip</name><version>1.0.0.0</version><required_kernel_version>0.0.0.0</required_kernel_version><kernel_ver>0.0.0.0</kernel_ver><jar_url><![CDATA[http://icy.bioimageanalysis.org/repository/getJarFile.php?pluginId=154&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=986]]></icon_url><image_url></image_url><description><![CDATA[Clip depth processor forTrack Manager plugin
 
 Show only the Detections in the range of current Z slice +-Value.
 Value is a parameter of the track processor.]]></description><classname><![CDATA[plugins.spop.trackprocessorZclip.TrackProcessorZClip]]></classname><author><![CDATA[spop - Sorin Pop]]></author><changelog><![CDATA[-
@@ -15,4 +15,4 @@ Date 2012-02-23 18:20:33
 
 
 
-]]></changelog><dependencies><dependency><classname>plugins.fab.trackmanager.TrackManager</classname><version>0.0.0.1</version></dependency></dependencies></root>
+]]></changelog><web><![CDATA[http://icy.bioimageanalysis.org/plugin/Track_Processor_Z_Clip]]></web><dependencies><dependency><classname>plugins.fab.trackmanager.TrackManager</classname></dependency></dependencies></root>
