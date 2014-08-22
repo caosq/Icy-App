@@ -12,26 +12,14 @@
 </band>
 <band name="Others">
 <item classname="plugins.vannary.morphomaths.AnalyzeSkeleton" priority="low"/>
-<item classname="plugins.tutorial.basics.AnimatedMarkPainter" priority="low"/>
-<item classname="plugins.tutorial.basics.BarChartDemo1" priority="low"/>
 <item classname="plugins.nchenouard.trackprocessorperformance.BatchMSDsandDistanceComputation" priority="low"/>
 <item classname="plugins.oeway.viewers.Chart1DCanvas" priority="low"/>
-<item classname="plugins.tutorial.basics.CreateAreaROI" priority="low"/>
 <item classname="plugins.adufour.sequenceutil.SequenceCropper" priority="low"/>
 <item classname="plugins.oeway.DcmImporter" priority="low"/>
-<item classname="plugins.tutorial.basics.DeviationRendererDemo2" priority="low"/>
 <item classname="plugins.oeway.EvaRawImporter" priority="low"/>
 <item classname="plugins.adufour.tutorial.EzPlugTutorial" priority="low"/>
 <item classname="plugins.praveen.fft.FFT" priority="low"/>
-<item classname="plugins.tutorial.basics.GenerateABugTutorial" priority="low"/>
-<item classname="plugins.tutorial.gui.SequenceActionFrameExample" priority="low"/>
-<item classname="plugins.tutorial.gui.GuiBuildExample01" priority="low"/>
-<item classname="plugins.tutorial.basics.HelloWorldPlugin" priority="low"/>
-<item classname="plugins.tutorial.basics.GenerateImageOfDifferentType" priority="low"/>
-<item classname="plugins.tutorial.basics.TransparentlyProcessAnyImageDataType" priority="low"/>
 <item classname="plugins.nchenouard.isotropicwavelets.IsotropicWavelets" priority="low"/>
-<item classname="plugins.tutorial.basics.ListOfRegisteredPlugins" priority="low"/>
-<item classname="plugins.tutorial.event.MainListenerUse" priority="low"/>
 <item classname="plugins.nherve.maskeditor.MaskEditor" priority="low"/>
 <item classname="plugins.ylemontag.mathoperations.MathOperationPlugin" priority="low"/>
 <item classname="plugins.oeway.featureExtraction.MaxProjection" priority="low"/>
@@ -40,19 +28,12 @@
 <item classname="plugins.stef.demo.particle.Particles" priority="low"/>
 <item classname="plugins.tlecomte.pythonPackager.PythonPluginPackager" priority="low"/>
 <item classname="plugins.tlecomte.pythonExtractor.PythonExtractorManager" priority="low"/>
-<item classname="plugins.tutorial.roi.ProcessingFromROI" priority="low"/>
 <item classname="plugins.nchenouard.roiintensityevolution.ROIIntensityEvolution" priority="low"/>
-<item classname="plugins.tutorial.basics.IntensityOverRoi" priority="low"/>
 <item classname="plugins.fab.ROIPool.ROIPool" priority="low"/>
 <item classname="plugins.fab.ROITagger.ROITagger" priority="low"/>
 <item classname="plugins.adufour.roi.ROIStatistics" priority="low"/>
 <item classname="plugins.oeway.featureExtraction.SequenceExtractor" priority="low"/>
-<item classname="plugins.tutorial.painter.SimplePainter01" priority="low"/>
-<item classname="plugins.tutorial.painter.SimplePainter02" priority="low"/>
 <item classname="plugins.spop.rotation3D.StackRotationByAngle" priority="low"/>
-<item classname="plugins.tutorial.basics.SwimmingPoolEmitterTutorial" priority="low"/>
-<item classname="plugins.tutorial.basics.SwimmingPoolListenerTutorial" priority="low"/>
-<item classname="plugins.tutorial.vtk.VtkPainterExamples" priority="low"/>
 <item classname="plugins.adufour.workbooks.Workbooks" priority="low"/>
 <item classname="plugins.tprovoost.xugglerslider.XugglerSlider" priority="low"/>
 </band>
