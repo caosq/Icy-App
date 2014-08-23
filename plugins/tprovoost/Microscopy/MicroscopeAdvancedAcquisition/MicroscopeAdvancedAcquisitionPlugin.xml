@@ -1,6 +1,12 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <root>
-<url><![CDATA[http://icy.bioimageanalysis.org/repository/getXMLPluginFile.php?pluginId=126&beta=0]]></url><name>Microscope Advanced Acquisition</name><version>1.3.2.0</version><required_kernel_version>1.5.0.0</required_kernel_version><kernel_ver>1.5.0.0</kernel_ver><jar_url><![CDATA[http://icy.bioimageanalysis.org/repository/getJarFile.php?pluginId=126&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=657]]></icon_url><image_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=658]]></image_url><description><![CDATA[Advanced Acquisition plugin for microscope.]]></description><classname><![CDATA[plugins.tprovoost.Microscopy.MicroscopeAdvancedAcquisition.MicroscopeAdvancedAcquisitionPlugin]]></classname><author><![CDATA[tprovoost - Thomas Provoost]]></author><changelog><![CDATA[-
+<url><![CDATA[http://icy.bioimageanalysis.org/repository/getXMLPluginFile.php?pluginId=126&beta=0]]></url><name>Microscope Advanced Acquisition</name><version>1.3.3.0</version><required_kernel_version>1.5.0.0</required_kernel_version><kernel_ver>1.5.0.0</kernel_ver><jar_url><![CDATA[http://icy.bioimageanalysis.org/repository/getJarFile.php?pluginId=126&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=657]]></icon_url><image_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=658]]></image_url><description><![CDATA[Advanced Acquisition plugin for microscope.]]></description><classname><![CDATA[plugins.tprovoost.Microscopy.MicroscopeAdvancedAcquisition.MicroscopeAdvancedAcquisitionPlugin]]></classname><author><![CDATA[tprovoost - Thomas Provoost]]></author><changelog><![CDATA[-
+Version 1.3.3.0
+Date 2014-08-22 18:06:01
+
+Updated for last Micro Manager plugin + some improvements and fixes.
+
+-
 Version 1.3.2.0
 Date 2014-07-15 11:35:00
 

@@ -3,12 +3,18 @@
 <task name="Plugins">
 <band name="Setup"/>
 <band name="New">
-<item classname="plugins.worm.bandpassfilter.BandpassFilter" priority="top"/>
 <item classname="plugins.tprovoost.scripteditor.main.ScriptEditorPlugin" priority="top"/>
+<item classname="plugins.oeway.featureExtraction.FeatureExtractionEngine" priority="top"/>
 <item classname="plugins.oeway.featureExtraction.FeatureExtractionInPython" priority="top"/>
+<item classname="plugins.oeway.featureExtraction.MaxProjection" priority="top"/>
+<item classname="plugins.oeway.featureExtraction.MeanProjection" priority="top"/>
+<item classname="plugins.oeway.featureExtraction.Projections" priority="top"/>
+<item classname="plugins.oeway.featureExtraction.SequenceExtractor" priority="top"/>
+<item classname="plugins.worm.bandpassfilter.BandpassFilter" priority="top"/>
 <item classname="plugins.worm.envelopeline.EnvelopeLine" priority="top"/>
 <item classname="plugins.worm.fft1d.FFT1D" priority="top"/>
 <item classname="plugins.worm.mbnfeatureextraction.MBNFeatureExtraction" priority="top"/>
+<item classname="plugins.worm.waveletfilter.WaveletFilter" priority="top"/>
 </band>
 <band name="Others">
 <item classname="plugins.vannary.morphomaths.AnalyzeSkeleton" priority="low"/>
@@ -22,8 +28,6 @@
 <item classname="plugins.nchenouard.isotropicwavelets.IsotropicWavelets" priority="low"/>
 <item classname="plugins.nherve.maskeditor.MaskEditor" priority="low"/>
 <item classname="plugins.ylemontag.mathoperations.MathOperationPlugin" priority="low"/>
-<item classname="plugins.oeway.featureExtraction.MaxProjection" priority="low"/>
-<item classname="plugins.oeway.featureExtraction.MeanProjection" priority="low"/>
 <item classname="plugins.nchenouard.particleTracking.sequenceGenerator.TrackingBenchmarkGenerator" priority="low"/>
 <item classname="plugins.stef.demo.particle.Particles" priority="low"/>
 <item classname="plugins.tlecomte.pythonPackager.PythonPluginPackager" priority="low"/>
@@ -32,7 +36,6 @@
 <item classname="plugins.fab.ROIPool.ROIPool" priority="low"/>
 <item classname="plugins.fab.ROITagger.ROITagger" priority="low"/>
 <item classname="plugins.adufour.roi.ROIStatistics" priority="low"/>
-<item classname="plugins.oeway.featureExtraction.SequenceExtractor" priority="low"/>
 <item classname="plugins.spop.rotation3D.StackRotationByAngle" priority="low"/>
 <item classname="plugins.adufour.workbooks.Workbooks" priority="low"/>
 <item classname="plugins.tprovoost.xugglerslider.XugglerSlider" priority="low"/>

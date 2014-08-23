@@ -1,6 +1,14 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <root>
-<url><![CDATA[http://icy.bioimageanalysis.org/repository/getXMLPluginFile.php?pluginId=122&beta=0]]></url><name>Micro-Manager for Icy</name><version>1.5.2.0</version><required_kernel_version>1.5.0.0</required_kernel_version><kernel_ver>1.5.0.0</kernel_ver><jar_url><![CDATA[http://icy.bioimageanalysis.org/repository/getJarFile.php?pluginId=122&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=639]]></icon_url><image_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=665]]></image_url><description><![CDATA[Micro-Manager plugin for Icy. Use your microscope and microscopic devices in Icy! Now compatible with MM 1.4.14.]]></description><classname><![CDATA[plugins.tprovoost.Microscopy.MicroManagerForIcy.MicromanagerPlugin]]></classname><author><![CDATA[tprovoost - Thomas Provoost]]></author><changelog><![CDATA[-
+<url><![CDATA[http://icy.bioimageanalysis.org/repository/getXMLPluginFile.php?pluginId=122&beta=0]]></url><name>Micro-Manager for Icy</name><version>1.5.3.0</version><required_kernel_version>1.5.0.0</required_kernel_version><kernel_ver>1.5.0.0</kernel_ver><jar_url><![CDATA[http://icy.bioimageanalysis.org/repository/getJarFile.php?pluginId=122&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=639]]></icon_url><image_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=665]]></image_url><description><![CDATA[Micro-Manager plugin for Icy. Use your microscope and microscopic devices in Icy! Now compatible with MM 1.4.14.]]></description><classname><![CDATA[plugins.tprovoost.Microscopy.MicroManagerForIcy.MicromanagerPlugin]]></classname><author><![CDATA[tprovoost - Thomas Provoost]]></author><changelog><![CDATA[-
+Version 1.5.3.0
+Date 2014-08-22 18:03:00
+
+- Support for multi channel camera acquisition.
+- Many other changes, improvements and fixes.
+
+
+-
 Version 1.5.2.0
 Date 2014-07-15 11:33:17
 
