@@ -12,9 +12,11 @@
 <band name="Signal Processing">
 <item classname="plugins.oeway.featureExtraction.FeatureExtractionEngine" priority="top"/>
 <item classname="plugins.oeway.featureExtraction.FeatureExtractionInPython" priority="med"/>
+<item classname="plugins.worm.waveletfilter.WaveletFilter" priority="med"/>
 <item classname="plugins.tlecomte.histogram.HistogramEqualization" priority="med"/>
 <item classname="plugins.vannary.morphomaths.MorphoMaths" priority="low"/>
 <item classname="plugins.spop.advancefilters.PeronaMalikFilter" priority="low"/>
+<item classname="plugins.oeway.featureExtraction.Projections" priority="med"/>
 <item classname="plugins.adufour.thresholder.Thresholder" priority="low"/>
 <item classname="plugins.spop.medianfilter.MedianFilter" priority="low"/>
 </band>
@@ -25,6 +27,8 @@
 <item classname="plugins.fab.anglehelper.AngleHelper" priority="med"/>
 <item classname="plugins.fab.Ruler.Ruler" priority="top"/>
 <item classname="plugins.adufour.roi.ROIMeasures" priority="med"/>
+<item classname="plugins.worm.image2workbook.Image2Workbook" priority="med"/>
+<item classname="plugins.adufour.connectedcomponents.ConnectedComponents" priority="med"/>
 </band>
 </task>
 </root>

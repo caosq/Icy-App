@@ -15,6 +15,7 @@
 <item classname="plugins.worm.fft1d.FFT1D" priority="top"/>
 <item classname="plugins.worm.mbnfeatureextraction.MBNFeatureExtraction" priority="top"/>
 <item classname="plugins.worm.waveletfilter.WaveletFilter" priority="top"/>
+<item classname="plugins.worm.image2workbook.Image2Workbook" priority="top"/>
 </band>
 <band name="Others">
 <item classname="plugins.vannary.morphomaths.AnalyzeSkeleton" priority="low"/>
