@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<protocol VERSION="4">
+<blocks>
+<block ID="1122612515" blockType="plugins.oeway.featureExtraction.SequenceExtractor" className="plugins.oeway.featureExtraction.SequenceExtractor" collapsed="false" definedName="Sequence extractor" height="264" width="349" xLocation="31" yLocation="0">
+<variables>
+<input>
+<variable ID="x" name="x" runtime="false" value="0" visible="false"/>
+<variable ID="y" name="y" runtime="false" value="0" visible="false"/>
+<variable ID="z" name="z" runtime="false" value="0" visible="false"/>
+<variable ID="t" name="t" runtime="false" value="0" visible="false"/>
+<variable ID="c" name="c" runtime="false" value="0" visible="false"/>
+<variable ID="Extract Along" name="Extract Along" runtime="false" value="X" visible="false"/>
+<variable ID="Input" name="Input" runtime="false" visible="false"/>
+</input>
+<output>
+<variable ID="Output" name="Output" runtime="false" visible="false"/>
+</output>
+</variables>
+</block>
+<block ID="1941653049" blockType="plugins.oeway.featureExtraction.FeatureExtractionInPython" className="plugins.oeway.featureExtraction.FeatureExtractionInPython" collapsed="false" definedName="EvaFE In Python" height="402" width="718" xLocation="423" yLocation="3">
+<variables>
+<input>
+<variable ID="Interpreter" name="Interpreter" runtime="false" value="CPython" visible="false"/>
+<variable ID="Template" name="Template" runtime="false" value="CPython_FFT" visible="false"/>
+<variable ID="Script" name="Script" runtime="false" value="import numpy as np&#10;def process(input, position):&#10;&#9;#put your python(CPython) code below&#10;&#9;#do something with input&#10;&#9;output = np.fft.fft(input)&#10;&#9;output = np.abs(output)&#10;&#9;return output[1:]" visible="false"/>
+<variable ID="input" name="input" runtime="false" visible="false"/>
+<variable ID="Pos" name="Pos" runtime="false" value="" visible="false"/>
+</input>
+<output>
+<variable ID="output" name="output" runtime="false" visible="false"/>
+</output>
+</variables>
+</block>
+<block ID="1341842687" blockType="plugins.oeway.viewers.LineChartDisplay" className="plugins.oeway.viewers.LineChartDisplay" collapsed="false" definedName="Line chart display" height="260" width="942" xLocation="296" yLocation="628">
+<variables>
+<input>
+<variable ID="" name="" runtime="false" visible="false"/>
+</input>
+<output/>
+</variables>
+</block>
+<block ID="1140975768" blockType="plugins.oeway.viewers.LineChartDisplay" className="plugins.oeway.viewers.LineChartDisplay" collapsed="false" definedName="Line chart display" height="192" width="870" xLocation="150" yLocation="430">
+<variables>
+<input>
+<variable ID="" name="" runtime="false" visible="false"/>
+</input>
+<output/>
+</variables>
+</block>
+</blocks>
+<links>
+<link dstBlockID="1941653049" dstVarID="input" srcBlockID="1122612515" srcVarID="Output"/>
+<link dstBlockID="1341842687" dstVarID="" srcBlockID="1941653049" srcVarID="output"/>
+<link dstBlockID="1140975768" dstVarID="" srcBlockID="1122612515" srcVarID="Output"/>
+</links>
+</protocol>

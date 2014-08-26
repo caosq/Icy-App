@@ -5,7 +5,6 @@
 <band name="New">
 <item classname="plugins.tprovoost.scripteditor.main.ScriptEditorPlugin" priority="top"/>
 <item classname="plugins.oeway.featureExtraction.FeatureExtractionEngine" priority="top"/>
-<item classname="plugins.oeway.featureExtraction.FeatureExtractionInPython" priority="top"/>
 <item classname="plugins.oeway.featureExtraction.MaxProjection" priority="top"/>
 <item classname="plugins.oeway.featureExtraction.MeanProjection" priority="top"/>
 <item classname="plugins.oeway.featureExtraction.Projections" priority="top"/>
@@ -16,6 +15,7 @@
 <item classname="plugins.worm.mbnfeatureextraction.MBNFeatureExtraction" priority="top"/>
 <item classname="plugins.worm.waveletfilter.WaveletFilter" priority="top"/>
 <item classname="plugins.worm.image2workbook.Image2Workbook" priority="top"/>
+<item classname="plugins.oeway.featureExtraction.FeatureExtractionInPython" priority="top"/>
 </band>
 <band name="Others">
 <item classname="plugins.vannary.morphomaths.AnalyzeSkeleton" priority="low"/>

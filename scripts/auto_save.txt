@@ -1,6 +1,0 @@
-import numpy as np
-def process(input, position):
-	output = input
-	#do something here
-
-	return output[1:100]

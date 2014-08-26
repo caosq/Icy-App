@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<protocol VERSION="4">
+<blocks>
+<block ID="1122612515" blockType="plugins.oeway.featureExtraction.SequenceExtractor" className="plugins.oeway.featureExtraction.SequenceExtractor" collapsed="false" definedName="Sequence extractor" height="264" width="349" xLocation="32" yLocation="23">
+<variables>
+<input>
+<variable ID="x" name="x" runtime="false" value="0" visible="false"/>
+<variable ID="y" name="y" runtime="false" value="0" visible="false"/>
+<variable ID="z" name="z" runtime="false" value="0" visible="false"/>
+<variable ID="t" name="t" runtime="false" value="0" visible="false"/>
+<variable ID="c" name="c" runtime="false" value="0" visible="false"/>
+<variable ID="Extract Along" name="Extract Along" runtime="false" value="X" visible="false"/>
+<variable ID="Input" name="Input" runtime="false" visible="false"/>
+</input>
+<output>
+<variable ID="Output" name="Output" runtime="false" visible="false"/>
+</output>
+</variables>
+</block>
+<block ID="1941653049" blockType="plugins.oeway.featureExtraction.FeatureExtractionInPython" className="plugins.oeway.featureExtraction.FeatureExtractionInPython" collapsed="false" definedName="EvaFE In Python" height="464" width="769" xLocation="403" yLocation="17">
+<variables>
+<input>
+<variable ID="Interpreter" name="Interpreter" runtime="false" value="CPython" visible="false"/>
+<variable ID="Template" name="Template" runtime="false" value="none" visible="false"/>
+<variable ID="Script" name="Script" runtime="false" value="import numpy as np&#13;&#10;class waveSnippet():&#13;&#10;&#9;def __init__(self,offset, length, parentWaveform):&#13;&#10;&#9;&#9;self.offset = offset&#13;&#10;&#9;&#9;self.length = length&#13;&#10;&#9;&#9;self.waveform = parentWaveform[offset:offset+length]&#13;&#10;&#9;&#9;self.parentWaveform = parentWaveform&#13;&#10;&#9;&#9;self.getLocation = self.getMaxLocation&#13;&#10;&#9;&#9;self.paramDict = {}&#13;&#10;&#9;def getMaxLocation(self):&#13;&#10;&#9;&#9;if not 'maxLocation' in self.paramDict:&#13;&#10;&#9;&#9;&#9;self.paramDict['maxLocation'] = self.offset + self.waveform.argmax()&#13;&#10;&#9;&#9;return self.paramDict['maxLocation']&#13;&#10;&#9;def getMinLocation(self):&#13;&#10;&#9;&#9;if not 'minLocation' in self.paramDict:&#13;&#10;&#9;&#9;&#9;self.paramDict['minLocation'] =  self.offset + self.waveform.argmin()&#13;&#10;&#9;&#9;return self.paramDict['minLocation']&#13;&#10;&#9;def getMaxAmplitude(self):&#13;&#10;&#9;&#9;if not 'maxAmplitude' in self.paramDict:&#13;&#10;&#9;&#9;&#9;self.paramDict['maxAmplitude'] =  self.waveform.max()&#13;&#10;&#9;&#9;return self.paramDict['maxAmplitude']&#13;&#10;&#9;def getMinAmplitude(self):&#13;&#10;&#9;&#9;if not 'minAmplitude' in self.paramDict:&#13;&#10;&#9;&#9;&#9;self.paramDict['minAmplitude'] =  self.waveform.min()&#13;&#10;&#9;&#9;return self.paramDict['minAmplitude']&#13;&#10;&#9;def getWaveRangeArray(self):&#13;&#10;&#9;&#9;if not 'waveRangeArray' in self.paramDict:&#13;&#10;&#9;&#9;&#9;self.paramDict['waveRangeArray'] = np.zeros((self.parentWaveform.shape[0]))&#13;&#10;&#9;&#9;&#9;self.paramDict['waveRangeArray'][self.offset:self.offset+self.length] +=self.getMaxAmplitude() *0.5&#13;&#10;&#9;&#9;return self.paramDict['waveRangeArray']&#13;&#10;&#9;def getNextSnippet(self,distance,length):&#13;&#10;&#9;&#9;newoffset = self.getLocation() + distance - length/2&#13;&#10;&#9;&#9;return waveSnippet(newoffset,length,self.parentWaveform)&#13;&#10;&#13;&#10;def process(input, position):&#13;&#10;&#9;SearchStart = 0&#13;&#10;&#9;SearchRange = 650&#10;&#9;distance = 400&#10;&#9;waveWidth = 100&#10;&#9;h = 9.05&#10;&#9;f = 1e8&#13;&#10;&#9;surface = waveSnippet(SearchStart,SearchRange,input)&#13;&#10;&#9;bottom1 = surface.getNextSnippet(distance,waveWidth)&#13;&#10;&#9;bottom2 = bottom1.getNextSnippet(distance,waveWidth)&#10;&#9;speed = 2.0*h*1e-3/((bottom2.getMaxLocation() - bottom1.getMaxLocation())*8e-9)&#10;&#9;output = np.array([speed])&#13;&#10;&#9;return output&#13;&#10;&#13;&#10;" visible="false"/>
+<variable ID="input" name="input" runtime="false" visible="false"/>
+<variable ID="Pos" name="Pos" runtime="false" value="" visible="false"/>
+</input>
+<output>
+<variable ID="output" name="output" runtime="false" visible="false"/>
+</output>
+</variables>
+</block>
+<block ID="1934552595" blockType="plugins.oeway.viewers.LineChartDisplay" className="plugins.oeway.viewers.LineChartDisplay" collapsed="true" definedName="Line chart display" height="341" width="1128" xLocation="1346" yLocation="447">
+<variables>
+<input>
+<variable ID="" name="" runtime="false" visible="false"/>
+</input>
+<output/>
+</variables>
+</block>
+<block ID="2636996" blockType="plugins.adufour.blocks.tools.Display" className="plugins.adufour.blocks.tools.Display" collapsed="false" definedName="Display" height="221" width="254" xLocation="1337" yLocation="202">
+<variables>
+<input>
+<variable ID="object" name="object" runtime="false" type="[D" visible="false"/>
+</input>
+<output/>
+</variables>
+</block>
+<block ID="576051391" blockType="plugins.oeway.viewers.LineChartDisplay" className="plugins.oeway.viewers.LineChartDisplay" collapsed="false" definedName="Line chart display" height="281" width="1469" xLocation="111" yLocation="501">
+<variables>
+<input>
+<variable ID="" name="" runtime="false" visible="false"/>
+</input>
+<output/>
+</variables>
+</block>
+</blocks>
+<links>
+<link dstBlockID="1941653049" dstVarID="input" srcBlockID="1122612515" srcVarID="Output"/>
+<link dstBlockID="1934552595" dstVarID="" srcBlockID="1941653049" srcVarID="output"/>
+<link dstBlockID="2636996" dstVarID="object" srcBlockID="1941653049" srcVarID="output"/>
+<link dstBlockID="576051391" dstVarID="" srcBlockID="1122612515" srcVarID="Output"/>
+</links>
+</protocol>
