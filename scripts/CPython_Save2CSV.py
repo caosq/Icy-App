@@ -11,6 +11,6 @@ def process(input, position):
     
 	file = open(path,'a')
 	outputStr = [str(d) for d in output]
-	file.write("%f,%f,%s\\n"%(position[0],position[1],",".join(outputStr)))
+	file.write("%f,%f,%s\n"%(position[0],position[1],",".join(outputStr)))
 	file.close()
 	return  output
