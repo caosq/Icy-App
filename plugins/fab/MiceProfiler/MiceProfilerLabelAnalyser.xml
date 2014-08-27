@@ -1,6 +1,12 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <root>
-<url><![CDATA[http://icy.bioimageanalysis.org/repository/getXMLPluginFile.php?pluginId=156&beta=0]]></url><name>Mice Profiler Label Analyser</name><version>7.0.0.8</version><required_kernel_version>1.2.3.1</required_kernel_version><kernel_ver>1.2.3.1</kernel_ver><jar_url><![CDATA[http://icy.bioimageanalysis.org/repository/getJarFile.php?pluginId=156&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=1007]]></icon_url><image_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=1008]]></image_url><description><![CDATA[Mice profiler temporal analysis of data]]></description><classname><![CDATA[plugins.fab.MiceProfiler.MiceProfilerLabelAnalyser]]></classname><author><![CDATA[fab - Fabrice de Chaumont]]></author><changelog><![CDATA[-
+<url><![CDATA[http://icy.bioimageanalysis.org/repository/getXMLPluginFile.php?pluginId=156&beta=0]]></url><name>Mice Profiler Label Analyser</name><version>7.0.0.9</version><required_kernel_version>1.2.3.1</required_kernel_version><kernel_ver>1.2.3.1</kernel_ver><jar_url><![CDATA[http://icy.bioimageanalysis.org/repository/getJarFile.php?pluginId=156&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=1007]]></icon_url><image_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=1008]]></image_url><description><![CDATA[Mice profiler temporal analysis of data]]></description><classname><![CDATA[plugins.fab.MiceProfiler.MiceProfilerLabelAnalyser]]></classname><author><![CDATA[fab - Fabrice de Chaumont]]></author><changelog><![CDATA[-
+Version 7.0.0.9
+Date 2014-08-26 14:20:54
+
+- fix a layout problem in the xls export
+
+-
 Version 7.0.0.8
 Date 2014-07-18 17:25:09
 

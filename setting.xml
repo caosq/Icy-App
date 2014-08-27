@@ -33,6 +33,7 @@
 <key name="col_standard_dev" value="false"/>
 </section>
 <key name="guiFontSize" value="15"/>
+<key name="guiSkin" value="Mist Silver"/>
 </section>
 
 <section name="repositories">
@@ -146,8 +147,8 @@
 </section>
 <section name="frame">
 <section name="main">
-<key name="XE" value="86"/>
-<key name="YE" value="37"/>
+<key name="XE" value="-170"/>
+<key name="YE" value="77"/>
 <key name="WidthE" value="2460"/>
 <key name="HeightE" value="1292"/>
 <key name="MaximizedE" value="false"/>

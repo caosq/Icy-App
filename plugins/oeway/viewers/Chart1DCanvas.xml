@@ -1,8 +1,20 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <root>
-<url><![CDATA[http://icy.bioimageanalysis.org/repository/getXMLPluginFile.php?pluginId=270&beta=0]]></url><name>Chart1DCanvas</name><version>5.4.0.0</version><required_kernel_version>1.0.0.0</required_kernel_version><kernel_ver>1.0.0.0</kernel_ver><jar_url><![CDATA[http://icy.bioimageanalysis.org/repository/getJarFile.php?pluginId=270&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=2285]]></icon_url><image_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=2303]]></image_url><description><![CDATA[A canvas plugin using JFreeChart to show intensity profile of a specific row or column. Initially used in a 1-row image of 1D signal representation. Can also used with Micro-Manager for Icy Plugin to show 1D signal from hardware like data acquisition device as waveform. Common 2D+ sequence is also supported. 
+<url><![CDATA[http://icy.bioimageanalysis.org/repository/getXMLPluginFile.php?pluginId=270&beta=0]]></url><name>Chart1DCanvas</name><version>5.6.0.0</version><required_kernel_version>1.0.0.0</required_kernel_version><kernel_ver>1.0.0.0</kernel_ver><jar_url><![CDATA[http://icy.bioimageanalysis.org/repository/getJarFile.php?pluginId=270&beta=0]]></jar_url><icon_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=2285]]></icon_url><image_url><![CDATA[http://bioimageanalysis.org/icy/image.php?idAttach=2303]]></image_url><description><![CDATA[A canvas plugin using JFreeChart to show intensity profile of a specific row or column. Initially used in a 1-row image of 1D signal representation. Can also used with Micro-Manager for Icy Plugin to show 1D signal from hardware like data acquisition device as waveform. Common 2D+ sequence is also supported. 
 Using it by select the plugin icon in the canvas type combobox of the sequence window, a JFreeChart line chart will show up.
 As an alternative plugin to Intensity Profile, this plugin is modified from "Intensity Profile" by fab,  special thanks to him for giving me the idea to make such a plugin.]]></description><classname><![CDATA[plugins.oeway.viewers.Chart1DCanvas]]></classname><author><![CDATA[oeway - Wei Ouyang]]></author><changelog><![CDATA[-
+Version 5.6.0.0
+Date 2014-08-27 11:41:30
+
+* add crosshair
+
+-
+Version 5.5.0.0
+Date 2014-08-27 10:57:17
+
+* Add xy chart block
+
+-
 Version 5.4.0.0
 Date 2014-08-06 09:36:35
 
