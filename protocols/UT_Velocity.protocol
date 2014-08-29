@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <protocol VERSION="4">
 <blocks>
-<block ID="1122612515" blockType="plugins.oeway.featureExtraction.SequenceExtractor" className="plugins.oeway.featureExtraction.SequenceExtractor" collapsed="false" definedName="Sequence extractor" height="264" width="349" xLocation="23" yLocation="23">
+<block ID="1122612515" blockType="plugins.oeway.featureExtraction.SequenceExtractor" className="plugins.oeway.featureExtraction.SequenceExtractor" collapsed="false" definedName="Sequence extractor" height="268" width="349" xLocation="0" yLocation="0">
 <variables>
 <input>
 <variable ID="x" name="x" runtime="false" value="0" visible="false"/>
-<variable ID="y" name="y" runtime="false" value="171" visible="false"/>
-<variable ID="z" name="z" runtime="false" value="58" visible="false"/>
+<variable ID="y" name="y" runtime="false" value="31" visible="false"/>
+<variable ID="z" name="z" runtime="false" value="5" visible="false"/>
 <variable ID="t" name="t" runtime="false" value="0" visible="false"/>
 <variable ID="c" name="c" runtime="false" value="0" visible="false"/>
 <variable ID="Extract Along" name="Extract Along" runtime="false" value="X" visible="false"/>
-<variable ID="Input" name="Input" runtime="false" visible="false"/>
+<variable ID="Input" name="Input" runtime="false" value="No Sequence" visible="false"/>
 </input>
 <output>
 <variable ID="Output" name="Output" runtime="false" visible="false"/>
 </output>
 </variables>
 </block>
-<block ID="1587920024" blockType="plugins.oeway.featureExtraction.FeatureExtractionInPython" className="plugins.oeway.featureExtraction.FeatureExtractionInPython" collapsed="false" definedName="EvaFE In Python" height="472" width="920" xLocation="483" yLocation="0">
+<block ID="1587920024" blockType="plugins.oeway.featureExtraction.FeatureExtractionInPython" className="plugins.oeway.featureExtraction.FeatureExtractionInPython" collapsed="false" definedName="EvaFE In Python" height="260" width="435" xLocation="405" yLocation="0">
 <variables>
 <input>
 <variable ID="Interpreter" name="Interpreter" runtime="false" value="CPython" visible="false"/>
 <variable ID="Template" name="Template" runtime="false" value="CPython_WaveformDetection" visible="false"/>
-<variable ID="Script" name="Script" runtime="false" value="import numpy as np&#13;&#10;import math&#10;class waveSnippet():&#13;&#10;&#9;def __init__(self,offset, length, parentWaveform):&#13;&#10;&#9;&#9;self.offset = offset&#13;&#10;&#9;&#9;self.length = length&#13;&#10;&#9;&#9;self.waveform = parentWaveform[offset:offset+length]&#13;&#10;&#9;&#9;self.parentWaveform = parentWaveform&#13;&#10;&#9;&#9;self.getLocation = self.getMaxLocation&#13;&#10;&#9;&#9;self.paramDict = {}&#13;&#10;&#9;def getMaxLocation(self):&#13;&#10;&#9;&#9;if not 'maxLocation' in self.paramDict:&#13;&#10;&#9;&#9;&#9;self.paramDict['maxLocation'] = self.offset + self.waveform.argmax()&#13;&#10;&#9;&#9;return self.paramDict['maxLocation']&#13;&#10;&#9;def getMinLocation(self):&#13;&#10;&#9;&#9;if not 'minLocation' in self.paramDict:&#13;&#10;&#9;&#9;&#9;self.paramDict['minLocation'] =  self.offset + self.waveform.argmin()&#13;&#10;&#9;&#9;return self.paramDict['minLocation']&#13;&#10;&#9;def getMaxAmplitude(self):&#13;&#10;&#9;&#9;if not 'maxAmplitude' in self.paramDict:&#13;&#10;&#9;&#9;&#9;self.paramDict['maxAmplitude'] =  self.waveform.max()&#13;&#10;&#9;&#9;return self.paramDict['maxAmplitude']&#13;&#10;&#9;def getMinAmplitude(self):&#13;&#10;&#9;&#9;if not 'minAmplitude' in self.paramDict:&#13;&#10;&#9;&#9;&#9;self.paramDict['minAmplitude'] =  self.waveform.min()&#13;&#10;&#9;&#9;return self.paramDict['minAmplitude']&#13;&#10;&#9;def getWaveRangeArray(self):&#13;&#10;&#9;&#9;if not 'waveRangeArray' in self.paramDict:&#13;&#10;&#9;&#9;&#9;self.paramDict['waveRangeArray'] = np.zeros((self.parentWaveform.shape[0]))&#13;&#10;&#9;&#9;&#9;self.paramDict['waveRangeArray'][self.offset:self.offset+self.length] +=self.getMaxAmplitude() *0.5&#13;&#10;&#9;&#9;return self.paramDict['waveRangeArray']&#13;&#10;&#9;def getNextSnippet(self,distance,length):&#13;&#10;&#9;&#9;newoffset = self.getLocation() + distance - length/2&#13;&#10;&#9;&#9;return waveSnippet(newoffset,length,self.parentWaveform)&#13;&#10;&#13;&#10;def process(input, position):&#13;&#10;&#9;SearchStart = 0&#13;&#10;&#9;SearchRange = 1500&#10;&#9;distance = 1430&#10;&#9;waveWidth = 800&#13;&#10;&#9;h = 9.0&#10;&#9;f = 5e8&#13;  &#10;&#9;surface = waveSnippet(SearchStart,SearchRange,input)&#10;&#9;bottom1 = surface.getNextSnippet(distance,waveWidth)&#10;&#9;&#10;&#9;Infrontofbottom1 = input[bottom1.getMaxLocation()-150 : bottom1.getMaxLocation()]&#10;&#9;w = input[bottom1.getMaxLocation() : bottom1.getMaxLocation()+150].argmin() + bottom1.getMaxLocation() &#10;&#9;Underbottom1 = input[w : w +64]&#10;&#9;bottom2 = bottom1.getNextSnippet(distance,waveWidth) #根据提供的距离和波形宽度查找下一个波形片段&#10;&#9;&#10;&#9;t21 =  bottom2.getMaxLocation()- bottom1.getMaxLocation() #一次底波和二次底波时间差&#10;&#9;v21 = 2.0*(1.0*h/1000)*f/t21&#10;&#9;a = bottom2.getMaxAmplitude()/ bottom1.getMaxAmplitude()&#10;&#9;t21 =  bottom2.getMaxLocation()- bottom1.getMaxLocation() #一次底波和二次底波时间差&#10;&#9;v21 = 2.0*(1.0*h/1000)*f/t21&#10;&#9;db = (20*math.log((bottom1.getMaxAmplitude()/ bottom2.getMaxAmplitude()),10)-0)/(2*h)&#10;&#10;&#9;output = []&#10;&#9;output.append(bottom1.getMaxLocation())&#10;&#9;output.append(bottom2.getMaxLocation())&#10;&#9;output.append(v21)&#10;&#9;output.append(db)&#10;&#9;&#10;&#9;return  np.array(output)" visible="false"/>
+<variable ID="Script" name="Script" runtime="false" value="import numpy as np&#13;&#10;import math&#10;from waveDetect import waveSnippet &#10;def process(input, position):&#13;&#10;&#9;SearchStart = 0&#13;&#10;&#9;SearchRange = 1400&#10;&#9;distance = 700&#10;&#9;waveWidth = 400&#10;&#9;h = 4.0&#10;&#9;f = 5e8&#13;  &#10;&#9;surface = waveSnippet(SearchStart,SearchRange,input)&#10;&#9;bottom1 = surface.getNextSnippet(distance,waveWidth)&#10;&#9;&#10;&#9;Infrontofbottom1 = input[bottom1.getMaxLocation()-150 : bottom1.getMaxLocation()]&#10;&#9;w = input[bottom1.getMaxLocation() : bottom1.getMaxLocation()+150].argmin() + bottom1.getMaxLocation() &#10;&#9;Underbottom1 = input[w : w +64]&#10;&#9;bottom2 = bottom1.getNextSnippet(distance,waveWidth) #根据提供的距离和波形宽度查找下一个波形片段&#10;&#9;&#10;&#9;t21 =  bottom2.getMaxLocation()- bottom1.getMaxLocation() #一次底波和二次底波时间差&#10;&#9;v21 = 2.0*(1.0*h/1000)*f/t21&#10;&#9;a = bottom2.getMaxAmplitude()/ bottom1.getMaxAmplitude()&#10;&#9;t21 =  bottom2.getMaxLocation()- bottom1.getMaxLocation() #一次底波和二次底波时间差&#10;&#9;v21 = 2.0*(1.0*h/1000)*f/t21&#10;&#9;db = (20*math.log((bottom1.getMaxAmplitude()/ bottom2.getMaxAmplitude()),10)-0)/(2*h)&#10;&#10;&#9;output = []&#10;&#9;output.append(bottom1.getMaxLocation())&#10;&#9;output.append(bottom2.getMaxLocation())&#10;&#9;output.append(v21)&#10;&#9;output.append(db)&#10;&#9;&#10;&#9;return  np.array(output)" visible="false"/>
 <variable ID="input" name="input" runtime="false" visible="false"/>
 <variable ID="Pos" name="Pos" runtime="false" value="" visible="false"/>
 </input>
@@ -31,21 +31,25 @@
 </output>
 </variables>
 </block>
-<block ID="437840857" blockType="plugins.worm.arraySlicer.ArraySlicer" className="plugins.worm.arraySlicer.ArraySlicer" collapsed="false" definedName="array slicer" height="201" width="181" xLocation="548" yLocation="516">
+<block ID="437840857" blockType="plugins.worm.arraySlicer.ArraySlicer" className="plugins.worm.arraySlicer.ArraySlicer" collapsed="false" definedName="array slicer" height="190" width="190" xLocation="380" yLocation="288">
 <variables>
 <input>
 <variable ID="Add slice" name="Add slice" runtime="false" value="1" visible="false"/>
 <variable ID="input" name="input" runtime="false" visible="false"/>
-<variable ID="slice1" name="slice1" runtime="false" value="0 2" visible="false"/>
-<variable ID="slice2" name="slice2" runtime="false" value="2 4" visible="false"/>
+<variable ID="range 1" name="range 1" runtime="false" value="0 2" visible="false"/>
+<variable ID="range 2" name="range 2" runtime="false" value="2 4" visible="false"/>
+<variable ID="range 3" name="range 3" runtime="false" value="0 4" visible="false"/>
+<variable ID="range 4" name="range 4" runtime="false" value="0 4" visible="false"/>
 </input>
 <output>
 <variable ID="slice1 output" name="slice1 output" runtime="false" visible="false"/>
 <variable ID="slice2 output" name="slice2 output" runtime="false" visible="false"/>
+<variable ID="slice3 output" name="slice3 output" runtime="false" visible="false"/>
+<variable ID="slice4 output" name="slice4 output" runtime="false" visible="false"/>
 </output>
 </variables>
 </block>
-<block ID="2636996" blockType="plugins.adufour.blocks.tools.Display" className="plugins.adufour.blocks.tools.Display" collapsed="false" definedName="Display" height="92" width="628" xLocation="993" yLocation="497">
+<block ID="2636996" blockType="plugins.adufour.blocks.tools.Display" className="plugins.adufour.blocks.tools.Display" collapsed="false" definedName="Display" height="76" width="459" xLocation="616" yLocation="268">
 <variables>
 <input>
 <variable ID="object" name="object" runtime="false" type="[D" visible="false"/>
@@ -53,7 +57,7 @@
 <output/>
 </variables>
 </block>
-<block ID="576051391" blockType="plugins.oeway.viewers.LineChartDisplay" className="plugins.oeway.viewers.LineChartDisplay" collapsed="false" definedName="Line chart display" height="123" width="629" xLocation="992" yLocation="600">
+<block ID="576051391" blockType="plugins.oeway.viewers.LineChartDisplay" className="plugins.oeway.viewers.LineChartDisplay" collapsed="false" definedName="Line chart display" height="202" width="448" xLocation="621" yLocation="349">
 <variables>
 <input>
 <variable ID="" name="" runtime="false" visible="false"/>
@@ -61,19 +65,22 @@
 <output/>
 </variables>
 </block>
-<block ID="1795658545" blockType="plugins.worm.multilineadapter.MultiLineAdapter" className="plugins.worm.multilineadapter.MultiLineAdapter" collapsed="false" definedName="EvamultiLineAdapter" height="163" width="291" xLocation="81" yLocation="524">
+<block ID="1795658545" blockType="plugins.worm.multilineadapter.MultiLineAdapter" className="plugins.worm.multilineadapter.MultiLineAdapter" collapsed="false" definedName="EvamultiLineAdapter" height="241" width="286" xLocation="43" yLocation="288">
 <variables>
 <input>
 <variable ID="Add Line" name="Add Line" runtime="false" value="0" visible="false"/>
 <variable ID="Label" name="Label" runtime="false" visible="false"/>
 <variable ID="line1" name="line1" runtime="false" visible="false"/>
+<variable ID="line2" name="line2" runtime="false" value="" visible="false"/>
+<variable ID="line3" name="line3" runtime="false" value="" visible="false"/>
+<variable ID="line4" name="line4" runtime="false" value="" visible="false"/>
 </input>
 <output>
 <variable ID="Output" name="Output" runtime="false" visible="false"/>
 </output>
 </variables>
 </block>
-<block ID="1458242032" blockType="plugins.oeway.viewers.MultiLineChartDisplay" className="plugins.oeway.viewers.MultiLineChartDisplay" collapsed="false" definedName="Multi line chart display" height="371" width="1539" xLocation="88" yLocation="739">
+<block ID="1458242032" blockType="plugins.oeway.viewers.MultiLineChartDisplay" className="plugins.oeway.viewers.MultiLineChartDisplay" collapsed="false" definedName="Multi line chart display" height="168" width="1045" xLocation="32" yLocation="553">
 <variables>
 <input>
 <variable ID="" name="" runtime="false" visible="false"/>

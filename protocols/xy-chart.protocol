@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<protocol VERSION="4">
+<blocks>
+<block ID="1868484533" blockType="plugins.oeway.featureExtraction.SequenceExtractor" className="plugins.oeway.featureExtraction.SequenceExtractor" collapsed="false" definedName="Sequence extractor" height="264" width="295" xLocation="35" yLocation="24">
+<variables>
+<input>
+<variable ID="x" name="x" runtime="false" value="0" visible="false"/>
+<variable ID="y" name="y" runtime="false" value="0" visible="false"/>
+<variable ID="z" name="z" runtime="false" value="0" visible="false"/>
+<variable ID="t" name="t" runtime="false" value="0" visible="false"/>
+<variable ID="c" name="c" runtime="false" value="0" visible="false"/>
+<variable ID="Extract Along" name="Extract Along" runtime="false" value="X" visible="false"/>
+<variable ID="Input" name="Input" runtime="false" visible="false"/>
+</input>
+<output>
+<variable ID="Output" name="Output" runtime="false" visible="false"/>
+</output>
+</variables>
+</block>
+<block ID="1751589579" blockType="plugins.oeway.featureExtraction.SequenceExtractor" className="plugins.oeway.featureExtraction.SequenceExtractor" collapsed="false" definedName="Sequence extractor" height="264" width="295" xLocation="55" yLocation="324">
+<variables>
+<input>
+<variable ID="x" name="x" runtime="false" visible="false"/>
+<variable ID="y" name="y" runtime="false" visible="false"/>
+<variable ID="z" name="z" runtime="false" visible="false"/>
+<variable ID="t" name="t" runtime="false" visible="false"/>
+<variable ID="c" name="c" runtime="false" value="1" visible="false"/>
+<variable ID="Extract Along" name="Extract Along" runtime="false" visible="false"/>
+<variable ID="Input" name="Input" runtime="false" visible="false"/>
+</input>
+<output>
+<variable ID="Output" name="Output" runtime="false" visible="false"/>
+</output>
+</variables>
+</block>
+<block ID="1503916051" blockType="plugins.oeway.featureExtraction.FeatureExtractionInPython" className="plugins.oeway.featureExtraction.FeatureExtractionInPython" collapsed="true" definedName="EvaFE In Python" height="479" width="612" xLocation="419" yLocation="305">
+<variables>
+<input>
+<variable ID="Interpreter" name="Interpreter" runtime="false" value="CPython" visible="false"/>
+<variable ID="Template" name="Template" runtime="false" value="auto-save" visible="false"/>
+<variable ID="Script" name="Script" runtime="false" value="import numpy as np&#10;def process(input, position):&#10;&#9;output=input-32768&#10;&#9;return output&#10;" visible="false"/>
+<variable ID="input" name="input" runtime="false" visible="false"/>
+<variable ID="Pos" name="Pos" runtime="false" value="" visible="false"/>
+</input>
+<output>
+<variable ID="output" name="output" runtime="false" visible="false"/>
+</output>
+</variables>
+</block>
+<block ID="71271453" blockType="plugins.oeway.featureExtraction.FeatureExtractionInPython" className="plugins.oeway.featureExtraction.FeatureExtractionInPython" collapsed="true" definedName="EvaFE In Python" height="479" width="612" xLocation="430" yLocation="601">
+<variables>
+<input>
+<variable ID="Interpreter" name="Interpreter" runtime="false" value="CPython" visible="false"/>
+<variable ID="Template" name="Template" runtime="false" value="auto-save" visible="false"/>
+<variable ID="Script" name="Script" runtime="false" value="import numpy as np&#10;def process(input, position):&#10;&#9;output=input-32768&#10;&#9;return output&#10;" visible="false"/>
+<variable ID="input" name="input" runtime="false" visible="false"/>
+<variable ID="Pos" name="Pos" runtime="false" value="" visible="false"/>
+</input>
+<output>
+<variable ID="output" name="output" runtime="false" visible="false"/>
+</output>
+</variables>
+</block>
+<block ID="1462368583" blockType="plugins.oeway.viewers.XYChartDisplay" className="plugins.oeway.viewers.XYChartDisplay" collapsed="false" definedName="XY chart display" height="789" width="906" xLocation="666" yLocation="57">
+<variables>
+<input>
+<variable ID="X" name="X" runtime="false" visible="false"/>
+<variable ID="Y" name="Y" runtime="false" visible="false"/>
+<variable ID="" name="" runtime="false" value="[D@3122eb97 [D@6b991fb4" visible="false"/>
+</input>
+<output/>
+</variables>
+</block>
+</blocks>
+<links>
+<link dstBlockID="1503916051" dstVarID="input" srcBlockID="1868484533" srcVarID="Output"/>
+<link dstBlockID="71271453" dstVarID="input" srcBlockID="1751589579" srcVarID="Output"/>
+<link dstBlockID="1462368583" dstVarID="X" srcBlockID="1503916051" srcVarID="output"/>
+<link dstBlockID="1751589579" dstVarID="Input" srcBlockID="1868484533" srcVarID="Input"/>
+<link dstBlockID="1751589579" dstVarID="Extract Along" srcBlockID="1868484533" srcVarID="Extract Along"/>
+<link dstBlockID="1751589579" dstVarID="t" srcBlockID="1868484533" srcVarID="t"/>
+<link dstBlockID="1751589579" dstVarID="z" srcBlockID="1868484533" srcVarID="z"/>
+<link dstBlockID="1751589579" dstVarID="y" srcBlockID="1868484533" srcVarID="y"/>
+<link dstBlockID="1751589579" dstVarID="x" srcBlockID="1868484533" srcVarID="x"/>
+<link dstBlockID="1462368583" dstVarID="Y" srcBlockID="71271453" srcVarID="output"/>
+</links>
+</protocol>

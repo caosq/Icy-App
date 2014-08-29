@@ -27,6 +27,7 @@
 <item classname="plugins.adufour.roi.ROIMeasures" priority="med"/>
 <item classname="plugins.worm.image2workbook.Image2Workbook" priority="med"/>
 <item classname="plugins.adufour.connectedcomponents.ConnectedComponents" priority="med"/>
+<item classname="plugins.worm.sequence2csv.Sequence2CSV" priority="med"/>
 </band>
 </task>
 </root>

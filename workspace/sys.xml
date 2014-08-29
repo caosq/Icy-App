@@ -16,6 +16,7 @@
 <item classname="plugins.worm.waveletfilter.WaveletFilter" priority="top"/>
 <item classname="plugins.worm.image2workbook.Image2Workbook" priority="top"/>
 <item classname="plugins.oeway.featureExtraction.FeatureExtractionInPython" priority="top"/>
+<item classname="plugins.worm.sequence2csv.Sequence2CSV" priority="top"/>
 </band>
 <band name="Others">
 <item classname="plugins.vannary.morphomaths.AnalyzeSkeleton" priority="low"/>

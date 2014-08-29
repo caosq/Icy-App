@@ -151,17 +151,17 @@
 <key name="YE" value="77"/>
 <key name="WidthE" value="2460"/>
 <key name="HeightE" value="1292"/>
-<key name="MaximizedE" value="false"/>
+<key name="MaximizedE" value="true"/>
 </section>
 <section name="inspector">
-<key name="XC" value="1725"/>
+<key name="XC" value="2035"/>
 <key name="YC" value="0"/>
 <key name="XE" value="600"/>
 <key name="YE" value="140"/>
 <key name="XI" value="600"/>
 <key name="YI" value="140"/>
-<key name="WidthC" value="727"/>
-<key name="HeightC" value="1107"/>
+<key name="WidthC" value="517"/>
+<key name="HeightC" value="1255"/>
 <key name="WidthE" value="300"/>
 <key name="HeightE" value="600"/>
 <key name="WidthI" value="300"/>
@@ -178,8 +178,8 @@
 <key name="YE" value="100"/>
 <key name="XI" value="100"/>
 <key name="YI" value="100"/>
-<key name="WidthC" value="717"/>
-<key name="HeightC" value="1014"/>
+<key name="WidthC" value="507"/>
+<key name="HeightC" value="1162"/>
 <key name="WidthE" value="400"/>
 <key name="HeightE" value="600"/>
 <key name="WidthI" value="400"/>
@@ -196,8 +196,8 @@
 <key name="YE" value="200"/>
 <key name="XI" value="200"/>
 <key name="YI" value="200"/>
-<key name="WidthC" value="717"/>
-<key name="HeightC" value="1014"/>
+<key name="WidthC" value="507"/>
+<key name="HeightC" value="1162"/>
 <key name="WidthE" value="400"/>
 <key name="HeightE" value="300"/>
 <key name="WidthI" value="400"/>
@@ -214,8 +214,8 @@
 <key name="YE" value="200"/>
 <key name="XI" value="200"/>
 <key name="YI" value="200"/>
-<key name="WidthC" value="717"/>
-<key name="HeightC" value="1014"/>
+<key name="WidthC" value="507"/>
+<key name="HeightC" value="1162"/>
 <key name="WidthE" value="400"/>
 <key name="HeightE" value="300"/>
 <key name="WidthI" value="400"/>
@@ -228,8 +228,8 @@
 <section name="preference">
 <key name="XE" value="100"/>
 <key name="YE" value="100"/>
-<key name="XI" value="100"/>
-<key name="YI" value="100"/>
+<key name="XI" value="128"/>
+<key name="YI" value="20"/>
 <key name="WidthE" value="640"/>
 <key name="HeightE" value="480"/>
 <key name="WidthI" value="979"/>
