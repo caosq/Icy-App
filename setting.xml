@@ -56,6 +56,47 @@
 <key name="allowBeta" value="false"/>
 <section name="local"/>
 <section name="online"/>
+<section name="plugins.tprovoost.Microscopy.MicroManagerForIcy.MicromanagerPlugin">
+<section name="StageMover"/>
+<section name="paintersPreferences">
+<section name="Borders">
+<key name="red" value="217"/>
+<key name="green" value="217"/>
+<key name="blue" value="217"/>
+<key name="alpha" value="100"/>
+</section>
+<section name="Text">
+<key name="red" value="250"/>
+<key name="green" value="253"/>
+<key name="blue" value="12"/>
+<key name="alpha" value="100"/>
+</section>
+<section name="Foreground">
+<key name="red" value="250"/>
+<key name="green" value="253"/>
+<key name="blue" value="12"/>
+<key name="alpha" value="100"/>
+</section>
+<section name="Normal">
+<key name="red" value="30"/>
+<key name="green" value="255"/>
+<key name="blue" value="255"/>
+<key name="alpha" value="100"/>
+</section>
+<section name="Shadow">
+<key name="red" value="128"/>
+<key name="green" value="128"/>
+<key name="blue" value="128"/>
+<key name="alpha" value="255"/>
+</section>
+<section name="Background">
+<key name="red" value="0"/>
+<key name="green" value="0"/>
+<key name="blue" value="0"/>
+<key name="alpha" value="75"/>
+</section>
+</section>
+</section>
 </section>
 <key name="maxMemory" value="8160"/>
 <section name="canvas">
@@ -80,9 +121,9 @@
 <key name="realname" value="guest6241"/>
 <key name="userPassword" value=""/>
 <key name="extraChannels" value=""/>
-<key name="autoConnect" value="true"/>
+<key name="autoConnect" value="false"/>
 <key name="showStatusMessages" value="false"/>
-<key name="desktopOverlay" value="true"/>
+<key name="desktopOverlay" value="false"/>
 <key name="desktopChannels" value="icy"/>
 </section>
 <section name="workspaces">
@@ -131,12 +172,14 @@
 </section>
 </section>
 <key name="os" value="win64"/>
-<key name="version" value="1.5.3.1"/>
+<key name="version" value="1.5.4.0"/>
 <key name="id" value="117212103"/>
 <section name="gui.histo"/>
 </section>
 <section name="plugins">
-<section name="plugins.tprovoost.Microscopy.MicroManagerForIcy.MicromanagerPlugin"/>
+<section name="plugins.tprovoost.Microscopy.MicroManagerForIcy.MicromanagerPlugin">
+<key name="libray_path" value="C:\Program Files\Micro-Manager-1.4/"/>
+</section>
 <section name="plugins.tprovoost.scripteditor.main.ScriptEditorPlugin">
 <section name="recentFiles"/>
 <section name="openedFiles">
@@ -147,7 +190,7 @@
 </section>
 <section name="frame">
 <section name="main">
-<key name="XE" value="-170"/>
+<key name="XE" value="0"/>
 <key name="YE" value="77"/>
 <key name="WidthE" value="2460"/>
 <key name="HeightE" value="1292"/>
@@ -161,7 +204,7 @@
 <key name="XI" value="600"/>
 <key name="YI" value="140"/>
 <key name="WidthC" value="517"/>
-<key name="HeightC" value="1255"/>
+<key name="HeightC" value="1207"/>
 <key name="WidthE" value="300"/>
 <key name="HeightE" value="600"/>
 <key name="WidthI" value="300"/>
@@ -179,7 +222,7 @@
 <key name="XI" value="100"/>
 <key name="YI" value="100"/>
 <key name="WidthC" value="507"/>
-<key name="HeightC" value="1162"/>
+<key name="HeightC" value="1114"/>
 <key name="WidthE" value="400"/>
 <key name="HeightE" value="600"/>
 <key name="WidthI" value="400"/>
@@ -197,7 +240,7 @@
 <key name="XI" value="200"/>
 <key name="YI" value="200"/>
 <key name="WidthC" value="507"/>
-<key name="HeightC" value="1162"/>
+<key name="HeightC" value="1114"/>
 <key name="WidthE" value="400"/>
 <key name="HeightE" value="300"/>
 <key name="WidthI" value="400"/>
@@ -215,7 +258,7 @@
 <key name="XI" value="200"/>
 <key name="YI" value="200"/>
 <key name="WidthC" value="507"/>
-<key name="HeightC" value="1162"/>
+<key name="HeightC" value="1114"/>
 <key name="WidthE" value="400"/>
 <key name="HeightE" value="300"/>
 <key name="WidthI" value="400"/>
